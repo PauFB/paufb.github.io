@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My site</title>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+        <hr>
+        Default: Hello!
+        <br>
+        Bold: <b>Hello!</b>
+        <br>
+        Italic: <i>Hello!</i>
+        <br>
+        Underlined: <u>Hello!</u>
+        <br>
+        Emphasized: <em>Hello!</em>
+        <br>
+        Strong: <strong>Hello!</strong>
+        <hr>
+        Hyperink (accessing in current page): <a href="https://www.google.com">https://www.google.com</a>
+        <br>
+        Hyperlink (accessing in another page): <a href="https://www.google.com" target="_blank">https://www.google.com</a>
+        <hr>
+
+        <form name="form_roman_converter">
+            Roman number <input type="text" name="roman_number_input">
+            <input type="button" value="Convert" onClick="romanToDecimal()">
+            <br>
+            Decimal number <input type="text" name="decimal_number_input">
+            <input type="button" value="Convert" onClick="decimalToRoman()">
+            <br>
+        </form>
+
+        <script type="text/javascript">
+            function romanToDecimal() {
+                var input = document.form_roman_converter.roman_number_input.value.toUpperCase();
+                if (input.match("[IVXLCDM]+") == null) {
+                    document.form_roman_converter.decimal_number_input.value = "";
+                    window.alert("Enter roman numerals only.");
+                    return;
+                }
+                if (input.match("^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$") == null) {
+                    document.form_roman_converter.decimal_number_input.value = "";
+                    window.alert("Enter a valid roman numeral.");
+                    return;
+                }
+                const legend = "IVXLCDM";
+                const l = [1, 5, 10, 50, 100, 500, 1000];
+                let sum = 0;
+                while(input){
+                    if(!!input[1] && legend.indexOf(input[0]) < legend.indexOf(input[1])){
+                        sum += (l[legend.indexOf(input[1])] - l[legend.indexOf(input[0])]);
+                        input = input.substring(2, input.length);
+                    } else {
+                        sum += l[legend.indexOf(input[0])];
+                        input = input.substring(1, input.length);
+                    }
+                }
+                if (sum < 1 || sum > 4999) {
+                    document.form_roman_converter.decimal_number_input.value = "";
+                    window.alert(sum + " is invalid.");
+                    return;
+                }
+                document.form_roman_converter.decimal_number_input.value = sum;
+            }
+            function decimalToRoman() {
+                var input = document.form_roman_converter.decimal_number_input.value;
+                if (input.match("[0123456789]+") == null) {
+                    document.form_roman_converter.roman_number_input.value = "";
+                    window.alert("Enter a valid decimal whole number.");
+                    return;
+                }
+                const map = {
+                    M: 1000,
+                    CM: 900,
+                    D: 500,
+                    CD: 400,
+                    C: 100,
+                    XC: 90,
+                    L: 50,
+                    XL: 40,
+                    X: 10,
+                    IX: 9,
+                    V: 5,
+                    IV: 4,
+                    I: 1,
+                };
+                let result = "";
+                for (key in map) {
+                    const repeatCounter = Math.floor(input / map[key]);
+                    if (repeatCounter !== 0) {
+                        result += key.repeat(repeatCounter);
+                    }
+                    input %= map[key];
+                    if (input === 0)
+                    document.form_roman_converter.roman_number_input.value = result;
+                }
+                document.form_roman_converter.roman_number_input.value = result;
+            }
+        </script>
+
+        <hr>
+
+        Unit converter
+        <form name="form_unit_converter">
+            <select name="unit1_selection" id="unit1_selection" onchange="updateConversionForm_1()">
+                <option value="">Select</option>
+                <option value="yotta">yotta</option>
+                <option value="zetta">zetta</option>
+                <option value="exa">exa</option>
+                <option value="peta">peta</option>
+                <option value="tera">tera</option>
+                <option value="giga">giga</option>
+                <option value="mega">mega</option>
+                <option value="kilo">kilo</option>
+                <option value="hecto">hecto</option>
+                <option value="deca">deca</option>
+                <option value="uni">uni</option>
+                <option value="deci">deci</option>
+                <option value="centi">centi</option>
+                <option value="milli">milli</option>
+                <option value="micro">micro</option>
+                <option value="nano">nano</option>
+                <option value="pico">pico</option>
+                <option value="femto">femto</option>
+                <option value="atto">atto</option>
+                <option value="zepto">zepto</option>
+                <option value="yocto">yocto</option>
+            </select>
+            <input type="text" name="unit1_input" onkeyup="convertUnit1()">
+            <br>
+            <select name="unit2_selection" id="unit2_selection" onchange="updateConversionForm_2()">
+                <option value="">Select</option>
+                <option value="yotta">yotta</option>
+                <option value="zetta">zetta</option>
+                <option value="exa">exa</option>
+                <option value="peta">peta</option>
+                <option value="tera">tera</option>
+                <option value="giga">giga</option>
+                <option value="mega">mega</option>
+                <option value="kilo">kilo</option>
+                <option value="hecto">hecto</option>
+                <option value="deca">deca</option>
+                <option value="uni">uni</option>
+                <option value="deci">deci</option>
+                <option value="centi">centi</option>
+                <option value="milli">milli</option>
+                <option value="micro">micro</option>
+                <option value="nano">nano</option>
+                <option value="pico">pico</option>
+                <option value="femto">femto</option>
+                <option value="atto">atto</option>
+                <option value="zepto">zepto</option>
+                <option value="yocto">yocto</option>
+            </select>
+            <input type="text" name="unit2_input" onkeyup="convertUnit2()">
+            <br>
+            <label id="label_conversion_factor_1">... ... = ... ...</label>
+            <br>
+            <label id="label_conversion_factor_2">... ... = ... ...</label>
+        </form>
+
+        <script type="text/javascript">
+            function updateConversionForm_1() {
+                if (document.form_unit_converter.unit1_selection.value == "" && document.form_unit_converter.unit2_selection.value == "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " ... = 10^(...) ...";
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " ... = 10^(...) ...";
+                }
+                if (document.form_unit_converter.unit1_selection.value == "" && document.form_unit_converter.unit2_selection.value != "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + "... = 10^(...) " + document.form_unit_converter.unit2_selection.value;
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " " + document.form_unit_converter.unit2_selection.value + " = 10^(...) ...";
+                }
+                if (document.form_unit_converter.unit1_selection.value != "" && document.form_unit_converter.unit2_selection.value == "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " " + document.form_unit_converter.unit1_selection.value + " = 10^(...) ...";
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " ... = 10^(...) " + document.form_unit_converter.unit1_selection.value;
+                }
+                if (document.form_unit_converter.unit1_selection.value != "" && document.form_unit_converter.unit2_selection.value != "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " " + document.form_unit_converter.unit1_selection.value + " = 10^(" + conversionFactorOf(document.form_unit_converter.unit1_selection.value, document.form_unit_converter.unit2_selection.value) + ") " + document.form_unit_converter.unit2_selection.value;
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " " + document.form_unit_converter.unit2_selection.value + " = 10^(" + conversionFactorOf(document.form_unit_converter.unit2_selection.value, document.form_unit_converter.unit1_selection.value) + ") " + document.form_unit_converter.unit1_selection.value;
+                }
+                convertUnit1();
+            }
+            function updateConversionForm_2() {
+                if (document.form_unit_converter.unit1_selection.value == "" && document.form_unit_converter.unit2_selection.value == "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " ... = 10^(...) ...";
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " ... = 10^(...) ...";
+                }
+                if (document.form_unit_converter.unit1_selection.value == "" && document.form_unit_converter.unit2_selection.value != "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + "... = 10^(...) " + document.form_unit_converter.unit2_selection.value;
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " " + document.form_unit_converter.unit2_selection.value + " = 10^(...) ...";
+                }
+                if (document.form_unit_converter.unit1_selection.value != "" && document.form_unit_converter.unit2_selection.value == "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " " + document.form_unit_converter.unit1_selection.value + " = 10^(...) ...";
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " ... = 10^(...) " + document.form_unit_converter.unit1_selection.value;
+                }
+                if (document.form_unit_converter.unit1_selection.value != "" && document.form_unit_converter.unit2_selection.value != "") {
+                    document.getElementById("label_conversion_factor_1").innerHTML = 1 + " " + document.form_unit_converter.unit1_selection.value + " = 10^(" + conversionFactorOf(document.form_unit_converter.unit1_selection.value, document.form_unit_converter.unit2_selection.value) + ") " + document.form_unit_converter.unit2_selection.value;
+                    document.getElementById("label_conversion_factor_2").innerHTML = 1 + " " + document.form_unit_converter.unit2_selection.value + " = 10^(" + conversionFactorOf(document.form_unit_converter.unit2_selection.value, document.form_unit_converter.unit1_selection.value) + ") " + document.form_unit_converter.unit1_selection.value;
+                }
+                convertUnit2();
+            }
+            function conversionFactorOf(prefix_src, prefix_dst) {
+                const exp_map = {
+                    yotta: 24,
+                    zetta: 21,
+                    exa: 18,
+                    peta: 15,
+                    tera: 12,
+                    giga: 9,
+                    mega: 6,
+                    kilo: 3,
+                    hecto: 2,
+                    deca: 1,
+                    uni: 0,
+                    deci: -1,
+                    centi: -2,
+                    milli: -3,
+                    micro: -6,
+                    nano: -9,
+                    pico: -12,
+                    femto: -15,
+                    atto: -18,
+                    zepto: -21,
+                    yocto: -24
+                };
+                var exp_src = exp_map[prefix_src];
+                var exp_dst = exp_map[prefix_dst];
+                if (exp_src == 0) {
+                    if (exp_dst == 0) {
+                        return 0;
+                    }
+                    return exp_dst;
+                }
+                if (exp_dst == 0) {
+                    return -exp_src;
+                }
+                if (exp_src > exp_dst) {
+                    if (exp_dst > 0) {
+                        return exp_src - exp_dst;
+                    }
+                    if (exp_src < 0 && exp_dst < 0) {
+                        return Math.abs(exp_dst) - Math.abs(exp_src);
+                    }
+                    if (exp_src > 0 && exp_dst < 0) {
+                        return exp_src + Math.abs(exp_dst);
+                    }
+                }
+                else {
+                    if (exp_src < exp_dst) {
+                        if (exp_src > 0) {
+                            return -(exp_dst - exp_src);
+                        }
+                        if (exp_src < 0 && exp_dst < 0) {
+                            return -(Math.abs(exp_src) - Math.abs(exp_dst));
+                        }
+                        if (exp_src < 0 && exp_dst > 0) {
+                            return -(Math.abs(exp_src) + exp_dst);
+                        }
+                    }
+                    else {
+                        if (exp_src == exp_dst) {
+                            return 0;
+                        }
+                    }
+                }
+            }
+            function convertUnit1() {
+                if (document.form_unit_converter.unit1_input.value == "") {
+                    document.form_unit_converter.unit2_input.value = "";
+                    return;
+                }
+                document.form_unit_converter.unit2_input.value = document.form_unit_converter.unit1_input.value * Math.pow(10, conversionFactorOf(document.form_unit_converter.unit1_selection.value, document.form_unit_converter.unit2_selection.value));
+            }
+            function convertUnit2() {
+                if (document.form_unit_converter.unit2_input.value == "") {
+                    document.form_unit_converter.unit1_input.value = "";
+                    return;
+                }
+                document.form_unit_converter.unit1_input.value = document.form_unit_converter.unit2_input.value * Math.pow(10, conversionFactorOf(document.form_unit_converter.unit2_selection.value, document.form_unit_converter.unit1_selection.value));
+            }
+        </script>
+
+        <hr>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget posuere sem. Morbi vitae eleifend lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ligula nulla. Quisque quis lectus interdum, scelerisque ex vel, cursus elit. Aliquam orci felis, fermentum a dapibus eu, tempus a nulla. Aliquam leo nibh, gravida eget ullamcorper a, faucibus at neque. Donec elementum faucibus commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam dui eros, faucibus interdum nibh non, ullamcorper iaculis sem. In congue varius enim, eu egestas lorem blandit sed. Etiam pellentesque non arcu eget luctus.
+        </p>
+        <p>
+            Ut scelerisque non odio et imperdiet. Curabitur non cursus nulla. Sed maximus orci non elit scelerisque finibus. Aliquam venenatis tortor libero, ac euismod augue mattis eu. Integer vehicula est a rutrum cursus. Phasellus et risus urna. Quisque eu sapien nec ipsum scelerisque porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer at nisl at nunc viverra consectetur.
+        </p>
+        <p>
+            Sed ut urna purus. Maecenas nec purus eget est congue gravida sed non libero. Curabitur eget nunc varius, accumsan elit ac, accumsan eros. Pellentesque tellus ex, fringilla in tellus ac, tempus blandit felis. Aenean varius ut metus eu luctus. Mauris aliquam ultrices diam a ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse a mauris vitae metus imperdiet consectetur. Fusce ut libero erat.
+        </p>
+        <p>
+            Donec odio elit, rutrum at augue in, elementum egestas orci. Nunc id mattis est. Nulla ultrices velit a dolor egestas tristique et et urna. Nulla efficitur faucibus neque eu rutrum. Nulla pharetra iaculis rutrum. Mauris ac egestas nulla. Nullam lobortis felis et mauris pretium iaculis. Quisque eget quam vitae tortor dictum dignissim. Sed imperdiet lacus metus, at interdum ante sagittis nec.
+        </p>
+        <p>
+            Vivamus in cursus lorem, sed semper est. Mauris auctor tellus justo, ac sagittis ligula pretium nec. Sed nec tempor erat, sit amet aliquam ligula. Mauris vel odio volutpat elit efficitur rhoncus. Vestibulum mattis lectus et augue sollicitudin, eget luctus augue sollicitudin. Quisque feugiat odio ut pellentesque eleifend. Praesent malesuada velit vel est euismod convallis. Donec a consectetur lacus.
+        </p>
+    </body>
+</html>
