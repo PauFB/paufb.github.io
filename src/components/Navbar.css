@@ -1,34 +1,84 @@
-nav {
-  background-color: #333;
+nav.navbar-top {
   position: sticky;
   top: 0;
 }
 
-nav ul {
+nav.navbar-top ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-nav ul li {
+nav.navbar-top ul li {
   display: inline;
 }
 
-nav ul li a {
+nav.navbar-top ul li a {
   display: inline-block;
-  margin: 0.5rem 0.25rem 0.5rem 0.25rem;
+  margin: 0.75rem 0.375rem 0.75rem 0.375rem;
   padding: 10px;
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
-nav ul li a:not(.active):hover {
-  background-color: #555;
+nav.navbar-top ul li a:not(.active):hover {
+  background-color: #555555;
   border-radius: 10px;
 }
 
-nav .active {
-  background-color: #4CAF50;
+nav.navbar-top .active {
+  background-color: #4169e1;
   border-radius: 10px;
+}
+
+.inline-container {
+  padding: 0 0.75rem 0 0.75rem;
+  background-color: #8c8c8c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  width: 2em;
+  height: 2em;
+}
+
+.hamburger:hover {
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav.navbar-left {
+  width: 336px;
+  height: 100vh;
+  position: fixed;
+  background-color: #b3b3b3;
+}
+
+nav.navbar-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar-left ul li a {
+  width: 100%;
+  display: inline-block;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav.navbar-left ul li a:not(.active):hover {
+  background-color: #8c8c8c;
+}
+
+nav.navbar-left .active {
+  background-color: #4169e1;
+  color: white;
 }
