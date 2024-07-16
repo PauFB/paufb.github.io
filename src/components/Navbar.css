@@ -40,12 +40,11 @@ nav.navbar-top .active {
   align-items: center;
 }
 
-.hamburger {
-  width: 2em;
-  height: 2em;
+.hamburger-container {
+  transition: all 0.3s ease;
 }
 
-.hamburger:hover {
+.hamburger-container:hover {
   background-color: #b3b3b3;
   border-radius: 50%;
   cursor: pointer;
