@@ -59,6 +59,12 @@ nav.navbar-left {
   height: 100vh;
   position: fixed;
   background-color: #b3b3b3;
+  margin-left: calc(-1 * var(--sidebar-width));
+  transition: all 0.3s ease;
+}
+
+nav.navbar-left.navbar-left-open {
+  margin-left: 0;
 }
 
 nav.navbar-left ul {
