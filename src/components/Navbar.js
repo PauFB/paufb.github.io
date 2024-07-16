@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { ReactComponent as HamburgerMenuIcon } from '../assets/hamburger-menu-icon.svg';
+import { HamburgerMenuIcon } from './HamburgerMenuIcon';
 import './Navbar.css';
 
 export const Navbar = () => {
@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <>
       <div className="inline-container">
-        <HamburgerMenuIcon className="hamburger" onClick={toggleSidebar} />
+        <HamburgerMenuIcon onClick={toggleSidebar} width="2em" height="2em" backgroundColor="#ffffff" />
         <nav className="navbar-top">
           <ul>
             <li>
