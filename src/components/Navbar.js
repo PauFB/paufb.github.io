@@ -1,15 +1,8 @@
-import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HamburgerMenuIcon } from './HamburgerMenuIcon';
 import './Navbar.css';
 
-export const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  }
-
+export const Navbar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <>
       <div className="inline-container">

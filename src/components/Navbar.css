@@ -1,3 +1,7 @@
+:root {
+  --sidebar-width: 336px;
+}
+
 nav.navbar-top {
   position: sticky;
   top: 0;
@@ -51,7 +55,7 @@ nav.navbar-top .active {
 }
 
 nav.navbar-left {
-  width: 336px;
+  width: var(--sidebar-width);
   height: 100vh;
   position: fixed;
   background-color: #b3b3b3;
