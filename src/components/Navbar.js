@@ -15,7 +15,7 @@ export const Navbar = ({ isSidebarOpen, toggleSidebar }) => {
           </ul>
         </nav>
       </div>
-      <nav className="navbar-left" style={{ display: isSidebarOpen ? "inherit" : "none" }}>
+      <nav className={`navbar-left ${isSidebarOpen ? "navbar-left-open" : ""}`} >
         <ul>
           <li>
             <NavLink to="/">Home</NavLink>
