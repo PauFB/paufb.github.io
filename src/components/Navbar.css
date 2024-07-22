@@ -29,6 +29,7 @@ nav.navbar-top ul li a {
 nav.navbar-top ul li a:not(.active):hover {
   background-color: #555555;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 nav.navbar-top .active {
@@ -86,11 +87,18 @@ nav.navbar-left ul li a {
   font-weight: bold;
 }
 
+nav.navbar-left ul li.menu-item {
+  margin: 0.3rem;
+}
+
 nav.navbar-left ul li a:not(.active):hover {
   background-color: #8c8c8c;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 
 nav.navbar-left .active {
   background-color: #4169e1;
+  border-radius: 0.5rem;
   color: white;
 }

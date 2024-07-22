@@ -15,9 +15,9 @@ export const Navbar = ({ isSidebarOpen, toggleSidebar }) => {
           </ul>
         </nav>
       </div>
-      <nav className={`navbar-left ${isSidebarOpen ? "navbar-left-open" : ""}`} >
+      <nav className={`navbar-left ${isSidebarOpen ? "navbar-left-open" : ""}`}>
         <ul>
-          <li>
+          <li className="menu-item">
             <NavLink to="/">Home</NavLink>
           </li>
         </ul>
