@@ -2,9 +2,20 @@
   --sidebar-width: 336px;
 }
 
-nav.navbar-top {
+.inline-container {
+  padding: 0 1rem 0 1rem;
+  background-color: #8c8c8c;
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+
+nav.navbar-top {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav.navbar-top ul {
@@ -35,17 +46,6 @@ nav.navbar-top ul li a:not(.active):hover {
 nav.navbar-top .active {
   background-color: #4169e1;
   border-radius: 10px;
-}
-
-.inline-container {
-  padding: 0 0.75rem 0 0.75rem;
-  background-color: #8c8c8c;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .hamburger-container {
