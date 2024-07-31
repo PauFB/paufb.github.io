@@ -1,4 +1,4 @@
-import { ReactComponent as GithubLogo } from '../../assets/github-logo.svg';
+import { ReactComponent as GithubLogo } from '../../../assets/github-logo.svg';
 import './Home.css';
 
 export const Home = () => {
