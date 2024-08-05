@@ -1,0 +1,71 @@
+.weapons-container {
+  width: 90vw;
+  margin: 3rem auto 3rem auto;
+}
+
+.filters-container {
+  background-color: #d3d3d3;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+
+.filter {
+  background-color: #e6e6e6;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.overboost-stars-container {
+  background-color: #051629;
+  border-style: solid;
+  border-color: #193d63;
+  border-width: 0.1rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  vertical-align: middle;
+}
+
+.element-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 100%;
+  background-color: #666666;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.25rem 0 0.25rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.element-icon.selected {
+  background-color: #000000;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: #4169e1;
+}
+
+.table-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  overflow-x: scroll;
+}

@@ -2,6 +2,22 @@ export const navbarItemsData = [
   {
     title: "Home",
     url: "/"
+  },
+  {
+    title: "Games",
+    url: "games",
+    submenu: [
+      {
+        title: "FINAL FANTASY VII EVER CRISIS",
+        url: "final-fantasy-vii-ever-crisis",
+        submenu: [
+          {
+            title: "Weapons",
+            url: "weapons"
+          }
+        ]
+      }
+    ]
   }
 ];
 
