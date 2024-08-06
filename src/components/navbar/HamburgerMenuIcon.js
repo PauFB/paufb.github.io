@@ -1,22 +1,15 @@
-import { useState } from 'react';
 import './HamburgerMenuIcon.css';
 
-export function HamburgerMenuIcon({ width, height, backgroundColor, onClick }) {
-  const [isActive, setIsActive] = useState(false);
+export function HamburgerMenuIcon({ isSidebarOpen, onClick, width, height, backgroundColor }) {
 
-  function toggleHamburgerMenu() {
-    setIsActive(!isActive);
-  }
-
-  function onClickWrapper() {
+  function handleOnClickHamburger() {
     if (onClick) {
       onClick();
     }
-    toggleHamburgerMenu();
   }
 
   return (
-    <div className={`hamburger-container ${isActive ? "active" : ""}`} onClick={onClickWrapper} style={{ width: width, height: height }}>
+    <div className={`hamburger-container ${isSidebarOpen ? "active" : ""}`} onClick={handleOnClickHamburger} style={{ width: width, height: height }}>
       <div className="line line-top" style={{ backgroundColor: backgroundColor }} />
       <div className="line line-middle" style={{ backgroundColor: backgroundColor }} />
       <div className="line line-bottom" style={{ backgroundColor: backgroundColor }} />

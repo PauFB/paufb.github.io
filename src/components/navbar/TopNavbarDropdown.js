@@ -1,6 +1,6 @@
 import { TopNavbarItem } from "./TopNavbarItem";
 
-export function Dropdown({ submenus, depthLevel, isDropdownOpen }) {
+export function TopNavbarDropdown({ submenus, depthLevel, isDropdownOpen }) {
   depthLevel++;
   return (
     <ul className={`dropdown-menu

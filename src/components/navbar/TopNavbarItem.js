@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Dropdown } from './Dropdown';
+import { TopNavbarDropdown } from './TopNavbarDropdown';
 import './TopNavbarItem.css';
 
 export function TopNavbarItem({ items, depthLevel }) {
@@ -18,7 +18,7 @@ export function TopNavbarItem({ items, depthLevel }) {
             {items.title}
             {depthLevel > 0 ? (<span className="arrow-right">&raquo;</span>) : (<span className="arrow-down" />)}
           </NavLink>
-          <Dropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} />
+          <TopNavbarDropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} />
         </>
       ) : (
         <NavLink to={items.url}>{items.title}</NavLink>
