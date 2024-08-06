@@ -1,15 +1,21 @@
-li span.arrow-down {
+.arrow-down {
   content: "";
   display: inline-block;
-  margin-left: 0.28em;
+  margin-left: 0.5em;
   vertical-align: 0.09em;
   border-top: 0.42em solid;
   border-right: 0.32em solid transparent;
   border-left: 0.32em solid transparent;
 }
 
-li span.arrow-right {
-  margin-left: 0.28em;
+.arrow-down.rotated-right {
+  border-top: 0.32em solid transparent;
+  border-bottom: 0.32em solid transparent;
+  border-left: 0.42em solid;
+}
+
+.arrow-right {
+  margin-left: 0.5em;
   display: inline-block;
 }
 

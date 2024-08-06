@@ -1,0 +1,8 @@
+.dropdown-menu-navbar-left {
+  display: none;
+  margin-left: 1rem !important;
+}
+
+.dropdown-menu-navbar-left.open {
+  display: block;
+}
