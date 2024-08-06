@@ -13,3 +13,7 @@
 .app-container.sidebar-open .main-content {
   margin-left: var(--sidebar-width);
 }
+
+.app-container.sidebar-open.narrow .main-content {
+  margin-left: 0;
+}
