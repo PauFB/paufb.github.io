@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './HamburgerMenuIcon.css';
 
-export const HamburgerMenuIcon = ({width, height, backgroundColor, onClick}) => {
+export function HamburgerMenuIcon({ width, height, backgroundColor, onClick }) {
   const [isActive, setIsActive] = useState(false);
 
-  const toggleHamburgerMenu = () => {
+  function toggleHamburgerMenu() {
     setIsActive(!isActive);
   }
 
-  const onClickWrapper = () => {
+  function onClickWrapper() {
     if (onClick) {
       onClick();
     }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { Dropdown } from './Dropdown';
 import './TopNavbarItem.css';
 
-export function TopNavbarItem({items, depthLevel}) {
+export function TopNavbarItem({ items, depthLevel }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
