@@ -15,7 +15,7 @@ function App() {
   });
 
   function getIsViewportNarrow() {
-    return window.innerWidth < 960;
+    return window.innerWidth < 800;
   }
 
   function updateLayout() {
