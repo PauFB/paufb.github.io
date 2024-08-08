@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4bf6ed93.css",
+    "main.js": "/static/js/main.78221da3.js",
+    "static/js/453.ecb3862f.chunk.js": "/static/js/453.ecb3862f.chunk.js",
+    "static/media/react-logo.svg": "/static/media/react-logo.b06630590764f529db9c7353b130a17e.svg",
+    "static/media/non-elemental.webp": "/static/media/non-elemental.ef2fa583cfbcc0db0834.webp",
+    "static/media/github-logo.svg": "/static/media/github-logo.2b69960d4429f60616550b157e10d6e1.svg",
+    "index.html": "/index.html",
+    "static/media/wind.webp": "/static/media/wind.1988f6e9af7db9ce180c.webp",
+    "static/media/fire.webp": "/static/media/fire.41e7f83dd55c4c10b9f8.webp",
+    "static/media/ice.webp": "/static/media/ice.38c4d1644ab628b586f3.webp",
+    "static/media/earth.webp": "/static/media/earth.9a6b828e9763f1d28d0d.webp",
+    "static/media/water.webp": "/static/media/water.51db88886bc5dbedbfb6.webp",
+    "static/media/lightning.webp": "/static/media/lightning.f693baf87b9cca72271b.webp",
+    "main.4bf6ed93.css.map": "/static/css/main.4bf6ed93.css.map",
+    "main.78221da3.js.map": "/static/js/main.78221da3.js.map",
+    "453.ecb3862f.chunk.js.map": "/static/js/453.ecb3862f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bf6ed93.css",
+    "static/js/main.78221da3.js"
+  ]
+}
