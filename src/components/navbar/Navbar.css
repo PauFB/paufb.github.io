@@ -67,7 +67,6 @@
   margin-left: calc(-1 * var(--sidebar-width));
   transition: all 0.3s ease;
   z-index: 9999;
-  padding: 0 0.25rem 0 0.25rem;
   box-sizing: border-box;
 }
 
@@ -100,10 +99,6 @@
   margin: 0.25rem 0 0.25rem 0;
 }
 
-.navbar-left ul li.menu-item {
-  margin-left: 0;
-}
-
 .navbar-left ul li a:not(.active):hover {
   background-color: #8c8c8c;
   border-radius: 0.5rem;
@@ -114,4 +109,10 @@
   background-color: #4169e1;
   border-radius: 0.5rem;
   color: white;
+}
+
+.navbar-left__item-container {
+  background-color: #a6a6a6;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
 }

@@ -26,7 +26,9 @@ export function Navbar({ isSidebarOpen, toggleSidebar, isNarrow }) {
       <nav className={`navbar-left ${isSidebarOpen ? "open" : ""} ${isNarrow ? "narrow" : ""}`}>
         <ul>
           {navbarItemsDataWithFullUrls.map((item, index) =>
-            <LeftNavbarItem items={item} depthLevel={depthLevel} toggleSidebar={toggleSidebar} key={item.url} />
+            <div className="navbar-left__item-container">
+              <LeftNavbarItem items={item} depthLevel={depthLevel} toggleSidebar={toggleSidebar} key={item.url} />
+            </div>
           )}
         </ul>
       </nav>
