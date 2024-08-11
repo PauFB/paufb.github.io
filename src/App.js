@@ -10,26 +10,25 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
+    function updateLayout() {
+      setIsViewportNarrow(getIsViewportNarrow());
+    }
     window.addEventListener("resize", updateLayout);
     return () => window.removeEventListener("resize", updateLayout);
-  });
+  }, []);
 
   function getIsViewportNarrow() {
     return window.innerWidth < 800;
   }
 
-  function updateLayout() {
-    setIsViewportNarrow(getIsViewportNarrow());
-  }
-
-  const toggleSidebar = () => {
+  function toggleSidebar() {
     setIsSidebarOpen(!isSidebarOpen);
   }
 
   return (
-    <div className={`app-container ${isSidebarOpen ? "sidebar-open" : ""} ${isViewportNarrow ? "narrow" : ""}`}>
+    <div className={`app-container ${isViewportNarrow ? "app-container--narrow" : ""}`}>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} isNarrow={isViewportNarrow} />
-      <div className="main-content">
+      <div className={`app-container__page-container ${isSidebarOpen ? "app-container__page-container--sidebar-open" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="games">
