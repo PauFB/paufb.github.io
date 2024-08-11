@@ -1,4 +1,4 @@
-.inline-container {
+.navbar-header {
   height: 4rem;
   padding: 0 1rem 0 1rem;
   background-color: #8c8c8c;
@@ -48,14 +48,14 @@
   border-radius: 0.5rem;
 }
 
-.navbar-github-logo {
+.navbar-top__github-logo {
   width: 2rem;
   height: 2rem;
   color: #b3b3b3;
   margin-left: auto;
 }
 
-.navbar-github-logo.centered {
+.navbar-top__github-logo--centered {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -72,12 +72,12 @@
   box-sizing: border-box;
 }
 
-.navbar-left.narrow {
+.navbar-left--narrow {
   width: 100vw;
   margin-left: calc(-1 * 100vw);
 }
 
-.navbar-left.open {
+.navbar-left--open {
   margin-left: 0;
 }
 
@@ -98,10 +98,6 @@
   font-weight: bold;
 }
 
-.navbar-left__item {
-  margin: 0.25rem 0 0.25rem 0;
-}
-
 .navbar-left ul li a:not(.active):hover {
   background-color: #8c8c8c;
   border-radius: 0.5rem;
@@ -118,4 +114,8 @@
   background-color: #a6a6a6;
   border-radius: 0.5rem;
   margin: 0.5rem;
+}
+
+.navbar-left__item {
+  margin: 0.25rem 0 0.25rem 0;
 }
