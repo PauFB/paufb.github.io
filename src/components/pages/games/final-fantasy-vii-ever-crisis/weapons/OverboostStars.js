@@ -1,4 +1,4 @@
-export const OverboostStars = ({overboostLevel, size = "1rem"}) => {
+export function OverboostStars({ overboostLevel, size = "1rem" }) {
   const gold = "#d39e24";
   const red = "#ec373a";
   const purple = "#e3cdf9";
@@ -23,8 +23,9 @@ export const OverboostStars = ({overboostLevel, size = "1rem"}) => {
 
   return (
     <>
-      {Array.from({ length: 5 }, (_, i) =>
+      {[...Array(5)].map((_, i) =>
         <svg
+          key={i}
           width={size}
           height={size}
           viewBox="0 0 24 24"
