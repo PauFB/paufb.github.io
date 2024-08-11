@@ -11,18 +11,29 @@ export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
     setIsDropdownOpen(!isDropdownOpen);
   }
 
+  function getItemIcon() {
+    return items.icon ? <img className="menu-item__icon" src={items.icon} alt="" />
+                      : null;
+  }
+
   return (
     <li className="menu-item">
       {items.submenu ?  (
         <>
           <NavLink to={items.url} onClick={handleOnClickItemWithSubmenu}>
+            {getItemIcon()}
             {items.title}
             <span className={`arrow-down ${isDropdownOpen ? "" : "rotated-right"}`} />
           </NavLink>
           <LeftNavbarDropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} toggleSidebar={toggleSidebar} />
         </>
       ) : (
-        <NavLink to={items.url} onClick={toggleSidebar}>{items.title}</NavLink>
+        <>
+          <NavLink to={items.url} onClick={toggleSidebar}>
+            {getItemIcon()}
+            {items.title}
+          </NavLink>
+        </>
       )}
     </li>
   );
