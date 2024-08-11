@@ -1,28 +1,40 @@
 import { useEffect, useState } from 'react';
 import { OverboostStars } from './OverboostStars';
-import { elementsData } from '../elementsData';
-import { charactersData } from '../charactersData';
-import { weaponsData } from '../weaponsData';
 import './Weapons.css';
 
 export function Weapons() {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
-  const [filteredWeapons, setFilteredWeapons] = useState(weaponsData);
+  const [weapons, setWeapons] = useState([]);
+  const [elements, setElements] = useState([]);
+  const [characters, setCharacters] = useState([]);
+  const [filteredWeapons, setFilteredWeapons] = useState([]);
   const [nameQuery, setNameQuery] = useState("");
-  const [selectedCharacters, setSelectedCharacters] = useState([]);
-  const [weaponLevel, setWeaponLevel] = useState(120);
-  const [overboostLevel, setOverboostLevel] = useState(10);
   const [selectedElements, setSelectedElements] = useState([]);
+  const [selectedCharacters, setSelectedCharacters] = useState([]);
+  const [selectedWeaponLevel, setSelectedWeaponLevel] = useState(120);
+  const [selectedOverboostLevel, setSelectedOverboostLevel] = useState(10);
+
+  useEffect(() => {
+    Promise.all([
+      import('../weaponsData.js'),
+      import('../elementsData.js'),
+      import('../charactersData.js')
+    ]).then(([weaponsModule, elementsModule, charactersModule]) => {
+      setWeapons(weaponsModule.weaponsData);
+      setElements(elementsModule.elementsData);
+      setCharacters(charactersModule.charactersData);
+    });
+  }, []);
 
   useEffect(() => {
     setFilteredWeapons(
-      weaponsData.filter(weapon =>
+      weapons.filter(weapon =>
         weapon.name.toLowerCase().includes(nameQuery.toLowerCase())
         && (selectedCharacters.length === 0 || selectedCharacters.includes(weapon.character))
         && (selectedElements.length === 0 || selectedElements.includes(weapon.element))
       )
     );
-  }, [nameQuery, selectedCharacters, selectedElements]);
+  }, [weapons, nameQuery, selectedCharacters, selectedElements]);
 
   function handleNameQueryChange(event) {
     const query = event.target.value;
@@ -49,8 +61,8 @@ export function Weapons() {
 
   function getCharacterGroups() {
     const groups = [];
-    for (let i = 0; i < charactersData.length; i += 5) {
-      groups.push(charactersData.slice(i, i + 5));
+    for (let i = 0; i < characters.length; i += 5) {
+      groups.push(characters.slice(i, i + 5));
     }
     return groups;
   }
@@ -114,22 +126,22 @@ export function Weapons() {
           <div className="flex-item">
             <div className="filter">
               Level
-              <select defaultValue={weaponLevel} onChange={e => setWeaponLevel(e.target.value)} style={{marginLeft: "1rem"}} disabled>
+              <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} style={{marginLeft: "1rem"}} disabled>
                 {Array.from({ length: 120 }, (_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
               </select>
             </div>
             <div className="filter">
               Overboost
-              <select defaultValue={overboostLevel} onChange={e => setOverboostLevel(e.target.value)} style={{margin: "0 1rem 0 1rem"}}>
+              <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)} style={{margin: "0 1rem 0 1rem"}}>
                 {Array.from({ length: 11 }, (_, i) => <option key={i} value={i}>{i}</option>)}
               </select>
               <div className="overboost-stars-container">
-                <OverboostStars overboostLevel={overboostLevel} />
+                <OverboostStars overboostLevel={selectedOverboostLevel} />
               </div>
             </div>
             <div className="filter">
-              {elementsData.map(element => (
-                <label>
+              {elements.map(element => (
+                <label key={element.name}>
                   <input
                     type="checkbox"
                     value={element.name}
@@ -163,14 +175,14 @@ export function Weapons() {
               <tr key={index}>
                 <td>{weapon.name}</td>
                 <td>{weapon.character}</td>
-                <td>{getWeaponPatk(weapon, overboostLevel)}</td>
-                <td>{getWeaponMatk(weapon, overboostLevel)}</td>
-                <td>{getWeaponHeal(weapon, overboostLevel)}</td>
+                <td>{getWeaponPatk(weapon, selectedOverboostLevel)}</td>
+                <td>{getWeaponMatk(weapon, selectedOverboostLevel)}</td>
+                <td>{getWeaponHeal(weapon, selectedOverboostLevel)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
     </div>
-  )
+  );
 }
