@@ -6,8 +6,13 @@ import './TopNavbarItem.css';
 export function TopNavbarItem({ items, depthLevel }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  function getItemIcon() {
+    return items.icon ? <img className="navbar-top__item__icon" src={items.icon} alt="" />
+                      : null;
+  }
+
   return (
-    <li
+    <li className="navbar-top__item"
       onMouseEnter={() => setIsDropdownOpen(true)}
       onMouseLeave={() => setIsDropdownOpen(false)}
       onClick={() => isDropdownOpen && setIsDropdownOpen(false)}
@@ -15,13 +20,19 @@ export function TopNavbarItem({ items, depthLevel }) {
       {items.submenu ? (
         <>
           <NavLink to={items.url} onClick={(e) => {e.preventDefault()}}>
+            {getItemIcon()}
             {items.title}
             {depthLevel > 0 ? (<span className="arrow-right">&raquo;</span>) : (<span className="arrow-down" />)}
           </NavLink>
           <TopNavbarDropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} />
         </>
       ) : (
-        <NavLink to={items.url}>{items.title}</NavLink>
+        <>
+          <NavLink to={items.url}>
+            {getItemIcon()}
+            {items.title}
+          </NavLink>
+        </>
       )}
     </li>
   );

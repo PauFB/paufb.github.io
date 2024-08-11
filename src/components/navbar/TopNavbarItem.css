@@ -56,3 +56,9 @@ ul.dropdown-menu li a.active {
 .dropdown-menu.open {
   display: block;
 }
+
+.navbar-top__item__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
