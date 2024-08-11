@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   width: auto;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .app-container__page-container--sidebar-open {

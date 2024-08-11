@@ -67,7 +67,7 @@
   position: fixed;
   background-color: #b3b3b3;
   margin-left: calc(-1 * var(--sidebar-width));
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   z-index: 9999;
   box-sizing: border-box;
 }
