@@ -12,12 +12,12 @@ export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
   }
 
   function getItemIcon() {
-    return items.icon ? <img className="menu-item__icon" src={items.icon} alt="" />
+    return items.icon ? <img className="navbar-left__item__icon" src={items.icon} alt="" />
                       : null;
   }
 
   return (
-    <li className="menu-item">
+    <li className="navbar-left__item">
       {items.submenu ?  (
         <>
           <NavLink to={items.url} onClick={handleOnClickItemWithSubmenu}>
