@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { OverboostStars } from './OverboostStars';
 import './Weapons.css';
 
-export function Weapons() {
+export function Weapons({ isViewportNarrow }) {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
   const [weapons, setWeapons] = useState([]);
   const [elements, setElements] = useState([]);
@@ -92,8 +92,8 @@ export function Weapons() {
   return (
     <div className="weapons-page__container">
       <div className="filters-container">
-        <div className="flex-container">
-          <div className="flex-item">
+        <div className={`filters-container__row ${ isViewportNarrow ? "filters-container__row--narrow" : "" }`}>
+          <div className="filters-container__column">
             <div className="filter">
               <div className="filter-name">
                 Name
@@ -119,7 +119,7 @@ export function Weapons() {
               </div>
             </div>
           </div>
-          <div className="flex-item">
+          <div className="filters-container__column">
             <div className="filter">
               <div className="filter-level">
                 Level
