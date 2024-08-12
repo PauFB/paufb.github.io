@@ -59,14 +59,6 @@ export function Weapons() {
     );
   }
 
-  function getCharacterGroups() {
-    const groups = [];
-    for (let i = 0; i < characters.length; i += 5) {
-      groups.push(characters.slice(i, i + 5));
-    }
-    return groups;
-  }
-
   function getWeaponPatk(weapon, overboostLevel) {
     const overboostLevelMultipliers = [0, 0.4, 0.3, 0.2, 0.1, 0.1, 0.1, 0.05, 0.05, 0.05, 0.05];
     const basePAtk = weapon.fiveStarLevel120.pAtk;
@@ -98,69 +90,79 @@ export function Weapons() {
   }
 
   return (
-    <div className="weapons-container">
+    <div className="weapons-page__container">
       <div className="filters-container">
         <div className="flex-container">
           <div className="flex-item">
             <div className="filter">
-              Name
-              <input type="text" onChange={handleNameQueryChange} style={{marginLeft: "1rem"}}></input>
+              <div className="filter-name">
+                Name
+                <input type="text" className="filter-name__input" onChange={handleNameQueryChange} />
+              </div>
             </div>
             <div className="filter">
-              <div className="flex-container">
-                {getCharacterGroups().map((group, index) => (
-                  <div className="flex-item" key={index}>
-                    {group.map((character, index) => (
-                      <div key={index} style={{whiteSpace: "nowrap"}}>
-                        <label>
-                          <input type="checkbox" value={character.name} onChange={handleSelectedCharactersChange} />
-                          {character.name}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
+              <div className="filter-characters">
+                {characters.map(character => (
+                  <label className={`filter-characters__character ${selectedCharacters.includes(character.name) ? "filter-characters__character--selected" : ""}`}>
+                    <input
+                      type="checkbox"
+                      value={character.name}
+                      onChange={handleSelectedCharactersChange}
+                      style={{ display: 'none' }}
+                    />
+                    <img className="filter-characters__character__icon" src={character.icon} title={character.name} alt="" />
+                    <div className="filter-characters__character__name">
+                      {character.name}
+                    </div>
+                  </label>
                 ))}
               </div>
             </div>
           </div>
           <div className="flex-item">
             <div className="filter">
-              Level
-              <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} style={{marginLeft: "1rem"}} disabled>
-                {Array.from({ length: 120 }, (_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
-              </select>
-            </div>
-            <div className="filter">
-              Overboost
-              <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)} style={{margin: "0 1rem 0 1rem"}}>
-                {Array.from({ length: 11 }, (_, i) => <option key={i} value={i}>{i}</option>)}
-              </select>
-              <div className="overboost-stars-container">
-                <OverboostStars overboostLevel={selectedOverboostLevel} />
+              <div className="filter-level">
+                Level
+                <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} disabled>
+                  {[...Array(120)].map((_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
+                </select>
               </div>
             </div>
             <div className="filter">
-              {elements.map(element => (
-                <label key={element.name}>
-                  <input
-                    type="checkbox"
-                    value={element.name}
-                    onChange={handleSelectedElementsChange}
-                    style={{ display: 'none' }}
-                  />
-                  <span
-                    className={`element-icon ${selectedElements.includes(element.name) ? "selected" : ""}`}
-                    title={element.name}
-                    style={{backgroundImage: `url(${elementIcons(`./${element.icon}`)})`}}
-                  ></span>
-                </label>
-              ))}
+              <div className="filter-overboost">
+                Overboost
+                <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
+                {[...Array(11)].map((_, i) => <option key={i} value={i}>{i}</option>)}
+                </select>
+                <div className="filter-overboost__stars">
+                  <OverboostStars overboostLevel={selectedOverboostLevel} />
+                </div>
+              </div>
+            </div>
+            <div className="filter">
+              <div className="filter-elements">
+                {elements.map(element => (
+                  <label className={`filter-elements__element ${selectedElements.includes(element.name) ? "filter-elements__element--selected" : ""}`} key={element.name}>
+                    <input
+                      type="checkbox"
+                      value={element.name}
+                      onChange={handleSelectedElementsChange}
+                      style={{ display: 'none' }}
+                    />
+                    <span
+                      className="filter-elements__element__icon"
+                      title={element.name}
+                      style={{ backgroundImage: `url(${elementIcons(`./${element.icon}`)})` }}
+                    ></span>
+                  </label>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="table-container">
-        <table style={{width: "100%"}}>
+        <table style={{ width: "100%" }}>
           <thead>
             <tr>
               <th>Name</th>

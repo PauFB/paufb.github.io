@@ -1,4 +1,4 @@
-.weapons-container {
+.weapons-page__container {
   width: 90vw;
   margin: 3rem auto 3rem auto;
 }
@@ -7,7 +7,6 @@
   background-color: #d3d3d3;
   border-radius: 0.5rem;
   width: 100%;
-  box-sizing: border-box;
   overflow-x: scroll;
 }
 
@@ -16,7 +15,6 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin: 1rem;
-  white-space: nowrap;
 }
 
 .flex-container {
@@ -28,7 +26,68 @@
   flex: 1;
 }
 
-.overboost-stars-container {
+.filter-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+  width: 100%;
+}
+
+.filter-name__input {
+  flex-grow: 1;
+  width: 0;
+  border-radius: 0.5em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.filter-characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.filter-characters__character {
+  display: flex;
+  align-items: center;
+  background-color: #666666;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-characters__character--selected {
+  background-color: #4169e1;
+  text-shadow: 0px 0px 1px white;
+}
+
+.filter-characters__character__icon {
+  width: calc(4.1875rem * 0.5);
+  height: calc(4.9375rem * 0.5);
+}
+
+.filter-characters__character__name {
+  margin: 0 0.5rem;
+}
+
+.filter-level {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+}
+
+.filter-overboost {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.75rem;
+}
+
+.filter-overboost__stars {
   background-color: #051629;
   border-style: solid;
   border-color: #193d63;
@@ -41,24 +100,35 @@
   vertical-align: middle;
 }
 
-.element-icon {
-  display: inline-block;
-  vertical-align: middle;
-  background-size: 100%;
+.filter-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.filter-elements__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   background-color: #666666;
   border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 0.25rem 0 0.25rem;
-  cursor: pointer;
+  width: 2.25rem;
+  height: 2.25rem;
   box-sizing: border-box;
 }
 
-.element-icon.selected {
+.filter-elements__element--selected {
   background-color: #000000;
   border-style: solid;
   border-width: 0.25rem;
   border-color: #4169e1;
+}
+
+.filter-elements__element__icon {
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .table-container {
