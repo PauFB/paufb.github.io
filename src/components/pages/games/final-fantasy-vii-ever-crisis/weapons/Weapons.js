@@ -7,6 +7,7 @@ export function Weapons({ isViewportNarrow }) {
   const [weapons, setWeapons] = useState([]);
   const [elements, setElements] = useState([]);
   const [characters, setCharacters] = useState([]);
+  const [cAbilities, setCAbilities] = useState([]);
   const [filteredWeapons, setFilteredWeapons] = useState([]);
   const [nameQuery, setNameQuery] = useState("");
   const [selectedElements, setSelectedElements] = useState([]);
@@ -18,11 +19,13 @@ export function Weapons({ isViewportNarrow }) {
     Promise.all([
       import('../weaponsData.js'),
       import('../elementsData.js'),
-      import('../charactersData.js')
-    ]).then(([weaponsModule, elementsModule, charactersModule]) => {
+      import('../charactersData.js'),
+      import('../cAbilitiesData.js')
+    ]).then(([weaponsModule, elementsModule, charactersModule, cAbilitiesModule]) => {
       setWeapons(weaponsModule.weaponsData);
       setElements(elementsModule.elementsData);
       setCharacters(charactersModule.charactersData);
+      setCAbilities(cAbilitiesModule.cAbilitiesData);
     });
   }, []);
 
@@ -89,6 +92,12 @@ export function Weapons({ isViewportNarrow }) {
     return Math.floor(baseHeal + additionalHeal);
   }
 
+  function getWeaponCAbility(weapon, overboostLevel) {
+    const cAbility = cAbilities[weapon.cAbility];
+    const valuesByOverboost = cAbility.valuesByOverboost[overboostLevel];
+    return cAbility.description.replace(/{{(.*?)}}/g, (_, key) => valuesByOverboost[key]);
+  }
+
   return (
     <div className="weapons-page__container">
       <div className="filters-container">
@@ -132,7 +141,9 @@ export function Weapons({ isViewportNarrow }) {
               <div className="filter-overboost">
                 Overboost
                 <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
-                  {[...Array(11)].map((_, i) => <option key={i} value={i}>{i}</option>)}
+                  <option key={0} value="0">0</option>
+                  <option key={6} value="6">6</option>
+                  <option key={10} value="10">10</option>
                 </select>
                 <div className="filter-overboost__stars">
                   <OverboostStars overboostLevel={selectedOverboostLevel} />
@@ -165,13 +176,14 @@ export function Weapons({ isViewportNarrow }) {
         <div className="table-container">
           <table className="table-container__table">
             <colgroup>
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
-              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 8)" }} />
             </colgroup>
             <thead>
               <tr>
@@ -182,12 +194,13 @@ export function Weapons({ isViewportNarrow }) {
                 <th>PATK</th>
                 <th>MATK</th>
                 <th>HEAL</th>
+                <th>C. Ability</th>
               </tr>
             </thead>
             <tbody>
               {filteredWeapons.map((weapon, index) => (
                 <tr key={index} className="table-container__table__row">
-                  <td className="table-container__table__cell">
+                  <td className="table-container__table__cell table-container__table__cell--nowrap">
                     {weapon.name}
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
@@ -204,7 +217,7 @@ export function Weapons({ isViewportNarrow }) {
                       alt=""
                     />
                   </td>
-                  <td className="table-container__table__cell table-container__table__cell--centered">
+                  <td className="table-container__table__cell table-container__table__cell--centered table-container__table__cell--nowrap">
                     <OverboostStars overboostLevel={selectedOverboostLevel} />
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
@@ -215,6 +228,9 @@ export function Weapons({ isViewportNarrow }) {
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
                     {getWeaponHeal(weapon, selectedOverboostLevel)}
+                  </td>
+                  <td className="table-container__table__cell">
+                    {getWeaponCAbility(weapon, selectedOverboostLevel)}
                   </td>
                 </tr>
               ))}

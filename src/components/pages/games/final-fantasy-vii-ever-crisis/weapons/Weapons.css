@@ -197,11 +197,14 @@
 .table-container__table__cell {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  text-wrap: nowrap;
 }
 
 .table-container__table__cell--centered {
   text-align: center;
+}
+
+.table-container__table__cell--nowrap {
+  white-space: nowrap;
 }
 
 .table-container__table__cell__element {
