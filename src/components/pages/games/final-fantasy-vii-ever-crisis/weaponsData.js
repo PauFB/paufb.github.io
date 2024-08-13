@@ -1,6 +1,5 @@
-export const weaponsData = [
-  {
-    name: "Buster Sword",
+export const weaponsData = {
+  "Buster Sword": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Braver",
@@ -10,8 +9,7 @@ export const weaponsData = [
       heal: 181
     }
   },
-  {
-    name: "Iron Blade",
+  "Iron Blade": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Blast Wave",
@@ -21,8 +19,7 @@ export const weaponsData = [
       heal: 181
     }
   },
-  {
-    name: "Hardedge",
+  "Hardedge": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Armor Break",
@@ -32,8 +29,7 @@ export const weaponsData = [
       heal: 172
     }
   },
-  {
-    name: "Mythril Saber",
+  "Mythril Saber": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Blade Burst",
@@ -43,8 +39,7 @@ export const weaponsData = [
       heal: 172
     }
   },
-  {
-    name: "Butterfly Edge",
+  "Butterfly Edge": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Stalwart Barrier",
@@ -54,8 +49,7 @@ export const weaponsData = [
       heal: 172
     }
   },
-  {
-    name: "Murasame",
+  "Murasame": {
     character: "Cloud",
     element: "Lightning",
     cAbility: "Thunderstrike",
@@ -65,8 +59,7 @@ export const weaponsData = [
       heal: 170
     }
   },
-  {
-    name: "Organics",
+  "Organics": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Shock Slice",
@@ -76,8 +69,7 @@ export const weaponsData = [
       heal: 178
     }
   },
-  {
-    name: "Crystal Sword",
+  "Crystal Sword": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Healing Wave",
@@ -87,8 +79,7 @@ export const weaponsData = [
       heal: 213
     }
   },
-  {
-    name: "Enhance Sword",
+  "Enhance Sword": {
     character: "Cloud",
     element: "Ice",
     cAbility: "Blizzaga A",
@@ -98,8 +89,7 @@ export const weaponsData = [
       heal: 168
     }
   },
-  {
-    name: "Nail Bat",
+  "Nail Bat": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Disorder",
@@ -109,8 +99,7 @@ export const weaponsData = [
       heal: 164
     }
   },
-  {
-    name: "Apocalypse",
+  "Apocalypse": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Bloody End",
@@ -120,8 +109,7 @@ export const weaponsData = [
       heal: 182
     }
   },
-  {
-    name: "Maritime Sword",
+  "Maritime Sword": {
     character: "Cloud",
     element: "Water",
     cAbility: "Seasplitter",
@@ -131,8 +119,7 @@ export const weaponsData = [
       heal: 170
     }
   },
-  {
-    name: "Shiva's Blade",
+  "Shiva's Blade": {
     character: "Cloud",
     element: "Ice",
     cAbility: "Blizzara Surge",
@@ -142,8 +129,7 @@ export const weaponsData = [
       heal: 170
     }
   },
-  {
-    name: "Bandaged Sword",
+  "Bandaged Sword": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Sanctuary",
@@ -153,8 +139,7 @@ export const weaponsData = [
       heal: 182
     }
   },
-  {
-    name: "Skysplitter",
+  "Skysplitter": {
     character: "Cloud",
     element: "Fire",
     cAbility: "Blazing Strike",
@@ -164,8 +149,7 @@ export const weaponsData = [
       heal: 168
     }
   },
-  {
-    name: "Zidane's Sword",
+  "Zidane's Sword": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Free Energy",
@@ -175,8 +159,7 @@ export const weaponsData = [
       heal: 165
     }
   },
-  {
-    name: "Holiday Cheer",
+  "Holiday Cheer": {
     character: "Cloud",
     element: "Earth",
     cAbility: "Quakera Surge A",
@@ -186,8 +169,7 @@ export const weaponsData = [
       heal: 175
     }
   },
-  {
-    name: "Stream Saber",
+  "Stream Saber": {
     character: "Cloud",
     element: "Ice",
     cAbility: "Freezing Stream",
@@ -197,8 +179,7 @@ export const weaponsData = [
       heal: 168
     }
   },
-  {
-    name: "Igneous Saber",
+  "Igneous Saber": {
     character: "Cloud",
     element: "Fire",
     cAbility: "Fira Surge A",
@@ -208,8 +189,7 @@ export const weaponsData = [
       heal: 175
     }
   },
-  {
-    name: "Glavenus Sword",
+  "Glavenus Sword": {
     character: "Cloud",
     element: "Non-elemental",
     cAbility: "Fierce Charged Slash",
@@ -219,8 +199,7 @@ export const weaponsData = [
       heal: 151
     }
   },
-  {
-    name: "Rune Blade",
+  "Rune Blade": {
     character: "Cloud",
     element: "Ice",
     cAbility: "Blizzara Surge A",
@@ -230,8 +209,7 @@ export const weaponsData = [
       heal: 168
     }
   },
-  {
-    name: "Burning Oar",
+  "Burning Oar": {
     character: "Cloud",
     element: "Fire",
     cAbility: "Fira Impact",
@@ -241,4 +219,4 @@ export const weaponsData = [
       heal: 165
     }
   }
-];
+};

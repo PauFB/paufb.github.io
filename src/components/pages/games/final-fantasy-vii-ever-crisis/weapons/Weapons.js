@@ -4,11 +4,11 @@ import './Weapons.css';
 
 export function Weapons({ isViewportNarrow }) {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
-  const [weapons, setWeapons] = useState([]);
+  const [weapons, setWeapons] = useState({});
   const [elements, setElements] = useState([]);
   const [characters, setCharacters] = useState([]);
   const [cAbilities, setCAbilities] = useState([]);
-  const [filteredWeapons, setFilteredWeapons] = useState([]);
+  const [filteredWeapons, setFilteredWeapons] = useState({});
   const [nameQuery, setNameQuery] = useState("");
   const [selectedElements, setSelectedElements] = useState([]);
   const [selectedCharacters, setSelectedCharacters] = useState([]);
@@ -30,11 +30,16 @@ export function Weapons({ isViewportNarrow }) {
   }, []);
 
   useEffect(() => {
+    const lowerCaseNameQuery = nameQuery.toLowerCase();
+    const hasSelectedCharacters = selectedCharacters.length > 0;
+    const hasSelectedElements = selectedElements.length > 0;
     setFilteredWeapons(
-      weapons.filter(weapon =>
-        weapon.name.toLowerCase().includes(nameQuery.toLowerCase())
-        && (selectedCharacters.length === 0 || selectedCharacters.includes(weapon.character))
-        && (selectedElements.length === 0 || selectedElements.includes(weapon.element))
+      Object.fromEntries(
+        Object.entries(weapons).filter(([name, weapon]) =>
+          name.toLowerCase().includes(lowerCaseNameQuery)
+          && (!hasSelectedCharacters || selectedCharacters.includes(weapon.character))
+          && (!hasSelectedElements || selectedElements.includes(weapon.element))
+        )
       )
     );
   }, [weapons, nameQuery, selectedCharacters, selectedElements]);
@@ -101,7 +106,7 @@ export function Weapons({ isViewportNarrow }) {
   return (
     <div className="weapons-page__container">
       <div className="filters-container">
-        <div className={`filters-container__row ${ isViewportNarrow ? "filters-container__row--narrow" : "" }`}>
+        <div className={`filters-container__row ${isViewportNarrow ? "filters-container__row--narrow" : ""}`}>
           <div className="filters-container__column">
             <div className="filter">
               <div className="filter-name">
@@ -198,10 +203,10 @@ export function Weapons({ isViewportNarrow }) {
               </tr>
             </thead>
             <tbody>
-              {filteredWeapons.map((weapon, index) => (
+              {Object.entries(filteredWeapons).map(([name, weapon], index) => (
                 <tr key={index} className="table-container__table__row">
                   <td className="table-container__table__cell table-container__table__cell--nowrap">
-                    {weapon.name}
+                    {name}
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
                     <img src={elementIcons(`./${elements.find(e => e.name === weapon.element).icon}`)}
