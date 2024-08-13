@@ -103,7 +103,7 @@ export function Weapons({ isViewportNarrow }) {
             <div className="filter">
               <div className="filter-characters">
                 {characters.map(character => (
-                  <label className={`filter-characters__character ${selectedCharacters.includes(character.name) ? "filter-characters__character--selected" : ""}`}>
+                  <label className={`filter-characters__character ${selectedCharacters.includes(character.name) ? "filter-characters__character--selected" : ""}`} key={character.name}>
                     <input
                       type="checkbox"
                       value={character.name}
@@ -132,7 +132,7 @@ export function Weapons({ isViewportNarrow }) {
               <div className="filter-overboost">
                 Overboost
                 <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
-                {[...Array(11)].map((_, i) => <option key={i} value={i}>{i}</option>)}
+                  {[...Array(11)].map((_, i) => <option key={i} value={i}>{i}</option>)}
                 </select>
                 <div className="filter-overboost__stars">
                   <OverboostStars overboostLevel={selectedOverboostLevel} />
@@ -153,7 +153,7 @@ export function Weapons({ isViewportNarrow }) {
                       className="filter-elements__element__icon"
                       title={element.name}
                       style={{ backgroundImage: `url(${elementIcons(`./${element.icon}`)})` }}
-                    ></span>
+                    />
                   </label>
                 ))}
               </div>
@@ -161,29 +161,66 @@ export function Weapons({ isViewportNarrow }) {
           </div>
         </div>
       </div>
-      <div className="table-container">
-        <table style={{ width: "100%" }}>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Character</th>
-              <th>PATK</th>
-              <th>MATK</th>
-              <th>HEAL</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filteredWeapons.map((weapon, index) => (
-              <tr key={index}>
-                <td>{weapon.name}</td>
-                <td>{weapon.character}</td>
-                <td>{getWeaponPatk(weapon, selectedOverboostLevel)}</td>
-                <td>{getWeaponMatk(weapon, selectedOverboostLevel)}</td>
-                <td>{getWeaponHeal(weapon, selectedOverboostLevel)}</td>
+      <div className="table-decoration">
+        <div className="table-container">
+          <table className="table-container__table">
+            <colgroup>
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+              <col style={{ width: "calc(100% / 7)" }} />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Weapon</th>
+                <th>Element</th>
+                <th>Character</th>
+                <th>Overboost</th>
+                <th>PATK</th>
+                <th>MATK</th>
+                <th>HEAL</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {filteredWeapons.map((weapon, index) => (
+                <tr key={index} className="table-container__table__row">
+                  <td className="table-container__table__cell">
+                    {weapon.name}
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    <img src={elementIcons(`./${elements.find(e => e.name === weapon.element).icon}`)}
+                      className="table-container__table__cell__element"
+                      title={weapon.element}
+                      alt=""
+                    />
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    <img src={characters.find(c => c.name === weapon.character).icon}
+                      className="table-container__table__cell__character"
+                      title={weapon.character}
+                      alt=""
+                    />
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    <OverboostStars overboostLevel={selectedOverboostLevel} />
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    {getWeaponPatk(weapon, selectedOverboostLevel)}
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    {getWeaponMatk(weapon, selectedOverboostLevel)}
+                  </td>
+                  <td className="table-container__table__cell table-container__table__cell--centered">
+                    {getWeaponHeal(weapon, selectedOverboostLevel)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

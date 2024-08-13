@@ -1,4 +1,7 @@
 .weapons-page__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   width: 90vw;
   margin: 3rem auto 3rem auto;
 }
@@ -142,11 +145,71 @@
   height: 100%;
 }
 
+.table-decoration {
+  position: relative;
+  overflow: visible;
+  outline: #1c75be solid 0.15rem;
+}
+
+.table-decoration::before, .table-decoration::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #1c75be;
+  outline: #1c75be solid 0.15rem;
+  outline-offset: 0.1rem;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.table-decoration::before {
+  top: -0.4rem;
+  left: -0.4rem;
+}
+
+.table-decoration::after {
+  top: -0.4rem;
+  right: -0.4rem;
+}
+
 .table-container {
-  margin-top: 1.5rem;
   padding: 1rem;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  border-radius: 0.5rem;
+  color: white;
+  background-color: #04101e;
+  position: relative;
   overflow-x: scroll;
+  z-index: 0;
+}
+
+.table-container__table {
+  width: 100%;
+  position: relative;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.table-container__table__row {
+  background-color: #092443;
+}
+
+.table-container__table__cell {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-wrap: nowrap;
+}
+
+.table-container__table__cell--centered {
+  text-align: center;
+}
+
+.table-container__table__cell__element {
+  width: 2rem;
+  height: 2rem;
+}
+
+.table-container__table__cell__character {
+  width: calc(4.1875rem * 0.5);
+  height: calc(4.9375rem * 0.5);
 }
