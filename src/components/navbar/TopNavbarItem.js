@@ -22,7 +22,7 @@ export function TopNavbarItem({ items, depthLevel }) {
           <NavLink to={items.url} onClick={(e) => {e.preventDefault()}}>
             {getItemIcon()}
             {items.title}
-            {depthLevel > 0 ? (<span className="arrow-right">&raquo;</span>) : (<span className="arrow-down" />)}
+            {depthLevel > 0 ? <span style={{ marginLeft: "0.5rem" }}>&raquo;</span> : <span className="arrow-down" style={{ marginLeft: "0.5rem" }} />}
           </NavLink>
           <TopNavbarDropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} />
         </>

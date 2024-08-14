@@ -23,7 +23,7 @@ export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
           <NavLink to={items.url} onClick={handleOnClickItemWithSubmenu}>
             {getItemIcon()}
             {items.title}
-            <span className={`arrow-down ${isDropdownOpen ? "" : "rotated-right"}`} />
+            <span className={isDropdownOpen ? "arrow-down" : "arrow-right"} style={{ marginLeft: "0.5rem" }} />
           </NavLink>
           <LeftNavbarDropdown submenus={items.submenu} depthLevel={depthLevel} isDropdownOpen={isDropdownOpen} toggleSidebar={toggleSidebar} />
         </>

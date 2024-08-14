@@ -18,3 +18,46 @@
 .app-container__page-container--sidebar-open {
   margin-left: 0;
 }
+
+.arrow-up {
+  display: inline-block;
+  border-bottom: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.arrow-down {
+  display: inline-block;
+  border-top: 0.42em solid;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.arrow-right {
+  display: inline-block;
+  vertical-align: 0.09em;
+  border-left: 0.42em solid;
+  border-top: 0.32em solid transparent;
+  border-bottom: 0.32em solid transparent;
+}
+
+.arrow-up-down {
+  display: inline-block;
+}
+
+.arrow-up-down:before,
+.arrow-up-down:after {
+  content: "";
+  display: block;
+  border-right: 0.32em solid transparent;
+  border-left: 0.32em solid transparent;
+}
+
+.arrow-up-down:before {
+  border-bottom: 0.42em solid;
+  margin-bottom: 1px;
+}
+
+.arrow-up-down:after {
+  border-top: 0.42em solid;
+}
