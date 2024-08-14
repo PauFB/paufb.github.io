@@ -6,7 +6,7 @@ export function Weapons({ isViewportNarrow }) {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
   const [weapons, setWeapons] = useState({});
   const [elements, setElements] = useState([]);
-  const [characters, setCharacters] = useState([]);
+  const [characters, setCharacters] = useState({});
   const [cAbilities, setCAbilities] = useState([]);
   const [filteredWeapons, setFilteredWeapons] = useState({});
   const [nameQuery, setNameQuery] = useState("");
@@ -116,17 +116,17 @@ export function Weapons({ isViewportNarrow }) {
             </div>
             <div className="filter">
               <div className="filter-characters">
-                {characters.map(character => (
-                  <label className={`filter-characters__character ${selectedCharacters.includes(character.name) ? "filter-characters__character--selected" : ""}`} key={character.name}>
+                {Object.entries(characters).map(([characterName, character]) => (
+                  <label className={`filter-characters__character ${selectedCharacters.includes(characterName) ? "filter-characters__character--selected" : ""}`} key={characterName}>
                     <input
                       type="checkbox"
-                      value={character.name}
+                      value={characterName}
                       onChange={handleSelectedCharactersChange}
                       style={{ display: 'none' }}
                     />
-                    <img className="filter-characters__character__icon" src={character.icon} title={character.name} alt="" />
+                    <img className="filter-characters__character__icon" src={character.icon} title={characterName} alt="" />
                     <div className="filter-characters__character__name">
-                      {character.name}
+                      {characterName}
                     </div>
                   </label>
                 ))}
@@ -146,9 +146,9 @@ export function Weapons({ isViewportNarrow }) {
               <div className="filter-overboost">
                 Overboost
                 <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
-                  <option key={0} value="0">0</option>
-                  <option key={6} value="6">6</option>
-                  <option key={10} value="10">10</option>
+                  <option value="0">0</option>
+                  <option value="6">6</option>
+                  <option value="10">10</option>
                 </select>
                 <div className="filter-overboost__stars">
                   <OverboostStars overboostLevel={selectedOverboostLevel} />
@@ -203,10 +203,10 @@ export function Weapons({ isViewportNarrow }) {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(filteredWeapons).map(([name, weapon], index) => (
-                <tr key={index} className="table-container__table__row">
+              {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
+                <tr className="table-container__table__row" key={weaponName}>
                   <td className="table-container__table__cell table-container__table__cell--nowrap">
-                    {name}
+                    {weaponName}
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
                     <img src={elementIcons(`./${elements.find(e => e.name === weapon.element).icon}`)}
@@ -216,7 +216,7 @@ export function Weapons({ isViewportNarrow }) {
                     />
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
-                    <img src={characters.find(c => c.name === weapon.character).icon}
+                    <img src={characters[weapon.character].icon}
                       className="table-container__table__cell__character"
                       title={weapon.character}
                       alt=""
