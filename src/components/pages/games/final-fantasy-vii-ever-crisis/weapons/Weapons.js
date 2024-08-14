@@ -5,7 +5,7 @@ import './Weapons.css';
 export function Weapons({ isViewportNarrow }) {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
   const [weapons, setWeapons] = useState({});
-  const [elements, setElements] = useState([]);
+  const [elements, setElements] = useState({});
   const [characters, setCharacters] = useState({});
   const [cAbilities, setCAbilities] = useState([]);
   const [filteredWeapons, setFilteredWeapons] = useState({});
@@ -157,17 +157,17 @@ export function Weapons({ isViewportNarrow }) {
             </div>
             <div className="filter">
               <div className="filter-elements">
-                {elements.map(element => (
-                  <label className={`filter-elements__element ${selectedElements.includes(element.name) ? "filter-elements__element--selected" : ""}`} key={element.name}>
+                {Object.entries(elements).map(([elementName, element]) => (
+                  <label className={`filter-elements__element ${selectedElements.includes(elementName) ? "filter-elements__element--selected" : ""}`} key={elementName}>
                     <input
                       type="checkbox"
-                      value={element.name}
+                      value={elementName}
                       onChange={handleSelectedElementsChange}
                       style={{ display: 'none' }}
                     />
                     <span
                       className="filter-elements__element__icon"
-                      title={element.name}
+                      title={elementName}
                       style={{ backgroundImage: `url(${elementIcons(`./${element.icon}`)})` }}
                     />
                   </label>
@@ -209,7 +209,7 @@ export function Weapons({ isViewportNarrow }) {
                     {weaponName}
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
-                    <img src={elementIcons(`./${elements.find(e => e.name === weapon.element).icon}`)}
+                    <img src={elementIcons(`./${elements[weapon.element].icon}`)}
                       className="table-container__table__cell__element"
                       title={weapon.element}
                       alt=""

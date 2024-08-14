@@ -1,30 +1,23 @@
-export const elementsData = [
-  {
-    name: "Non-elemental",
+export const elementsData = {
+  "Non-elemental": {
     icon: "non-elemental.webp"
   },
-  {
-    name: "Fire",
+  "Fire": {
     icon: "fire.webp"
   },
-  {
-    name: "Ice",
+  "Ice": {
     icon: "ice.webp"
   },
-  {
-    name: "Lightning",
+  "Lightning": {
     icon: "lightning.webp"
   },
-  {
-    name: "Earth",
+  "Earth": {
     icon: "earth.webp"
   },
-  {
-    name: "Water",
+  "Water": {
     icon: "water.webp"
   },
-  {
-    name: "Wind",
+  "Wind": {
     icon: "wind.webp"
-  },
-];
+  }
+};
