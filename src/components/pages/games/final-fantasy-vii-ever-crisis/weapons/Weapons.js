@@ -181,21 +181,17 @@ export function Weapons({ isViewportNarrow }) {
         <div className="table-container">
           <table className="table-container__table">
             <colgroup>
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
-              <col style={{ width: "calc(100% / 8)" }} />
+              <col style={{ width: "calc(100% / 6)" }} />
+              <col style={{ width: "calc(100% / 12)" }} />
+              <col style={{ width: "calc(100% / 12)" }} />
+              <col style={{ width: "calc(100% / 12)" }} />
+              <col style={{ width: "calc(100% / 12)" }} />
+              <col style={{ width: "calc(100% / 2)" }} />
             </colgroup>
             <thead>
               <tr>
                 <th>Weapon</th>
                 <th>Element</th>
-                <th>Character</th>
-                <th>Overboost</th>
                 <th>PATK</th>
                 <th>MATK</th>
                 <th>HEAL</th>
@@ -206,7 +202,25 @@ export function Weapons({ isViewportNarrow }) {
               {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
                 <tr className="table-container__table__row" key={weaponName}>
                   <td className="table-container__table__cell table-container__table__cell--nowrap">
-                    {weaponName}
+                    <div className="table-container__table__cell__weapon-container">
+                      <div className="table-container__table__cell__weapon-container__row">
+                        <div className="table-container__table__cell__weapon-container__column">
+                          <img src={characters[weapon.character].icon}
+                            className="table-container__table__cell__weapon-container__character"
+                            title={weapon.character}
+                            alt=""
+                          />
+                        </div>
+                        <div className="table-container__table__cell__weapon-container__column">
+                          <div>
+                            {weaponName}
+                          </div>
+                          <div>
+                            <OverboostStars overboostLevel={selectedOverboostLevel} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
                     <img src={elementIcons(`./${elements[weapon.element].icon}`)}
@@ -214,16 +228,6 @@ export function Weapons({ isViewportNarrow }) {
                       title={weapon.element}
                       alt=""
                     />
-                  </td>
-                  <td className="table-container__table__cell table-container__table__cell--centered">
-                    <img src={characters[weapon.character].icon}
-                      className="table-container__table__cell__character"
-                      title={weapon.character}
-                      alt=""
-                    />
-                  </td>
-                  <td className="table-container__table__cell table-container__table__cell--centered table-container__table__cell--nowrap">
-                    <OverboostStars overboostLevel={selectedOverboostLevel} />
                   </td>
                   <td className="table-container__table__cell table-container__table__cell--centered">
                     {getWeaponPatk(weapon, selectedOverboostLevel)}

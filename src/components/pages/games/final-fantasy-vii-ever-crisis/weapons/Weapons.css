@@ -195,8 +195,7 @@
 }
 
 .table-container__table__cell {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
 }
 
 .table-container__table__cell--centered {
@@ -212,7 +211,23 @@
   height: 2rem;
 }
 
-.table-container__table__cell__character {
+.table-container__table__cell__weapon-container__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-container__table__cell__weapon-container__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.table-container__table__cell__weapon-container__character {
   width: calc(4.1875rem * 0.5);
   height: calc(4.9375rem * 0.5);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
