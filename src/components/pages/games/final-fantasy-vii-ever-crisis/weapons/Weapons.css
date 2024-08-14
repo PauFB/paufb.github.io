@@ -231,3 +231,8 @@
   height: calc(4.9375rem * 0.5);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+.table-container__table__cell__c-ability {
+  max-height: 7em;
+  overflow-y: scroll;
+}

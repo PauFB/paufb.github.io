@@ -239,7 +239,9 @@ export function Weapons({ isViewportNarrow }) {
                     {getWeaponHeal(weapon, selectedOverboostLevel)}
                   </td>
                   <td className="table-container__table__cell">
-                    {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                    <div className="table-container__table__cell__c-ability">
+                      {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                    </div>
                   </td>
                 </tr>
               ))}
