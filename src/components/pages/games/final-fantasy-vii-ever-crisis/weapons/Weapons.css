@@ -174,7 +174,7 @@
 }
 
 .table-container {
-  padding: 1rem;
+  padding: 0 0.5rem;
   color: white;
   background-color: #04101e;
   position: relative;
@@ -188,6 +188,22 @@
   table-layout: auto;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
+}
+
+.table-container__table__header--sortable:hover {
+  background-color: #0c305a;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.table-container__table__header__row {
+  height: 2rem;
+}
+
+.table-container__table__header__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .table-container__table__row {

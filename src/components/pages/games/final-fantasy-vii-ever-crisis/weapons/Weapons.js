@@ -14,6 +14,7 @@ export function Weapons({ isViewportNarrow }) {
   const [selectedCharacters, setSelectedCharacters] = useState([]);
   const [selectedWeaponLevel, setSelectedWeaponLevel] = useState(120);
   const [selectedOverboostLevel, setSelectedOverboostLevel] = useState(10);
+  const [sortConfig, setSortConfig] = useState({ column: null, direction: null });
 
   useEffect(() => {
     Promise.all([
@@ -33,16 +34,25 @@ export function Weapons({ isViewportNarrow }) {
     const lowerCaseNameQuery = nameQuery.toLowerCase();
     const hasSelectedCharacters = selectedCharacters.length > 0;
     const hasSelectedElements = selectedElements.length > 0;
-    setFilteredWeapons(
-      Object.fromEntries(
-        Object.entries(weapons).filter(([name, weapon]) =>
-          name.toLowerCase().includes(lowerCaseNameQuery)
-          && (!hasSelectedCharacters || selectedCharacters.includes(weapon.character))
-          && (!hasSelectedElements || selectedElements.includes(weapon.element))
-        )
-      )
+    let filteredEntries = Object.entries(weapons).filter(([name, weapon]) =>
+      name.toLowerCase().includes(lowerCaseNameQuery)
+      && (!hasSelectedCharacters || selectedCharacters.includes(weapon.character))
+      && (!hasSelectedElements || selectedElements.includes(weapon.element))
     );
-  }, [weapons, nameQuery, selectedCharacters, selectedElements]);
+    if (sortConfig.column && sortConfig.direction) {
+      filteredEntries = filteredEntries.sort(([nameA, weaponA], [nameB, weaponB]) => {
+        if (["pAtk", "mAtk", "heal"].includes(sortConfig.column)) {
+          const diff = weaponA.fiveStarLevel120[sortConfig.column] - weaponB.fiveStarLevel120[sortConfig.column];
+          return sortConfig.direction === "asc" ? diff : -diff;
+        } else if (sortConfig.column === "weapon") {
+          const comparison = nameA.localeCompare(nameB, "en", { sensitivity: "base" });
+          return sortConfig.direction === "asc" ? comparison : -comparison;
+        }
+        return 0;
+      });
+    }
+    setFilteredWeapons(Object.fromEntries(filteredEntries));
+  }, [weapons, nameQuery, selectedCharacters, selectedElements, sortConfig]);
 
   function handleNameQueryChange(event) {
     const query = event.target.value;
@@ -65,6 +75,24 @@ export function Weapons({ isViewportNarrow }) {
         ? [...prevState, elementName]
         : prevState.filter(e => e !== elementName)
     );
+  }
+
+  function handleOnClickColumnSorting(column) {
+    if (!column) return;
+    let direction = "desc";
+    if (sortConfig.column === column) {
+        direction = sortConfig.direction === "desc" ? "asc" : 
+                    sortConfig.direction === "asc"  ? null  :
+                                                      "desc";
+    }
+    setSortConfig({ column, direction });
+  }
+
+  function renderColumnSortIcon(column) {
+    if (sortConfig.column !== column) return <span style={{ marginLeft: "0.25rem" }} className="arrow-up-down" />;
+    return sortConfig.direction === "desc" ? <span style={{ marginLeft: "0.25rem" }} className="arrow-down" />    :
+           sortConfig.direction === "asc"  ? <span style={{ marginLeft: "0.25rem" }} className="arrow-up" />      :
+                                             <span style={{ marginLeft: "0.25rem" }} className="arrow-up-down" /> ;
   }
 
   function getWeaponPatk(weapon, overboostLevel) {
@@ -189,13 +217,37 @@ export function Weapons({ isViewportNarrow }) {
               <col style={{ width: "calc(100% / 2)" }} />
             </colgroup>
             <thead>
-              <tr>
-                <th>Weapon</th>
-                <th>Element</th>
-                <th>PATK</th>
-                <th>MATK</th>
-                <th>HEAL</th>
-                <th>C. Ability</th>
+              <tr className="table-container__table__header__row">
+                <th onClick={() => handleOnClickColumnSorting("weapon")} className="table-container__table__header--sortable">
+                  <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                    Weapon {renderColumnSortIcon("weapon")}
+                  </div>
+                </th>
+                <th>
+                  <div className="table-container__table__header__cell">
+                    Element
+                  </div>
+                </th>
+                <th onClick={() => handleOnClickColumnSorting("pAtk")} className="table-container__table__header--sortable">
+                  <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                    PATK {renderColumnSortIcon("pAtk")}
+                  </div>
+                </th>
+                <th onClick={() => handleOnClickColumnSorting("mAtk")} className="table-container__table__header--sortable">
+                  <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                    MATK {renderColumnSortIcon("mAtk")}
+                  </div>
+                </th>
+                <th onClick={() => handleOnClickColumnSorting("heal")} className="table-container__table__header--sortable">
+                  <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                    HEAL {renderColumnSortIcon("heal")}
+                  </div>
+                </th>
+                <th>
+                  <div className="table-container__table__header__cell">
+                    C. Ability
+                  </div>
+                </th>
               </tr>
             </thead>
             <tbody>
