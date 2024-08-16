@@ -12,14 +12,14 @@ export function Navbar({ isSidebarOpen, toggleSidebar, isNarrow }) {
     <>
       <div className="navbar-header">
         <HamburgerMenuIcon isSidebarOpen={isSidebarOpen} onClick={toggleSidebar} width="2em" height="2em" backgroundColor="#ffffff" />
-        <nav className="navbar-top" style={{ display: isNarrow && "none" }}>
+        <nav className="navbar-top" style={{ display: isNarrow ? "none" : null }}>
           <ul>
             {navbarItemsDataWithFullUrls.map(item =>
               <TopNavbarItem items={item} depthLevel={depthLevel} key={item.url} />
             )}
           </ul>
         </nav>
-        <Link to={"https://github.com/PauFB"} target="_blank" rel="noreferrer" className={`navbar-top__github-logo ${isNarrow ? "navbar-top__github-logo--centered" : ""}`}>
+        <Link to={"https://github.com/PauFB"} target="_blank" rel="noreferrer" className="navbar-top__github-logo">
           <GithubLogo />
         </Link>
       </div>
