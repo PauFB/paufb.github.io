@@ -3,12 +3,13 @@
   flex-direction: column;
   gap: 3rem;
   width: 90vw;
-  margin: 3rem auto 3rem auto;
+  max-width: 82rem;
+  margin: 3rem auto;
 }
 
 .filters-container {
-  background-color: #d3d3d3;
-  border-radius: 0.5rem;
+  background-color: rgb(9, 36, 67);
+  border-radius: 4px;
   width: 100%;
   overflow-x: scroll;
   padding: 1rem;
@@ -36,8 +37,9 @@
 }
 
 .filter {
-  background-color: #e6e6e6;
-  border-radius: 0.5rem;
+  background-color: rgb(4, 16, 30);
+  color: white;
+  border-radius: 4px;
   padding: 0.5rem;
 }
 
@@ -51,7 +53,7 @@
 .filter-name__input {
   flex-grow: 1;
   width: 0;
-  border-radius: 0.5em;
+  border-radius: 4px;
   padding-left: 0.25em;
   padding-right: 0.25em;
 }
@@ -59,32 +61,43 @@
 .filter-characters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .filter-characters__character {
   display: flex;
   align-items: center;
-  background-color: #666666;
-  border-radius: 0.5rem;
   overflow: hidden;
   color: white;
   white-space: nowrap;
   cursor: pointer;
+  background-color: rgb(5, 41, 80);
+  border-style: solid;
+  border-color: rgb(21, 81, 151);
+  border-radius: 4px;
+  border-width: 0.125rem;
+  outline: rgb(21, 81, 151) solid calc(0.3rem / 2.5);
+  outline-width: 0.125rem;
+  outline-offset: calc(-0.125rem * 3);
+  padding: calc(0.125rem * 3);
 }
 
 .filter-characters__character--selected {
-  background-color: #4169e1;
+  background-color: rgb(13, 83, 157);
+  border-color: rgb(44, 128, 215);
+  outline-color: rgb(44, 128, 215);
   text-shadow: 0px 0px 1px white;
 }
 
 .filter-characters__character__icon {
   width: calc(4.1875rem * 0.5);
   height: calc(4.9375rem * 0.5);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin: 0 0.125rem 0 0.25rem;
 }
 
 .filter-characters__character__name {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem 0 0.125rem;
 }
 
 .filter-level {
@@ -102,11 +115,6 @@
 }
 
 .filter-overboost__stars {
-  background-color: #051629;
-  border-style: solid;
-  border-color: #193d63;
-  border-width: 0.1rem;
-  border-radius: 0.25rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -124,19 +132,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  background-color: #666666;
-  border-radius: 0.5rem;
   width: 2.25rem;
   height: 2.25rem;
-  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgb(5, 41, 80);
+  border-style: solid;
+  border-color: rgb(21, 81, 151);
+  border-radius: 4px;
+  border-width: 0.125rem;
+  outline: rgb(21, 81, 151) solid calc(0.3rem / 2.5);
+  outline-width: 0.125rem;
+  outline-offset: calc(-0.125rem * 3);
+  padding: calc(0.125rem * 3);
 }
 
 .filter-elements__element--selected {
-  background-color: #000000;
-  border-style: solid;
-  border-width: 0.25rem;
-  border-color: #4169e1;
+  background-color: rgb(13, 83, 157);
+  border-color: rgb(44, 128, 215);
+  outline-color: rgb(44, 128, 215);
 }
 
 .filter-elements__element__icon {
@@ -148,7 +161,7 @@
 .table-decoration {
   position: relative;
   overflow: visible;
-  outline: #1c75be solid 0.15rem;
+  outline: rgb(28, 117, 190) solid 0.15rem;
 }
 
 .table-decoration::before, .table-decoration::after {
@@ -156,8 +169,8 @@
   position: absolute;
   width: 0.5rem;
   height: 0.5rem;
-  background: #1c75be;
-  outline: #1c75be solid 0.15rem;
+  background: rgb(28, 117, 190);
+  outline: rgb(28, 117, 190) solid 0.15rem;
   outline-offset: 0.1rem;
   transform: rotate(45deg);
   z-index: 1;
@@ -176,7 +189,7 @@
 .table-container {
   padding: 0 0.5rem;
   color: white;
-  background-color: #04101e;
+  background-color: rgb(4, 16, 30);
   position: relative;
   overflow-x: scroll;
   z-index: 0;
@@ -191,8 +204,8 @@
 }
 
 .table-container__table__header--sortable:hover {
-  background-color: #0c305a;
-  border-radius: 0.5rem;
+  background-color: rgb(12, 48, 90);
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -207,7 +220,7 @@
 }
 
 .table-container__table__row {
-  background-color: #092443;
+  background-color: rgb(9, 36, 67);
 }
 
 .table-container__table__cell {
