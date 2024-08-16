@@ -1,3 +1,13 @@
+.weapons-page__background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at bottom, rgb(7, 51, 108) 0%, black 100%);
+}
+
 .weapons-page__container {
   display: flex;
   flex-direction: column;
@@ -14,6 +24,7 @@
   overflow-x: scroll;
   padding: 1rem;
   box-sizing: border-box;
+  box-shadow: 0 0 12.5px 3.75px rgb(28, 117, 190);
 }
 
 .filters-container__row {
