@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { LeftNavbarDropdown } from './LeftNavbarDropdown';
-import './LeftNavbarItem.css';
 
 export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

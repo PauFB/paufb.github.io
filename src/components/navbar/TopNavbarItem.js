@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { TopNavbarDropdown } from './TopNavbarDropdown';
-import './TopNavbarItem.css';
 
 export function TopNavbarItem({ items, depthLevel }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
