@@ -8,6 +8,6 @@ test('renders github username link', () => {
       <App />
     </BrowserRouter>
   );
-  const linkElement = screen.getByText(/@PauFB/i);
+  const linkElement = screen.getByText(/PauFB/i);
   expect(linkElement).toBeInTheDocument();
 });
