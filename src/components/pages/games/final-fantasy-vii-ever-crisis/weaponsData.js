@@ -398,5 +398,215 @@ export const weaponsData = {
       mAtk: 235,
       heal: 167
     }
+  },
+  "Leather Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Omnistrike",
+    fiveStarLevel120: {
+      pAtk: 236,
+      mAtk: 236,
+      heal: 178
+    }
+  },
+  "Grand Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Vigor",
+    fiveStarLevel120: {
+      pAtk: 215,
+      mAtk: 214,
+      heal: 215
+    }
+  },
+  "Sonic Striker": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Divekick",
+    fiveStarLevel120: {
+      pAtk: 256,
+      mAtk: 220,
+      heal: 177
+    }
+  },
+  "Tiger Fangs": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Uppershot",
+    fiveStarLevel120: {
+      pAtk: 273,
+      mAtk: 215,
+      heal: 167
+    }
+  },
+  "Crystal Gloves": {
+    character: "Tifa",
+    element: "Lightning",
+    cAbility: "Thundaga A",
+    fiveStarLevel120: {
+      pAtk: 225,
+      mAtk: 256,
+      heal: 174
+    }
+  },
+  "Motor Drive": {
+    character: "Tifa",
+    element: "Wind",
+    cAbility: "Sonic Spiral",
+    fiveStarLevel120: {
+      pAtk: 254,
+      mAtk: 222,
+      heal: 177
+    }
+  },
+  "Kaiser Knuckles": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Chi Trap",
+    fiveStarLevel120: {
+      pAtk: 214,
+      mAtk: 273,
+      heal: 168
+    }
+  },
+  "Work Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Wall of Will",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 197,
+      heal: 161
+    }
+  },
+  "Powersoul": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Savage Blast",
+    fiveStarLevel120: {
+      pAtk: 228,
+      mAtk: 267,
+      heal: 161
+    }
+  },
+  "Lifeguard Wraps": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Healing Waves",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 231,
+      heal: 198
+    }
+  },
+  "Feathered Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Featherstrike",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 262,
+      heal: 167
+    }
+  },
+  "Bahamut Knuckles": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Ruinra Surge",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 225,
+      heal: 161
+    }
+  },
+  "Holy Flame Gloves": {
+    character: "Tifa",
+    element: "Ice",
+    cAbility: "Freezing Blow",
+    fiveStarLevel120: {
+      pAtk: 278,
+      mAtk: 201,
+      heal: 174
+    }
+  },
+  "Amarant's Claws": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "No Mercy",
+    fiveStarLevel120: {
+      pAtk: 268,
+      mAtk: 220,
+      heal: 167
+    }
+  },
+  "Bunny Gloves": {
+    character: "Tifa",
+    element: "Water",
+    cAbility: "Aqua Splash",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 281,
+      heal: 167
+    }
+  },
+  "Oven Mitts": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Solid Bravery",
+    fiveStarLevel120: {
+      pAtk: 222,
+      mAtk: 212,
+      heal: 160
+    }
+  },
+  "Turks' Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Armora Breach Surge",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 207,
+      heal: 160
+    }
+  },
+  "Guide Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Zangan Fist",
+    fiveStarLevel120: {
+      pAtk: 262,
+      mAtk: 214,
+      heal: 177
+    }
+  },
+  "Kirin Gloves": {
+    character: "Tifa",
+    element: "Lightning",
+    cAbility: "Spiral Levin Strike",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 283,
+      heal: 167
+    }
+  },
+  "Shell Knuckles": {
+    character: "Tifa",
+    element: "Fire",
+    cAbility: "Spinning Fervor",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 275,
+      heal: 161
+    }
+  },
+  "Steward Gloves": {
+    character: "Tifa",
+    element: "Non-elemental",
+    cAbility: "Debravera Surge",
+    fiveStarLevel120: {
+      pAtk: 218,
+      mAtk: 222,
+      heal: 154
+    }
   }
 };
