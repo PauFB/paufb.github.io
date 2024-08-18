@@ -218,5 +218,185 @@ export const weaponsData = {
       mAtk: 204,
       heal: 165
     }
+  },
+  "Gatling Gun": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Blitz Beat",
+    fiveStarLevel120: {
+      pAtk: 254,
+      mAtk: 218,
+      heal: 181
+    }
+  },
+  "Assault Gun": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Agitation",
+    fiveStarLevel120: {
+      pAtk: 257,
+      mAtk: 210,
+      heal: 184
+    }
+  },
+  "Heavy Vulcan": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Stalwart Manaward",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 194,
+      heal: 215
+    }
+  },
+  "Microlaser": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Stalwart Faith",
+    fiveStarLevel120: {
+      pAtk: 231,
+      mAtk: 249,
+      heal: 174
+    }
+  },
+  "W Machine": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Quick Burst",
+    fiveStarLevel120: {
+      pAtk: 273,
+      mAtk: 214,
+      heal: 168
+    }
+  },
+  "Solid Bazooka": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Doom Impact",
+    fiveStarLevel120: {
+      pAtk: 260,
+      mAtk: 210,
+      heal: 182
+    }
+  },
+  "Enemy Launcher": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Chain Bomber",
+    fiveStarLevel120: {
+      pAtk: 267,
+      mAtk: 212,
+      heal: 175
+    }
+  },
+  "Max Ray": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Energy Laser",
+    fiveStarLevel120: {
+      pAtk: 233,
+      mAtk: 252,
+      heal: 170
+    }
+  },
+  "Flame Projector": {
+    character: "Barret",
+    element: "Fire",
+    cAbility: "Firaga A",
+    fiveStarLevel120: {
+      pAtk: 236,
+      mAtk: 243,
+      heal: 174
+    }
+  },
+  "Heavy Hauser": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Pyroball",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 214,
+      heal: 185
+    }
+  },
+  "Lefko Kypseli": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Solid Barrier",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 205,
+      heal: 182
+    }
+  },
+  "Rocket Punch": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Jet Fists",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 191,
+      heal: 167
+    }
+  },
+  "Shiva Cannon": {
+    character: "Barret",
+    element: "Ice",
+    cAbility: "Blizzara Surge",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 222,
+      heal: 170
+    }
+  },
+  "Hell House Cannon": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Manara Breach Surge",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 214,
+      heal: 174
+    }
+  },
+  "Siege Cannon": {
+    character: "Barret",
+    element: "Water",
+    cAbility: "Watera Surge A",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 215,
+      heal: 175
+    }
+  },
+  "Electrocannon": {
+    character: "Barret",
+    element: "Lightning",
+    cAbility: "Energization",
+    fiveStarLevel120: {
+      pAtk: 214,
+      mAtk: 277,
+      heal: 165
+    }
+  },
+  "Leviathan Buster": {
+    character: "Barret",
+    element: "Water",
+    cAbility: "Watera Surge A",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 226,
+      heal: 165
+    }
+  },
+  "Sharkslayer": {
+    character: "Barret",
+    element: "Non-elemental",
+    cAbility: "Dorsal Fin Shot",
+    fiveStarLevel120: {
+      pAtk: 254,
+      mAtk: 235,
+      heal: 167
+    }
   }
 };
