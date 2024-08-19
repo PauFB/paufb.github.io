@@ -82,7 +82,7 @@ export const weaponsData = {
   "Enhance Sword": {
     character: "Cloud",
     element: "Ice",
-    cAbility: "Blizzaga A",
+    cAbility: "Blizzaga A (1)",
     fiveStarLevel120: {
       pAtk: 225,
       mAtk: 262,
@@ -122,7 +122,7 @@ export const weaponsData = {
   "Shiva's Blade": {
     character: "Cloud",
     element: "Ice",
-    cAbility: "Blizzara Surge",
+    cAbility: "Blizzara Surge (1)",
     fiveStarLevel120: {
       pAtk: 189,
       mAtk: 233,
@@ -202,7 +202,7 @@ export const weaponsData = {
   "Rune Blade": {
     character: "Cloud",
     element: "Ice",
-    cAbility: "Blizzara Surge A",
+    cAbility: "Blizzara Surge A (1)",
     fiveStarLevel120: {
       pAtk: 204,
       mAtk: 220,
@@ -242,7 +242,7 @@ export const weaponsData = {
   "Heavy Vulcan": {
     character: "Barret",
     element: "Non-elemental",
-    cAbility: "Stalwart Manaward",
+    cAbility: "Stalwart Manaward (1)",
     fiveStarLevel120: {
       pAtk: 235,
       mAtk: 194,
@@ -342,7 +342,7 @@ export const weaponsData = {
   "Shiva Cannon": {
     character: "Barret",
     element: "Ice",
-    cAbility: "Blizzara Surge",
+    cAbility: "Blizzara Surge (2)",
     fiveStarLevel120: {
       pAtk: 199,
       mAtk: 222,
@@ -362,7 +362,7 @@ export const weaponsData = {
   "Siege Cannon": {
     character: "Barret",
     element: "Water",
-    cAbility: "Watera Surge A",
+    cAbility: "Watera Surge A (1)",
     fiveStarLevel120: {
       pAtk: 199,
       mAtk: 215,
@@ -382,7 +382,7 @@ export const weaponsData = {
   "Leviathan Buster": {
     character: "Barret",
     element: "Water",
-    cAbility: "Watera Surge A",
+    cAbility: "Watera Surge A (2)",
     fiveStarLevel120: {
       pAtk: 201,
       mAtk: 226,
@@ -442,7 +442,7 @@ export const weaponsData = {
   "Crystal Gloves": {
     character: "Tifa",
     element: "Lightning",
-    cAbility: "Thundaga A",
+    cAbility: "Thundaga A (1)",
     fiveStarLevel120: {
       pAtk: 225,
       mAtk: 256,
@@ -562,7 +562,7 @@ export const weaponsData = {
   "Turks' Gloves": {
     character: "Tifa",
     element: "Non-elemental",
-    cAbility: "Armora Breach Surge",
+    cAbility: "Armora Breach Surge (1)",
     fiveStarLevel120: {
       pAtk: 226,
       mAtk: 207,
@@ -607,6 +607,226 @@ export const weaponsData = {
       pAtk: 218,
       mAtk: 222,
       heal: 154
+    }
+  },
+  "Guard Stick": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Stalwart Manaward (2)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 241,
+      heal: 206
+    }
+  },
+  "Silver Staff": {
+    character: "Aerith",
+    element: "Ice",
+    cAbility: "Blizzaga A (2)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 273,
+      heal: 181
+    }
+  },
+  "Striking Staff": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Tempest Force",
+    fiveStarLevel120: {
+      pAtk: 246,
+      mAtk: 215,
+      heal: 189
+    }
+  },
+  "Mythril Rod": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Saving Grace",
+    fiveStarLevel120: {
+      pAtk: 193,
+      mAtk: 231,
+      heal: 220
+    }
+  },
+  "Full Metal Staff": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Heavenly Spike",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 212,
+      heal: 188
+    }
+  },
+  "Prism Rod": {
+    character: "Aerith",
+    element: "Wind",
+    cAbility: "Raging Sphere",
+    fiveStarLevel120: {
+      pAtk: 194,
+      mAtk: 268,
+      heal: 188
+    }
+  },
+  "Fairy Tale": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Curaga A",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 220,
+      heal: 232
+    }
+  },
+  "Wizard Staff": {
+    character: "Aerith",
+    element: "Lightning",
+    cAbility: "Thundaga A (2)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 256,
+      heal: 191
+    }
+  },
+  "Wizer Staff": {
+    character: "Aerith",
+    element: "Earth",
+    cAbility: "Quaga A",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 262,
+      heal: 188
+    }
+  },
+  "Sun Umbrella": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Nightbloom",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 257,
+      heal: 189
+    }
+  },
+  "Floral Wand": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Floral Flare",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 186,
+      heal: 189
+    }
+  },
+  "Umbrella": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Cleansing Rain",
+    fiveStarLevel120: {
+      pAtk: 191,
+      mAtk: 199,
+      heal: 196
+    }
+  },
+  "Chocobo Staff": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Solid Manaward",
+    fiveStarLevel120: {
+      pAtk: 184,
+      mAtk: 186,
+      heal: 160
+    }
+  },
+  "Snowflake": {
+    character: "Aerith",
+    element: "Ice",
+    cAbility: "Snowspell",
+    fiveStarLevel120: {
+      pAtk: 193,
+      mAtk: 264,
+      heal: 192
+    }
+  },
+  "Ramuh's Staff": {
+    character: "Aerith",
+    element: "Lightning",
+    cAbility: "Thundara Surge",
+    fiveStarLevel120: {
+      pAtk: 191,
+      mAtk: 226,
+      heal: 174
+    }
+  },
+  "Garnet's Rod": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Healing Pulse",
+    fiveStarLevel120: {
+      pAtk: 193,
+      mAtk: 233,
+      heal: 219
+    }
+  },
+  "Egg Staff": {
+    character: "Aerith",
+    element: "Fire",
+    cAbility: "Helical Flame",
+    fiveStarLevel120: {
+      pAtk: 191,
+      mAtk: 278,
+      heal: 182
+    }
+  },
+  "Dawn's Prayers": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Armora Breach Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 212,
+      heal: 175
+    }
+  },
+  "Kamura Wand": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Spiritual Harmony",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 204,
+      heal: 232
+    }
+  },
+  "Radrod": {
+    character: "Aerith",
+    element: "Water",
+    cAbility: "Watera Surge A (3)",
+    fiveStarLevel120: {
+      pAtk: 197,
+      mAtk: 222,
+      heal: 172
+    }
+  },
+  "Hell House Rod": {
+    character: "Aerith",
+    element: "Ice",
+    cAbility: "Blizzara Surge A (2)",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 226,
+      heal: 175
+    }
+  },
+  "Citric Wand": {
+    character: "Aerith",
+    element: "Non-elemental",
+    cAbility: "Fruitful Energy",
+    fiveStarLevel120: {
+      pAtk: 194,
+      mAtk: 243,
+      heal: 208
     }
   }
 };

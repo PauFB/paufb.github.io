@@ -48,7 +48,7 @@ export const cAbilitiesData = {
     ]
   },
   "Blade Burst": {
-    description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%])",
+    description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).",
     valuesByOverboost: [
       { damage: "500" },
       { damage: "" },
@@ -127,7 +127,7 @@ export const cAbilitiesData = {
       { heal: "71" }
     ]
   },
-  "Blizzaga A": {
+  "Blizzaga A (1)": {
     description: "Deal {{damage}}% Mag. Ice damage [Rng.: All Enemies].",
     valuesByOverboost: [
       { damage: "280" },
@@ -191,7 +191,7 @@ export const cAbilitiesData = {
       { damage: "750" }
     ]
   },
-  "Blizzara Surge": {
+  "Blizzara Surge (1)": {
     description: "Deal {{damage}}% Mag. Ice damage [Rng.: Single Enemy].",
     valuesByOverboost: [
       { damage: "320" },
@@ -319,7 +319,7 @@ export const cAbilitiesData = {
       { damage: "850", pDefDecreaseDur: "30", pDefDecreaseExt: "10", pAtkIncreasePot: "High", pAtkIncreaseDur: "35", pAtkIncreaseExt: "7", pAtkIncreaseMaxPot: "High" }
     ]
   },
-  "Blizzara Surge A": {
+  "Blizzara Surge A (1)": {
     description: "Deal {{damage}}% Mag. Ice damage [Rng.: All Enemies].",
     valuesByOverboost: [
       { damage: "210" },
@@ -383,7 +383,7 @@ export const cAbilitiesData = {
       { pDefIncreasePot: "High", pDefIncreaseDur: "14", pDefIncreaseExt: "4", heal: "6" }
     ]
   },
-  "Stalwart Manaward": {
+  "Stalwart Manaward (1)": {
     description: "MDEF is increased. [Pot.: {{mDefIncreasePot}}] [Rng.: Single Ally] [Dur.: {{mDefIncreaseDur}}s]. [Ext.: +{{mDefIncreaseExt}}s] [Max. pot.: High]\nAlso, Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]",
     valuesByOverboost: [
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "30", mDefIncreaseExt: "10", heal: "9" },
@@ -543,6 +543,22 @@ export const cAbilitiesData = {
       { damage: "500" }
     ]
   },
+  "Blizzara Surge (2)": {
+    description: "Deal {{damage}}% Mag. Ice damage [Rng.: Single Enemy].",
+    valuesByOverboost: [
+      { damage: "320" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "450" }
+    ]
+  },
   "Manara Breach Surge": {
     description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).\nAlso, MDEF is decreased. [Pot.: Low] [Rng.: Single Enemy] [Dur.: {{mDefDecreaseDur}}s]. [Ext.: +{{mDefDecreaseExt}}s] [Max. pot.: Mid]",
     valuesByOverboost: [
@@ -559,7 +575,7 @@ export const cAbilitiesData = {
       { damage: "360", mDefDecreaseDur: "28", mDefDecreaseExt: "9" }
     ]
   },
-  "Watera Surge A": {
+  "Watera Surge A (1)": {
     description: "Deal {{damage}}% Mag. Water damage [Rng.: All Enemies].",
     valuesByOverboost: [
       { damage: "210" },
@@ -589,6 +605,22 @@ export const cAbilitiesData = {
       { damage: "480", pAtkDecreaseDur: "26", pAtkDecreaseExt: "8", pAtkDecreaseMaxPot: "High", mAtkDecreaseDur: "26", mAtkDecreaseExt: "8" },
       { damage: "480", pAtkDecreaseDur: "26", pAtkDecreaseExt: "8", pAtkDecreaseMaxPot: "High", mAtkDecreaseDur: "26", mAtkDecreaseExt: "8" },
       { damage: "540", pAtkDecreaseDur: "30", pAtkDecreaseExt: "10", pAtkDecreaseMaxPot: "High", mAtkDecreaseDur: "30", mAtkDecreaseExt: "10" }
+    ]
+  },
+  "Watera Surge A (2)": {
+    description: "Deal {{damage}}% Mag. Water damage [Rng.: Single Enemy].",
+    valuesByOverboost: [
+      { damage: "320" },
+      { damage: "370" },
+      { damage: "370" },
+      { damage: "370" },
+      { damage: "370" },
+      { damage: "370" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "430" },
+      { damage: "450" }
     ]
   },
   "Dorsal Fin Shot": {
@@ -671,7 +703,7 @@ export const cAbilitiesData = {
       { damage: "540", mAtkDecreasePot: "High", mAtkDecreaseDur: "25", mAtkDecreaseExt: "8" }
     ]
   },
-  "Thundaga A": {
+  "Thundaga A (1)": {
     description: "Deal {{damage}}% Mag. Lightning damage [Rng.: All Enemies].",
     valuesByOverboost: [
       { damage: "280" },
@@ -863,7 +895,7 @@ export const cAbilitiesData = {
       { pAtkIncreaseDur: "44", pAtkIncreaseExt: "14", regenDur: "15", heal: "13" }
     ]
   },
-  "Armora Breach Surge": {
+  "Armora Breach Surge (1)": {
     description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).\nAlso, PDEF is decreased. [Pot.: Low] [Rng.: Single Enemy] [Dur.: {{pDefDecreaseDur}}s]. [Ext.: +{{pDefDecreaseExt}}s] [Max. pot.: Mid]",
     valuesByOverboost: [
       { damage: "260", pDefDecreaseDur: "20", pDefDecreaseExt: "6" },
@@ -941,6 +973,358 @@ export const cAbilitiesData = {
       { damage: "350", pAtkDecreaseDur: "25", pAtkDecreaseExt: "7" },
       { damage: "350", pAtkDecreaseDur: "25", pAtkDecreaseExt: "7" },
       { damage: "360", pAtkDecreaseDur: "28", pAtkDecreaseExt: "9" }
+    ]
+  },
+  "Stalwart Manaward (2)": {
+    description: "MDEF is increased. [Pot.: {{mDefIncreasePot}}] [Rng.: Single Ally] [Dur.: {{mDefIncreaseDur}}s]. [Ext.: +{{mDefIncreaseExt}}s] [Max. pot.: High]\nAlso, Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]",
+    valuesByOverboost: [
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "30", mDefIncreaseExt: "10", heal: "10" },
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "High", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "High", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "High", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "High", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
+      { mDefIncreasePot: "High", mDefIncreaseDur: "38", mDefIncreaseExt: "12", heal: "15" }
+    ]
+  },
+  "Blizzaga A (2)": {
+    description: "Deal {{damage}}% Mag. Ice damage [Rng.: All Enemies].",
+    valuesByOverboost: [
+      { damage: "290" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "540" }
+    ]
+  },
+  "Tempest Force": {
+    description: "Deal {{damage}}% Phys. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).",
+    valuesByOverboost: [
+      { damage: "480" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "750" },
+      { damage: "750" },
+      { damage: "750" },
+      { damage: "750" },
+      { damage: "900" }
+    ]
+  },
+  "Saving Grace": {
+    description: "PDEF is increased. [Pot.: {{pDefIncreasePot}}] [Rng.: All Allies] [Dur.: {{pDefIncreaseDur}}s]. [Ext.: +{{pDefIncreaseExt}}s] [Max. pot.: Mid]\nAlso, MDEF is increased. [Pot.: {{mDefIncreasePot}}] [Rng.: All Allies] [Dur.: {{mDefIncreaseDur}}s]. [Ext.: +{{mDefIncreaseExt}}s] [Max. pot.: Mid]\nMag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: All Allies]",
+    valuesByOverboost: [
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "10", pDefIncreaseExt: "3", mDefIncreasePot: "Low", mDefIncreaseDur: "10", mDefIncreaseExt: "3", heal: "7" },
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
+      { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "9" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "9" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "9" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "9" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "14", pDefIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "14", mDefIncreaseExt: "4", heal: "9" }
+    ]
+  },
+  "Heavenly Spike": {
+    description: "Deal {{damage}}% Phys. Non-elem. damage [Rng.: All Enemies] ([Crit rate: 10%]).\nAlso, PATK is decreased. [Pot.: {{pAtkDecreasePot}}] [Rng.: All Enemies] [Dur.: {{pAtkDecreaseDur}}s]. [Ext.: +{{pAtkDecreaseExt}}s] [Max. pot.: Mid]",
+    valuesByOverboost: [
+      { damage: "210", pAtkDecreasePot: "Low", pAtkDecreaseDur: "20", pAtkDecreaseExt: "6" },
+      { damage: "240", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "240", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "240", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "240", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "240", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "290", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "290", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "290", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "290", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "340", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "25", pAtkDecreaseExt: "8" }
+    ]
+  },
+  "Raging Sphere": {
+    description: "Deal {{damage}}% Mag. Wind damage [Rng.: Single Enemy].",
+    valuesByOverboost: [
+      { damage: "440" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "660" },
+      { damage: "660" },
+      { damage: "660" },
+      { damage: "660" },
+      { damage: "800" }
+    ]
+  },
+  "Curaga A": {
+    description: "Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: All Allies]",
+    valuesByOverboost: [
+      { heal: "53" },
+      { heal: "63" },
+      { heal: "63" },
+      { heal: "63" },
+      { heal: "63" },
+      { heal: "63" },
+      { heal: "69" },
+      { heal: "69" },
+      { heal: "69" },
+      { heal: "69" },
+      { heal: "74" }
+    ]
+  },
+  "Thundaga A (2)": {
+    description: "Deal {{damage}}% Mag. Lightning damage [Rng.: All Enemies].",
+    valuesByOverboost: [
+      { damage: "290" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "540" }
+    ]
+  },
+  "Quaga A": {
+    description: "Deal {{damage}}% Mag. Earth damage [Rng.: All Enemies].",
+    valuesByOverboost: [
+      { damage: "290" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "350" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "450" },
+      { damage: "540" }
+    ]
+  },
+  "Nightbloom": {
+    description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).\nAlso, PDEF is decreased. [Pot.: {{pDefDecreasePot}}] [Rng.: Single Enemy] [Dur.: {{pDefDecreaseDur}}s]. [Ext.: +{{pDefDecreaseExt}}s] [Max. pot.: Mid]\nMDEF is decreased. [Pot.: {{mDefDecreasePot}}] [Rng.: Single Enemy] [Dur.: {{mDefDecreaseDur}}s]. [Ext.: +{{mDefDecreaseExt}}s] [Max. pot.: Mid]",
+    valuesByOverboost: [
+      { damage: "340", pDefDecreasePot: "Low", pDefDecreaseDur: "20", pDefDecreaseExt: "6", mDefDecreasePot: "Low", mDefDecreaseDur: "20", mDefDecreaseExt: "6" },
+      { damage: "390", pDefDecreasePot: "Low", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Low", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "390", pDefDecreasePot: "Low", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Low", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "390", pDefDecreasePot: "Low", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Low", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "390", pDefDecreasePot: "Low", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Low", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "390", pDefDecreasePot: "Low", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Low", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "480", pDefDecreasePot: "Mid", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Mid", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "480", pDefDecreasePot: "Mid", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Mid", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "480", pDefDecreasePot: "Mid", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Mid", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "480", pDefDecreasePot: "Mid", pDefDecreaseDur: "22", pDefDecreaseExt: "7", mDefDecreasePot: "Mid", mDefDecreaseDur: "22", mDefDecreaseExt: "7" },
+      { damage: "540", pDefDecreasePot: "Mid", pDefDecreaseDur: "25", pDefDecreaseExt: "8", mDefDecreasePot: "Mid", mDefDecreaseDur: "25", mDefDecreaseExt: "8" }
+    ]
+  },
+  "Floral Flare": {
+    description: "Deal {{damage}}% Phys. Non-elem. damage [Rng.: Single Enemy] ([Crit. rate: 10%]).\nAlso, PDEF is decreased. [Pot.: Mid] [Rng.: Single Enemy] [Dur.: {{pDefDecreaseDur}}s]. [Ext.: +{{pDefDecreaseExt}}s] [Max. pot.: Mid]\nWhen [Rng.: Self]'s HP is 50% or more, Wind Resist. is decreased. [Pot.: {{windResistDecreasePot}}] [Rng.: Single Enemy] [Dur.: {{windResistDecreaseDur}}s]. [Ext.: +{{windResistDecreaseExt}}s] [Max. pot.: {{windResistDecreaseMaxPot}}]",
+    valuesByOverboost: [
+      { damage: "260", pDefDecreaseDur: "16", pDefDecreaseExt: "5", windResistDecreasePot: "Low", windResistDecreaseDur: "16", windResistDecreaseExt: "5", windResistDecreaseMaxPot: "Mid" },
+      { damage: "300", pDefDecreaseDur: "18", pDefDecreaseExt: "6", windResistDecreasePot: "Low", windResistDecreaseDur: "18", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "Mid" },
+      { damage: "300", pDefDecreaseDur: "18", pDefDecreaseExt: "6", windResistDecreasePot: "Low", windResistDecreaseDur: "18", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "Mid" },
+      { damage: "300", pDefDecreaseDur: "18", pDefDecreaseExt: "6", windResistDecreasePot: "Low", windResistDecreaseDur: "18", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "Mid" },
+      { damage: "300", pDefDecreaseDur: "18", pDefDecreaseExt: "6", windResistDecreasePot: "Low", windResistDecreaseDur: "18", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "Mid" },
+      { damage: "300", pDefDecreaseDur: "18", pDefDecreaseExt: "6", windResistDecreasePot: "Low", windResistDecreaseDur: "18", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "Mid" },
+      { damage: "360", pDefDecreaseDur: "20", pDefDecreaseExt: "6", windResistDecreasePot: "High", windResistDecreaseDur: "20", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "High" },
+      { damage: "360", pDefDecreaseDur: "20", pDefDecreaseExt: "6", windResistDecreasePot: "High", windResistDecreaseDur: "20", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "High" },
+      { damage: "360", pDefDecreaseDur: "20", pDefDecreaseExt: "6", windResistDecreasePot: "High", windResistDecreaseDur: "20", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "High" },
+      { damage: "360", pDefDecreaseDur: "20", pDefDecreaseExt: "6", windResistDecreasePot: "High", windResistDecreaseDur: "20", windResistDecreaseExt: "6", windResistDecreaseMaxPot: "High" },
+      { damage: "420", pDefDecreaseDur: "24", pDefDecreaseExt: "8", windResistDecreasePot: "High", windResistDecreaseDur: "24", windResistDecreaseExt: "8", windResistDecreaseMaxPot: "High" }
+    ]
+  },
+  "Cleansing Rain": {
+    description: "Removes Phys. Attack Down, Mag. Attack Down [Rng.: Single Ally].\nAlso, Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]",
+    valuesByOverboost: [
+      { heal: "77" },
+      { heal: "" },
+      { heal: "" },
+      { heal: "" },
+      { heal: "" },
+      { heal: "" },
+      { heal: "100" },
+      { heal: "100" },
+      { heal: "100" },
+      { heal: "100" },
+      { heal: "108" }
+    ]
+  },
+  "Solid Manaward": {
+    description: "MDEF is increased. [Por.: Mid] [Rng.: Single Ally] [Dur.: {{mDefIncreaseDur}}s]. [Ext.: +{{mDefIncreaseExt}}s] [Max. pot.: {{mDefIncreaseMaxPot}}]\nAlso, Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]",
+    valuesByOverboost: [
+      { mDefIncreaseDur: "30", mDefIncreaseExt: "10", mDefIncreaseMaxPot: "Mid", heal: "9" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "High", heal: "12" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "High", heal: "12" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "High", heal: "12" },
+      { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "High", heal: "12" },
+      { mDefIncreaseDur: "38", mDefIncreaseExt: "12", mDefIncreaseMaxPot: "High", heal: "13" }
+    ]
+  },
+  "Snowspell": {
+    description: "Deal {{damage}}% Mag. Ice damage [Rng.: Single Enemy].\nAlso, MDEF is decreased. [Pot.: Mid] [Rng.: Single Enemy] [Dur.: {{mDefDecreaseDur}}s]. [Ext.: +{{mDefDecreaseExt}}s] [Max. pot.: {{mDefDecreaseMaxPot}}]",
+    valuesByOverboost: [
+      { damage: "340", mDefDecreaseDur: "20", mDefDecreaseExt: "6", mDefDecreaseMaxPot: "Mid" },
+      { damage: "390", mDefDecreaseDur: "22", mDefDecreaseExt: "7", mDefDecreaseMaxPot: "Mid" },
+      { damage: "390", mDefDecreaseDur: "22", mDefDecreaseExt: "7", mDefDecreaseMaxPot: "Mid" },
+      { damage: "390", mDefDecreaseDur: "22", mDefDecreaseExt: "7", mDefDecreaseMaxPot: "Mid" },
+      { damage: "390", mDefDecreaseDur: "22", mDefDecreaseExt: "7", mDefDecreaseMaxPot: "Mid" },
+      { damage: "390", mDefDecreaseDur: "22", mDefDecreaseExt: "7", mDefDecreaseMaxPot: "Mid" },
+      { damage: "480", mDefDecreaseDur: "26", mDefDecreaseExt: "8", mDefDecreaseMaxPot: "High" },
+      { damage: "480", mDefDecreaseDur: "26", mDefDecreaseExt: "8", mDefDecreaseMaxPot: "High" },
+      { damage: "480", mDefDecreaseDur: "26", mDefDecreaseExt: "8", mDefDecreaseMaxPot: "High" },
+      { damage: "480", mDefDecreaseDur: "26", mDefDecreaseExt: "8", mDefDecreaseMaxPot: "High" },
+      { damage: "540", mDefDecreaseDur: "30", mDefDecreaseExt: "10", mDefDecreaseMaxPot: "High" }
+    ]
+  },
+  "Thundara Surge": {
+    description: "Deal {{damage}}% Mag. Lightning damage [Rng.: Single Enemy].",
+    valuesByOverboost: [
+      { damage: "340" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "480" }
+    ]
+  },
+  "Healing Pulse": {
+    description: "MATK is increased. [Pot.: {{mAtkIncreasePot}}] [Rng.: Single Ally] [Dur.: {{mAtkIncreaseDur}}s]. [Ext.: +{{mAtkIncreaseExt}}s] [Max. pot.: High]\nAlso, Regen is applied [Rng.: Single Ally]. [Dur.: {{regenDur}}s] [Ext.: +3s]\nMag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]",
+    valuesByOverboost: [
+      { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", regenDur: "9", heal: "9" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "38", mAtkIncreaseExt: "12", regenDur: "15", heal: "13" }
+    ]
+  },
+  "Helical Flame": {
+    description: "Deal {{damage}}% Mag. Fire damage [Rng.: All Enemies].\nAlso, against a single target, x1.3 damage.",
+    valuesByOverboost: [
+      { damage: "340" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "530" },
+      { damage: "630" }
+    ]
+  },
+  "Armora Breach Surge (2)": {
+    description: "Deal {{damage}}% Mag. Non-elem. damage [Rng.: Single Enemy] ([Crit rate: 10%]).\nAlso, PDEF is decreased. [Pot.: Low] [Rng.: Single Enemy] [Dur.: {{pDefDecreaseDur}}s]. [Ext.: +{{pDefDecreaseExt}}s] [Max. pot.: Mid]",
+    valuesByOverboost: [
+      { damage: "260", pDefDecreaseDur: "20", pDefDecreaseExt: "6" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "350", pDefDecreaseDur: "25", pDefDecreaseExt: "7" },
+      { damage: "350", pDefDecreaseDur: "25", pDefDecreaseExt: "7" },
+      { damage: "350", pDefDecreaseDur: "25", pDefDecreaseExt: "7" },
+      { damage: "350", pDefDecreaseDur: "25", pDefDecreaseExt: "7" },
+      { damage: "360", pDefDecreaseDur: "28", pDefDecreaseExt: "9" }
+    ]
+  },
+  "Spiritual Harmony": {
+    description: "PATK is increased. [Pot.: {{pAtkIncreasePot}}] [Rng.: All Allies] [Dur.: {{pAtkIncreaseDur}}s]. [Ext.: +{{pAtkIncreaseExt}}s] [Max. pot.: High]\nAlso, when [Rng.: Self]'s HP is 70% or more, MDEF is increased. [Pot.: {{mDefIncreasePot}}] [Rng.: All Allies] [Dur.: {{mDefIncreaseDur}}s]. [Ext.: +{{mDefIncreaseExt}}s] [Max. pot.: High]\nMag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: All Allies]",
+    valuesByOverboost: [
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "12", pAtkIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "5" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", mDefIncreasePot: "High", mDefIncreaseDur: "16", mDefIncreaseExt: "5", heal: "7" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", mDefIncreasePot: "High", mDefIncreaseDur: "16", mDefIncreaseExt: "5", heal: "7" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", mDefIncreasePot: "High", mDefIncreaseDur: "16", mDefIncreaseExt: "5", heal: "7" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", mDefIncreasePot: "High", mDefIncreaseDur: "16", mDefIncreaseExt: "5", heal: "7" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "20", pAtkIncreaseExt: "6", mDefIncreasePot: "High", mDefIncreaseDur: "20", mDefIncreaseExt: "6", heal: "7" }
+    ]
+  },
+  "Watera Surge A (3)": {
+    description: "Deal {{damage}}% Mag. Water damage [Rng.: All Enemies].",
+    valuesByOverboost: [
+      { damage: "210" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "290" }
+    ]
+  },
+  "Blizzara Surge A (2)": {
+    description: "Deal {{damage}}% Mag. Ice damage [Rng.: All Enemies].",
+    valuesByOverboost: [
+      { damage: "210" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "290" }
+    ]
+  },
+  "Fruitful Energy": {
+    description: "Ice Damage is increased. [Pot.: {{iceDamageIncreasePot}}] [Rng.: Single Ally] [Dur.: {{iceDamageIncreaseDur}}s]. [Ext.: +{{iceDamageIncreaseExt}}s] [Max. pot.: {{iceDamageIncreaseMaxPot}}]\nAlso, Mag. heal is cast. [Pot.: {{heal}}% of Healing Pot.] [Rng.: Single Ally]\nWhen [Rng.: Self]'s HP is 50% or more, MATK is increased. [Pot.: Mid] [Rng.: Single Ally] [Dur.: {{mAtkIncreaseDur}}s]. [Ext.: +{{mAtkIncreaseExt}}s] [Max. pot.: {{mAtkIncreaseMaxPot}}]",
+    valuesByOverboost: [
+      { iceDamageIncreasePot: "Mid", iceDamageIncreaseDur: "24", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "Mid", heal: "7", mAtkIncreaseDur: "24", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "Mid" },
+      { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
+      { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
+      { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
+      { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
+      { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
+      { iceDamageIncreasePot: "High", iceDamageIncreaseDur: "26", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "High", heal: "9", mAtkIncreaseDur: "26", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "High" },
+      { iceDamageIncreasePot: "High", iceDamageIncreaseDur: "26", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "High", heal: "9", mAtkIncreaseDur: "26", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "High" },
+      { iceDamageIncreasePot: "High", iceDamageIncreaseDur: "26", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "High", heal: "9", mAtkIncreaseDur: "26", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "High" },
+      { iceDamageIncreasePot: "High", iceDamageIncreaseDur: "26", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "High", heal: "9", mAtkIncreaseDur: "26", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "High" },
+      { iceDamageIncreasePot: "High", iceDamageIncreaseDur: "30", iceDamageIncreaseExt: "10", iceDamageIncreaseMaxPot: "High", heal: "9", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", mAtkIncreaseMaxPot: "High" }
     ]
   }
 };
