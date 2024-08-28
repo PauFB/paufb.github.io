@@ -162,7 +162,7 @@ export const weaponsData = {
   "Holiday Cheer": {
     character: "Cloud",
     element: "Earth",
-    cAbility: "Quakera Surge A",
+    cAbility: "Quakera Surge A (1)",
     fiveStarLevel120: {
       pAtk: 201,
       mAtk: 214,
@@ -182,7 +182,7 @@ export const weaponsData = {
   "Igneous Saber": {
     character: "Cloud",
     element: "Fire",
-    cAbility: "Fira Surge A",
+    cAbility: "Fira Surge A (1)",
     fiveStarLevel120: {
       pAtk: 197,
       mAtk: 218,
@@ -212,7 +212,7 @@ export const weaponsData = {
   "Burning Oar": {
     character: "Cloud",
     element: "Fire",
-    cAbility: "Fira Impact",
+    cAbility: "Fira Impact (1)",
     fiveStarLevel120: {
       pAtk: 225,
       mAtk: 204,
@@ -252,7 +252,7 @@ export const weaponsData = {
   "Microlaser": {
     character: "Barret",
     element: "Non-elemental",
-    cAbility: "Stalwart Faith",
+    cAbility: "Stalwart Faith (1)",
     fiveStarLevel120: {
       pAtk: 231,
       mAtk: 249,
@@ -302,7 +302,7 @@ export const weaponsData = {
   "Flame Projector": {
     character: "Barret",
     element: "Fire",
-    cAbility: "Firaga A",
+    cAbility: "Firaga A (1)",
     fiveStarLevel120: {
       pAtk: 236,
       mAtk: 243,
@@ -322,7 +322,7 @@ export const weaponsData = {
   "Lefko Kypseli": {
     character: "Barret",
     element: "Non-elemental",
-    cAbility: "Solid Barrier",
+    cAbility: "Solid Barrier (1)",
     fiveStarLevel120: {
       pAtk: 201,
       mAtk: 205,
@@ -352,7 +352,7 @@ export const weaponsData = {
   "Hell House Cannon": {
     character: "Barret",
     element: "Non-elemental",
-    cAbility: "Manara Breach Surge",
+    cAbility: "Manara Breach Surge (1)",
     fiveStarLevel120: {
       pAtk: 204,
       mAtk: 214,
@@ -512,7 +512,7 @@ export const weaponsData = {
   "Bahamut Knuckles": {
     character: "Tifa",
     element: "Non-elemental",
-    cAbility: "Ruinra Surge",
+    cAbility: "Ruinra Surge (1)",
     fiveStarLevel120: {
       pAtk: 207,
       mAtk: 225,
@@ -552,7 +552,7 @@ export const weaponsData = {
   "Oven Mitts": {
     character: "Tifa",
     element: "Non-elemental",
-    cAbility: "Solid Bravery",
+    cAbility: "Solid Bravery (1)",
     fiveStarLevel120: {
       pAtk: 222,
       mAtk: 212,
@@ -602,7 +602,7 @@ export const weaponsData = {
   "Steward Gloves": {
     character: "Tifa",
     element: "Non-elemental",
-    cAbility: "Debravera Surge",
+    cAbility: "Debravera Surge (1)",
     fiveStarLevel120: {
       pAtk: 218,
       mAtk: 222,
@@ -692,7 +692,7 @@ export const weaponsData = {
   "Wizer Staff": {
     character: "Aerith",
     element: "Earth",
-    cAbility: "Quaga A",
+    cAbility: "Quaga A (1)",
     fiveStarLevel120: {
       pAtk: 201,
       mAtk: 262,
@@ -732,7 +732,7 @@ export const weaponsData = {
   "Chocobo Staff": {
     character: "Aerith",
     element: "Non-elemental",
-    cAbility: "Solid Manaward",
+    cAbility: "Solid Manaward (1)",
     fiveStarLevel120: {
       pAtk: 184,
       mAtk: 186,
@@ -752,7 +752,7 @@ export const weaponsData = {
   "Ramuh's Staff": {
     character: "Aerith",
     element: "Lightning",
-    cAbility: "Thundara Surge",
+    cAbility: "Thundara Surge (1)",
     fiveStarLevel120: {
       pAtk: 191,
       mAtk: 226,
@@ -827,6 +827,196 @@ export const weaponsData = {
       pAtk: 194,
       mAtk: 243,
       heal: 208
+    }
+  },
+  "Sleek Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Manaward A",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 252,
+      heal: 198
+    }
+  },
+  "Gold Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Eternal Storm",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 222,
+      heal: 220
+    }
+  },
+  "Platinum Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Therapeutic Touch",
+    fiveStarLevel120: {
+      pAtk: 193,
+      mAtk: 283,
+      heal: 177
+    }
+  },
+  "Noble Collar": {
+    character: "Red XIII",
+    element: "Water",
+    cAbility: "Waterga A (1)",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 268,
+      heal: 192
+    }
+  },
+  "Rage Collar": {
+    character: "Red XIII",
+    element: "Fire",
+    cAbility: "Blaze Rush",
+    fiveStarLevel120: {
+      pAtk: 197,
+      mAtk: 257,
+      heal: 195
+    }
+  },
+  "Leather Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Sonic Fangs",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 222,
+      heal: 178
+    }
+  },
+  "Rubber Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Mystic Flow",
+    fiveStarLevel120: {
+      pAtk: 194,
+      mAtk: 225,
+      heal: 223
+    }
+  },
+  "Junk Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Frenzied Fang",
+    fiveStarLevel120: {
+      pAtk: 246,
+      mAtk: 225,
+      heal: 182
+    }
+  },
+  "Canyon Collar": {
+    character: "Red XIII",
+    element: "Wind",
+    cAbility: "Canyon Gale",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 281,
+      heal: 170
+    }
+  },
+  "Iron Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Spiral Swing",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 215,
+      heal: 170
+    }
+  },
+  "Headphones": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Wild Howling",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 241,
+      heal: 164
+    }
+  },
+  "Seaside Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Power Fang",
+    fiveStarLevel120: {
+      pAtk: 246,
+      mAtk: 226,
+      heal: 181
+    }
+  },
+  "Hell House Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Manara Breach Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 220,
+      heal: 168
+    }
+  },
+  "Flame Dragon's Band": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Defira Surge (1)",
+    fiveStarLevel120: {
+      pAtk: 194,
+      mAtk: 235,
+      heal: 164
+    }
+  },
+  "Egg Collar": {
+    character: "Red XIII",
+    element: "Fire",
+    cAbility: "Fira Surge A (2)",
+    fiveStarLevel120: {
+      pAtk: 194,
+      mAtk: 218,
+      heal: 177
+    }
+  },
+  "Ivy Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Growing Ivy",
+    fiveStarLevel120: {
+      pAtk: 243,
+      mAtk: 235,
+      heal: 175
+    }
+  },
+  "Amethyst Collar": {
+    character: "Red XIII",
+    element: "Ice",
+    cAbility: "Blizzara Surge A (3)",
+    fiveStarLevel120: {
+      pAtk: 191,
+      mAtk: 222,
+      heal: 177
+    }
+  },
+  "Silver Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Rolling Claw",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 231,
+      heal: 215
+    }
+  },
+  "Steward Collar": {
+    character: "Red XIII",
+    element: "Non-elemental",
+    cAbility: "Debravera Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 220,
+      heal: 161
     }
   }
 };
