@@ -382,7 +382,7 @@ export const weaponsData = {
   "Leviathan Buster": {
     character: "Barret",
     element: "Water",
-    cAbility: "Watera Surge A (2)",
+    cAbility: "Watera Surge (1)",
     fiveStarLevel120: {
       pAtk: 201,
       mAtk: 226,
@@ -802,7 +802,7 @@ export const weaponsData = {
   "Radrod": {
     character: "Aerith",
     element: "Water",
-    cAbility: "Watera Surge A (3)",
+    cAbility: "Watera Surge A (2)",
     fiveStarLevel120: {
       pAtk: 197,
       mAtk: 222,
@@ -1017,6 +1017,176 @@ export const weaponsData = {
       pAtk: 212,
       mAtk: 220,
       heal: 161
+    }
+  },
+  "4-Point Shuriken": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Shuriken Throw",
+    fiveStarLevel120: {
+      pAtk: 249,
+      mAtk: 218,
+      heal: 184
+    }
+  },
+  "Boomerang": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Flurry of Steel",
+    fiveStarLevel120: {
+      pAtk: 267,
+      mAtk: 205,
+      heal: 181
+    }
+  },
+  "Pinwheel": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Sweeping Spin",
+    fiveStarLevel120: {
+      pAtk: 247,
+      mAtk: 220,
+      heal: 184
+    }
+  },
+  "Razor Ring": {
+    character: "Yuffie",
+    element: "Earth",
+    cAbility: "Quaga A (2)",
+    fiveStarLevel120: {
+      pAtk: 228,
+      mAtk: 256,
+      heal: 170
+    }
+  },
+  "Hawkeye": {
+    character: "Yuffie",
+    element: "Earth",
+    cAbility: "Earth Ninjutsu",
+    fiveStarLevel120: {
+      pAtk: 270,
+      mAtk: 201,
+      heal: 181
+    }
+  },
+  "Crystal Cross": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Stalwart Faith (2)",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 256,
+      heal: 184
+    }
+  },
+  "Wind Slash": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Nimble Wind Slash",
+    fiveStarLevel120: {
+      pAtk: 260,
+      mAtk: 218,
+      heal: 175
+    }
+  },
+  "Twin Viper": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Venomstrike",
+    fiveStarLevel120: {
+      pAtk: 267,
+      mAtk: 204,
+      heal: 182
+    }
+  },
+  "Spiral Shuriken": {
+    character: "Yuffie",
+    element: "Ice",
+    cAbility: "Ice Ninjutsu",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 212,
+      heal: 168
+    }
+  },
+  "Magic Shuriken": {
+    character: "Yuffie",
+    element: "Wind",
+    cAbility: "Wind Ninjutsu",
+    fiveStarLevel120: {
+      pAtk: 262,
+      mAtk: 225,
+      heal: 168
+    }
+  },
+  "Diner Tray": {
+    character: "Yuffie",
+    element: "Wind",
+    cAbility: "Twister",
+    fiveStarLevel120: {
+      pAtk: 267,
+      mAtk: 204,
+      heal: 182
+    }
+  },
+  "Arctic Star": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Feisty Spirit",
+    fiveStarLevel120: {
+      pAtk: 270,
+      mAtk: 207,
+      heal: 175
+    }
+  },
+  "Bamboo Ring": {
+    character: "Yuffie",
+    element: "Non-elemental",
+    cAbility: "Baddies Begone (1)",
+    fiveStarLevel120: {
+      pAtk: 236,
+      mAtk: 191,
+      heal: 165
+    }
+  },
+  "Chariot Wheel": {
+    character: "Yuffie",
+    element: "Water",
+    cAbility: "Watera Surge A (3)",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 212,
+      heal: 172
+    }
+  },
+  "Leviathan Cutter": {
+    character: "Yuffie",
+    element: "Water",
+    cAbility: "Watera Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 218,
+      heal: 168
+    }
+  },
+  "Striped Moogle Float": {
+    character: "Yuffie",
+    element: "Fire",
+    cAbility: "Explosion",
+    fiveStarLevel120: {
+      pAtk: 285,
+      mAtk: 189,
+      heal: 178
+    }
+  },
+  "Cactuar Fan": {
+    character: "Yuffie",
+    element: "Ice",
+    cAbility: "Blizzara Surge A (4)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 225,
+      heal: 164
     }
   }
 };
