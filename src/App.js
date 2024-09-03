@@ -33,9 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="games">
-            <Route path="final-fantasy-vii-ever-crisis">
-              <Route path="weapons" element={<FFVIIECWeapons isViewportNarrow={isViewportNarrow} />} />
-            </Route>
+            <Route path="final-fantasy-vii-ever-crisis" element={<FFVIIECWeapons isViewportNarrow={isViewportNarrow} />} />
             <Route path="final-fantasy-xiii" element={<FFXIIIWeaponsPage isViewportNarrow={isViewportNarrow} />} />
           </Route>
         </Routes>
