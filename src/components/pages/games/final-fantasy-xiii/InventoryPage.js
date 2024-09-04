@@ -7,7 +7,7 @@ import { KeyItemsInventory } from './KeyItemsInventory';
 import CursorIcon from '../../../../assets/final-fantasy-xiii/FFXIII_Pointer_White_BG.PNG.webp';
 import styles from './InventoryPage.module.css';
 
-export function WeaponsPage({ isViewportNarrow }) {
+export function InventoryPage({ isViewportNarrow }) {
   const [activeCategory, setActiveCategory] = useState("Items");
 
   const categories = ["Items", "Weapons", "Accessories", "Components", "Key Items"];

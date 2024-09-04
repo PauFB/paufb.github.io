@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { OverboostStars } from './OverboostStars';
-import './Weapons.css';
+import styles from './WeaponsPage.module.css';
 
-export function Weapons({ isViewportNarrow }) {
+export function WeaponsPage({ isViewportNarrow }) {
   const elementIcons = require.context("../../../../../assets/final-fantasy-vii-ever-crisis/elements");
   const [weapons, setWeapons] = useState({});
   const [elements, setElements] = useState({});
@@ -133,29 +133,29 @@ export function Weapons({ isViewportNarrow }) {
 
   return (
     <>
-      <div className="weapons-page__background" />
-      <div className="weapons-page__container">
-        <div className="filters-container">
-          <div className={`filters-container__row ${isViewportNarrow ? "filters-container__row--narrow" : ""}`}>
-            <div className="filters-container__column">
-              <div className="filter">
-                <div className="filter-name">
+      <div className={styles["page-background"]} />
+      <div className={styles["page-container"]}>
+        <div className={styles["filters-container"]}>
+          <div className={`${styles["filters-container-row"]} ${isViewportNarrow ? styles["filters-container-row--narrow"] : ""}`}>
+            <div className={styles["filters-container-column"]}>
+              <div className={styles["filter"]}>
+                <div className={styles["filter-name"]}>
                   Name
-                  <input type="text" className="filter-name__input" onChange={handleNameQueryChange} />
+                  <input type="text" className={styles["filter-name__input"]} onChange={handleNameQueryChange} />
                 </div>
               </div>
-              <div className="filter">
-                <div className="filter-characters">
+              <div className={styles["filter"]}>
+                <div className={styles["filter-characters"]}>
                   {Object.entries(characters).map(([characterName, character]) => (
-                    <label className={`filter-characters__character ${selectedCharacters.includes(characterName) ? "filter-characters__character--selected" : ""}`} key={characterName}>
+                    <label className={`${styles["filter-characters__character"]} ${selectedCharacters.includes(characterName) ? styles["character--selected"] : ""}`} key={characterName}>
                       <input
                         type="checkbox"
                         value={characterName}
                         onChange={handleSelectedCharactersChange}
-                        style={{ display: 'none' }}
+                        style={{ display: "none" }}
                       />
-                      <img className="filter-characters__character__icon" src={character.icon} title={characterName} alt="" />
-                      <div className="filter-characters__character__name">
+                      <img className={styles["filter-characters__character__icon"]} src={character.icon} title={characterName} alt="" />
+                      <div className={styles["filter-characters__character__name"]}>
                         {characterName}
                       </div>
                     </label>
@@ -163,40 +163,40 @@ export function Weapons({ isViewportNarrow }) {
                 </div>
               </div>
             </div>
-            <div className="filters-container__column">
-              <div className="filter">
-                <div className="filter-level">
+            <div className={styles["filters-container-column"]}>
+              <div className={styles["filter"]}>
+                <div className={styles["filter-level"]}>
                   Level
                   <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} disabled>
                     {[...Array(120)].map((_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
                   </select>
                 </div>
               </div>
-              <div className="filter">
-                <div className="filter-overboost">
+              <div className={styles["filter"]}>
+                <div className={styles["filter-overboost"]}>
                   Overboost
                   <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
                     <option value="0">0</option>
                     <option value="6">6</option>
                     <option value="10">10</option>
                   </select>
-                  <div className="filter-overboost__stars">
+                  <div className={styles["filter-overboost__stars"]}>
                     <OverboostStars overboostLevel={selectedOverboostLevel} />
                   </div>
                 </div>
               </div>
-              <div className="filter">
-                <div className="filter-elements">
+              <div className={styles["filter"]}>
+                <div className={styles["filter-elements"]}>
                   {Object.entries(elements).map(([elementName, element]) => (
-                    <label className={`filter-elements__element ${selectedElements.includes(elementName) ? "filter-elements__element--selected" : ""}`} key={elementName}>
+                    <label className={`${styles["filter-elements__element"]} ${selectedElements.includes(elementName) ? styles["element--selected"] : ""}`} key={elementName}>
                       <input
                         type="checkbox"
                         value={elementName}
                         onChange={handleSelectedElementsChange}
-                        style={{ display: 'none' }}
+                        style={{ display: "none" }}
                       />
                       <span
-                        className="filter-elements__element__icon"
+                        className={styles["filter-elements__element__icon"]}
                         title={elementName}
                         style={{ backgroundImage: `url(${elementIcons(`./${element.icon}`)})` }}
                       />
@@ -207,9 +207,9 @@ export function Weapons({ isViewportNarrow }) {
             </div>
           </div>
         </div>
-        <div className="table-decoration">
-          <div className="table-container">
-            <table className="table-container__table">
+        <div className={styles["table-decoration"]}>
+          <div className={styles["table-container"]}>
+            <table className={styles["table"]}>
               <colgroup>
                 <col style={{ width: "calc(100% / 6)" }} />
                 <col style={{ width: "calc(100% / 12)" }} />
@@ -219,34 +219,34 @@ export function Weapons({ isViewportNarrow }) {
                 <col style={{ width: "calc(100% / 2)" }} />
               </colgroup>
               <thead>
-                <tr className="table-container__table__header__row">
-                  <th onClick={() => handleOnClickColumnSorting("weapon")} className="table-container__table__header--sortable">
-                    <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                <tr className={styles["table-head-row"]}>
+                  <th onClick={() => handleOnClickColumnSorting("weapon")} className={styles["table-header--sortable"]}>
+                    <div className={styles["table-header-cell"]}>
                       Weapon {renderColumnSortIcon("weapon")}
                     </div>
                   </th>
                   <th>
-                    <div className="table-container__table__header__cell">
+                    <div className={styles["table-header-cell"]}>
                       Element
                     </div>
                   </th>
-                  <th onClick={() => handleOnClickColumnSorting("pAtk")} className="table-container__table__header--sortable">
-                    <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                  <th onClick={() => handleOnClickColumnSorting("pAtk")} className={styles["table-header--sortable"]}>
+                    <div className={styles["table-header-cell"]}>
                       PATK {renderColumnSortIcon("pAtk")}
                     </div>
                   </th>
-                  <th onClick={() => handleOnClickColumnSorting("mAtk")} className="table-container__table__header--sortable">
-                    <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                  <th onClick={() => handleOnClickColumnSorting("mAtk")} className={styles["table-header--sortable"]}>
+                    <div className={styles["table-header-cell"]}>
                       MATK {renderColumnSortIcon("mAtk")}
                     </div>
                   </th>
-                  <th onClick={() => handleOnClickColumnSorting("heal")} className="table-container__table__header--sortable">
-                    <div className="table-container__table__header__cell table-container__table__header__cell--sortable">
+                  <th onClick={() => handleOnClickColumnSorting("heal")} className={styles["table-header--sortable"]}>
+                    <div className={styles["table-header-cell"]}>
                       HEAL {renderColumnSortIcon("heal")}
                     </div>
                   </th>
                   <th>
-                    <div className="table-container__table__header__cell">
+                    <div className={styles["table-header-cell"]}>
                       C. Ability
                     </div>
                   </th>
@@ -254,46 +254,44 @@ export function Weapons({ isViewportNarrow }) {
               </thead>
               <tbody>
                 {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
-                  <tr className="table-container__table__row" key={weaponName}>
-                    <td className="table-container__table__cell table-container__table__cell--nowrap">
-                      <div className="table-container__table__cell__weapon-container">
-                        <div className="table-container__table__cell__weapon-container__row">
-                          <div className="table-container__table__cell__weapon-container__column">
-                            <img src={characters[weapon.character].icon}
-                              className="table-container__table__cell__weapon-container__character"
-                              title={weapon.character}
-                              alt=""
-                            />
+                  <tr className={styles["table-row"]} key={weaponName}>
+                    <td className={`${styles["table-data"]} ${styles["table-data--nowrap"]}`}>
+                      <div className={styles["table-data-weapon-container-row"]}>
+                        <div className={styles["table-data-weapon-container-column"]}>
+                          <img src={characters[weapon.character].icon}
+                            className={styles["table-data-weapon-container-character"]}
+                            title={weapon.character}
+                            alt=""
+                          />
+                        </div>
+                        <div className={styles["table-data-weapon-container-column"]}>
+                          <div>
+                            {weaponName}
                           </div>
-                          <div className="table-container__table__cell__weapon-container__column">
-                            <div>
-                              {weaponName}
-                            </div>
-                            <div>
-                              <OverboostStars overboostLevel={selectedOverboostLevel} />
-                            </div>
+                          <div>
+                            <OverboostStars overboostLevel={selectedOverboostLevel} />
                           </div>
                         </div>
                       </div>
                     </td>
-                    <td className="table-container__table__cell table-container__table__cell--centered">
+                    <td className={`${styles["table-data"]}} ${styles["table-data--centered"]}`}>
                       <img src={elementIcons(`./${elements[weapon.element].icon}`)}
-                        className="table-container__table__cell__element"
+                        className={styles["table-data-element"]}
                         title={weapon.element}
                         alt=""
                       />
                     </td>
-                    <td className="table-container__table__cell table-container__table__cell--centered">
+                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
                       {getWeaponPatk(weapon, selectedOverboostLevel)}
                     </td>
-                    <td className="table-container__table__cell table-container__table__cell--centered">
+                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
                       {getWeaponMatk(weapon, selectedOverboostLevel)}
                     </td>
-                    <td className="table-container__table__cell table-container__table__cell--centered">
+                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
                       {getWeaponHeal(weapon, selectedOverboostLevel)}
                     </td>
-                    <td className="table-container__table__cell">
-                      <div className="table-container__table__cell__c-ability">
+                    <td className={styles["table-data"]}>
+                      <div className={styles["table-data-c-ability"]}>
                         {getWeaponCAbility(weapon, selectedOverboostLevel)}
                       </div>
                     </td>

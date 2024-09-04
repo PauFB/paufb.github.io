@@ -11,7 +11,7 @@ export function TopNavbarItem({ items, depthLevel }) {
   }
 
   return (
-    <li className="navbar-top__item"
+    <li
       onMouseEnter={() => setIsDropdownOpen(true)}
       onMouseLeave={() => setIsDropdownOpen(false)}
       onClick={() => isDropdownOpen && setIsDropdownOpen(false)}

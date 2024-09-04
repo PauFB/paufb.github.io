@@ -5,45 +5,45 @@ import { ReactComponent as NodeJSLogo } from '../../../assets/home/nodejs.svg';
 import { ReactComponent as RailsLogo } from '../../../assets/home/rails.svg';
 import { ReactComponent as MySQLLogo } from '../../../assets/home/mysql.svg';
 import { ReactComponent as DockerLogo } from '../../../assets/home/docker.svg';
-import './Home.css';
+import styles from './HomePage.module.css';
 
-export function Home() {
+export function HomePage() {
   return (
     <>
-      <div className="home-page__background" />
-      <div className="home-page__container">
-        <header className="home-page__header">
-          <div className="home-page__header__title">
+      <div className={styles["page-background"]} />
+      <div className={styles["page-container"]}>
+        <header className={styles["header"]}>
+          <div className={styles["header-title"]}>
             PauFB
           </div>
-          <div className="home-page__header__image">
+          <div className={styles["header-image"]}>
             <Link to={"https://github.com/PauFB"} target="_blank" rel="noreferrer">
               <img src="https://avatars.githubusercontent.com/u/58038009" alt="" />
             </Link>
           </div>
         </header>
-        <section className="home-page__technologies-container">
-          <div className="home-page__technology react">
+        <section className={styles["technologies-container"]}>
+          <div className={`${styles["technology"]} ${styles["react"]}`}>
             <ReactLogo />
             React
           </div>
-          <div className="home-page__technology js">
+          <div className={`${styles["technology"]} ${styles["js"]}`}>
             <JavaScriptLogo />
             JavaScript
           </div>
-          <div className="home-page__technology nodejs">
+          <div className={`${styles["technology"]} ${styles["nodejs"]}`}>
             <NodeJSLogo />
             NodeJS
           </div>
-          <div className="home-page__technology rails">
+          <div className={`${styles["technology"]} ${styles["rails"]}`}>
             <RailsLogo />
             Ruby on Rails
           </div>
-          <div className="home-page__technology mysql">
+          <div className={`${styles["technology"]} ${styles["mysql"]}`}>
             <MySQLLogo />
             MySQL
           </div>
-          <div className="home-page__technology docker">
+          <div className={`${styles["technology"]} ${styles["docker"]}`}>
             <DockerLogo />
             Docker
           </div>

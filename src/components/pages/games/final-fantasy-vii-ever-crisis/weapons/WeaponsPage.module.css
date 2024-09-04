@@ -1,4 +1,4 @@
-.weapons-page__background {
+.page-background {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -8,13 +8,13 @@
   background: radial-gradient(ellipse at bottom, rgb(7, 51, 108) 0%, black 100%);
 }
 
-.weapons-page__container {
+.page-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  width: 90vw;
-  max-width: 82rem;
-  margin: 3rem auto;
+  margin: 8rem auto 3rem auto;
+  width: calc(100% - calc(2 * var(--app-padding)));
+  max-width: var(--app-max-width);
 }
 
 .filters-container {
@@ -27,19 +27,19 @@
   box-shadow: 0 0 12.5px 3.75px rgb(28, 117, 190);
 }
 
-.filters-container__row {
+.filters-container-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
+
+  &.filters-container-row--narrow {
+    flex-direction: column;
+  }
 }
 
-.filters-container__row--narrow {
-  flex-direction: column;
-}
-
-.filters-container__column {
+.filters-container-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -91,13 +91,13 @@
   outline-width: 0.125rem;
   outline-offset: calc(-0.125rem * 3);
   padding: calc(0.125rem * 3);
-}
 
-.filter-characters__character--selected {
-  background-color: rgb(13, 83, 157);
-  border-color: rgb(44, 128, 215);
-  outline-color: rgb(44, 128, 215);
-  text-shadow: 0px 0px 1px white;
+  &.character--selected {
+    background-color: rgb(13, 83, 157);
+    border-color: rgb(44, 128, 215);
+    outline-color: rgb(44, 128, 215);
+    text-shadow: 0px 0px 1px white;
+  }
 }
 
 .filter-characters__character__icon {
@@ -155,12 +155,12 @@
   outline-width: 0.125rem;
   outline-offset: calc(-0.125rem * 3);
   padding: calc(0.125rem * 3);
-}
 
-.filter-elements__element--selected {
-  background-color: rgb(13, 83, 157);
-  border-color: rgb(44, 128, 215);
-  outline-color: rgb(44, 128, 215);
+  &.element--selected {
+    background-color: rgb(13, 83, 157);
+    border-color: rgb(44, 128, 215);
+    outline-color: rgb(44, 128, 215);
+  }
 }
 
 .filter-elements__element__icon {
@@ -206,7 +206,7 @@
   z-index: 0;
 }
 
-.table-container__table {
+.table {
   width: 100%;
   position: relative;
   table-layout: auto;
@@ -214,44 +214,46 @@
   border-spacing: 0 0.5rem;
 }
 
-.table-container__table__header--sortable:hover {
-  background-color: rgb(12, 48, 90);
-  border-radius: 4px;
-  cursor: pointer;
+.table-header--sortable {
+  &:hover {
+    background-color: rgb(12, 48, 90);
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
 
-.table-container__table__header__row {
+.table-head-row {
   height: 2rem;
 }
 
-.table-container__table__header__cell {
+.table-header-cell {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.table-container__table__row {
+.table-row {
   background-color: rgb(9, 36, 67);
 }
 
-.table-container__table__cell {
+.table-data {
   padding: 0.5rem;
 }
 
-.table-container__table__cell--centered {
+.table-data--centered {
   text-align: center;
 }
 
-.table-container__table__cell--nowrap {
+.table-data--nowrap {
   white-space: nowrap;
 }
 
-.table-container__table__cell__element {
+.table-data-element {
   width: 2rem;
   height: 2rem;
 }
 
-.table-container__table__cell__weapon-container__row {
+.table-data-weapon-container-row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -260,19 +262,19 @@
   gap: 0.5rem;
 }
 
-.table-container__table__cell__weapon-container__column {
+.table-data-weapon-container-column {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.table-container__table__cell__weapon-container__character {
+.table-data-weapon-container-character {
   width: calc(4.1875rem * 0.5);
   height: calc(4.9375rem * 0.5);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.table-container__table__cell__c-ability {
+.table-data-c-ability {
   max-height: 7em;
   overflow-y: scroll;
 }

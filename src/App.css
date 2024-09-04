@@ -1,22 +1,7 @@
 :root {
+  --app-max-width: 82rem;
+  --app-padding: 1rem;
   --sidebar-width: 23rem;
-}
-
-.app-container__page-container {
-  margin-left: 0;
-  position: relative;
-  overflow: hidden;
-  width: auto;
-  transition: all 0.2s ease;
-}
-
-.app-container__page-container--sidebar-open {
-  margin-left: var(--sidebar-width);
-}
-
-.app-container--narrow
-.app-container__page-container--sidebar-open {
-  margin-left: 0;
 }
 
 .arrow-up {

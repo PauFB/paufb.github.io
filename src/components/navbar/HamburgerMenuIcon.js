@@ -1,4 +1,4 @@
-import './HamburgerMenuIcon.css';
+import './Navbar.css';
 
 export function HamburgerMenuIcon({ isSidebarOpen, onClick, width, height, backgroundColor }) {
 

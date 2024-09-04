@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar/Navbar';
-import { Weapons as FFVIIECWeapons } from './components/pages/games/final-fantasy-vii-ever-crisis/weapons/Weapons';
-import { WeaponsPage as FFXIIIWeaponsPage } from './components/pages/games/final-fantasy-xiii/InventoryPage';
-import { Home } from './components/pages/home/Home';
+import { WeaponsPage as FFVIIECWeapons } from './components/pages/games/final-fantasy-vii-ever-crisis/weapons/WeaponsPage';
+import { InventoryPage as FFXIIIInventoryPage } from './components/pages/games/final-fantasy-xiii/InventoryPage';
+import { HomePage } from './components/pages/home/HomePage';
 import './App.css';
 
 function App() {
@@ -27,18 +27,16 @@ function App() {
   }
 
   return (
-    <div className={`app-container ${isViewportNarrow ? "app-container--narrow" : ""}`}>
+    <>
       <Navbar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} isNarrow={isViewportNarrow} />
-      <div className={`app-container__page-container ${isSidebarOpen ? "app-container__page-container--sidebar-open" : ""}`}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="games">
-            <Route path="final-fantasy-vii-ever-crisis" element={<FFVIIECWeapons isViewportNarrow={isViewportNarrow} />} />
-            <Route path="final-fantasy-xiii" element={<FFXIIIWeaponsPage isViewportNarrow={isViewportNarrow} />} />
-          </Route>
-        </Routes>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="games">
+          <Route path="final-fantasy-vii-ever-crisis" element={<FFVIIECWeapons isViewportNarrow={isViewportNarrow} />} />
+          <Route path="final-fantasy-xiii" element={<FFXIIIInventoryPage isViewportNarrow={isViewportNarrow} />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
