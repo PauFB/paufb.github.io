@@ -19,11 +19,11 @@ export const cAbilitiesData = {
     description: `${damage("Phys. Non-elem.", "All Enemies", 10)}\nAlso, ${decrease("PATK", null, "All Enemies", null, null, "Mid")}`,
     valuesByOverboost: [
       { damage: "220", pAtkDecreasePot: "Low", pAtkDecreaseDur: "20", pAtkDecreaseExt: "6" },
-      { damage: "", pAtkDecreasePot: "", pAtkDecreaseDur: "", pAtkDecreaseExt: "" },
-      { damage: "", pAtkDecreasePot: "", pAtkDecreaseDur: "", pAtkDecreaseExt: "" },
-      { damage: "", pAtkDecreasePot: "", pAtkDecreaseDur: "", pAtkDecreaseExt: "" },
-      { damage: "", pAtkDecreasePot: "", pAtkDecreaseDur: "", pAtkDecreaseExt: "" },
-      { damage: "", pAtkDecreasePot: "", pAtkDecreaseDur: "", pAtkDecreaseExt: "" },
+      { damage: "250", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "250", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "250", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "250", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
+      { damage: "250", pAtkDecreasePot: "Low", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
       { damage: "310", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
       { damage: "310", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
       { damage: "310", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "22", pAtkDecreaseExt: "7" },
@@ -51,11 +51,11 @@ export const cAbilitiesData = {
     description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}`,
     valuesByOverboost: [
       { damage: "500" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
       { damage: "780" },
       { damage: "780" },
       { damage: "780" },
@@ -64,7 +64,7 @@ export const cAbilitiesData = {
     ]
   },
   "Stalwart Barrier": {
-    description: `${increase("PDEF", null, "Single Ally", null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    description: `${increase("PDEF", null, "Single Ally", null, null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { pDefIncreasePot: "Mid", pDefIncreaseDur: "30", pDefIncreaseExt: "10", heal: "9" },
       { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", heal: "11" },
@@ -83,11 +83,11 @@ export const cAbilitiesData = {
     description: `${damage("Phys. Lightning", "Single Enemy", null)}`,
     valuesByOverboost: [
       { damage: "400" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
       { damage: "620" },
       { damage: "620" },
       { damage: "620" },
@@ -115,11 +115,11 @@ export const cAbilitiesData = {
     description: `${heal("Mag.", "All Allies")}`,
     valuesByOverboost: [
       { heal: "50" },
-      { heal: "" },
-      { heal: "" },
-      { heal: "" },
-      { heal: "" },
-      { heal: "" },
+      { heal: "60" },
+      { heal: "60" },
+      { heal: "60" },
+      { heal: "60" },
+      { heal: "60" },
       { heal: "65" },
       { heal: "65" },
       { heal: "65" },
@@ -131,11 +131,11 @@ export const cAbilitiesData = {
     description: `${damage("Mag. Ice", "All Enemies", null)}`,
     valuesByOverboost: [
       { damage: "280" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
       { damage: "440" },
       { damage: "440" },
       { damage: "440" },
@@ -163,11 +163,11 @@ export const cAbilitiesData = {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}`,
     valuesByOverboost: [
       { damage: "500" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
+      { damage: "600" },
       { damage: "780" },
       { damage: "780" },
       { damage: "780" },
@@ -179,11 +179,11 @@ export const cAbilitiesData = {
     description: `${damage("Phys. Water", "Single Enemy", null)}`,
     valuesByOverboost: [
       { damage: "400" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
+      { damage: "480" },
       { damage: "620" },
       { damage: "620" },
       { damage: "620" },
@@ -208,7 +208,7 @@ export const cAbilitiesData = {
     ]
   },
   "Sanctuary": {
-    description: `${increase("MDEF", null, "All Allies", null, null, "High")}\nAlso, ${heal("Mag.", "All Allies")}`,
+    description: `${increase("MDEF", null, "All Allies", null, null, null, "High")}\nAlso, ${heal("Mag.", "All Allies")}`,
     valuesByOverboost: [
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "10", mDefIncreaseExt: "3", heal: "4" },
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "5" },
@@ -227,11 +227,11 @@ export const cAbilitiesData = {
     description: `${damage("Phys. Fire", "Single Enemy", null)}`,
     valuesByOverboost: [
       { damage: "480" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
-      { damage: "" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
+      { damage: "580" },
       { damage: "710" },
       { damage: "710" },
       { damage: "710" },
@@ -304,7 +304,7 @@ export const cAbilitiesData = {
     ]
   },
   "Fierce Charged Slash": {
-    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PDEF", "Mid", "Single Enemy", null, null, "Mid")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("PATK", null, "Self", null, null, null)}`,
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PDEF", "Mid", "Single Enemy", null, null, "Mid")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("PATK", null, "Self", null, null, null, null)}`,
     valuesByOverboost: [
       { damage: "530", pDefDecreaseDur: "20", pDefDecreaseExt: "6", pAtkIncreasePot: "Mid", pAtkIncreaseDur: "25", pAtkIncreaseExt: "5", pAtkIncreaseMaxPot: "Mid" },
       { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "", pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", pAtkIncreaseMaxPot: "" },
@@ -368,7 +368,7 @@ export const cAbilitiesData = {
     ]
   },
   "Agitation": {
-    description: `${increase("PDEF", null, "All Allies", null, null, "High")}\nAlso, ${heal("Phys.", "All Allies")}`,
+    description: `${increase("PDEF", null, "All Allies", null, null, null, "High")}\nAlso, ${heal("Phys.", "All Allies")}`,
     valuesByOverboost: [
       { pDefIncreasePot: "Mid", pDefIncreaseDur: "10", pDefIncreaseExt: "3", heal: "4" },
       { pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "", heal: "" },
@@ -384,7 +384,7 @@ export const cAbilitiesData = {
     ]
   },
   "Stalwart Manaward (1)": {
-    description: `${increase("MDEF", null, "Single Ally", null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MDEF", null, "Single Ally", null, null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "30", mDefIncreaseExt: "10", heal: "9" },
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "11" },
@@ -400,7 +400,7 @@ export const cAbilitiesData = {
     ]
   },
   "Stalwart Faith (1)": {
-    description: `${increase("MATK", null, "Single Ally", null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", regenDur: "9", heal: "9" },
       { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
@@ -512,7 +512,7 @@ export const cAbilitiesData = {
     ]
   },
   "Solid Barrier (1)": {
-    description: `${increase("PDEF", "Mid", "Single Ally", null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    description: `${increase("PDEF", "Mid", "Single Ally", null, null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { pDefIncreaseDur: "30", pDefIncreaseExt: "10", pDefIncreaseMaxPot: "Mid", heal: "9" },
       { pDefIncreaseDur: "", pDefIncreaseExt: "", pDefIncreaseMaxPot: "", heal: "" },
@@ -752,7 +752,7 @@ export const cAbilitiesData = {
     ]
   },
   "Wall of Will": {
-    description: `${increase("PDEF", null, "Self", null, null, "High")}\nAlso, ${increase("PATK", null, "Self", null, null, "High")}\n${heal("Mag.", "Self")}`,
+    description: `${increase("PDEF", null, "Self", null, null, null, "High")}\nAlso, ${increase("PATK", null, "Self", null, null, null, "High")}\n${heal("Mag.", "Self")}`,
     valuesByOverboost: [
       { pDefIncreasePot: "Mid", pDefIncreaseDur: "25", pDefIncreaseExt: "8", pAtkIncreasePot: "Mid", pAtkIncreaseDur: "25", pAtkIncreaseExt: "8", heal: "9" },
       { pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "", pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "" },
@@ -800,7 +800,7 @@ export const cAbilitiesData = {
     ]
   },
   "Featherstrike": {
-    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("MDEF", "Mid", "Single Enemy", null, null, "Mid")}\nWhen [Rng: Self]'s HP is 50% or more, ${increase("Water Damage", null, "Self", null, null, null)}`,
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("MDEF", "Mid", "Single Enemy", null, null, "Mid")}\nWhen [Rng: Self]'s HP is 50% or more, ${increase("Water Damage", null, "Self", null, null, null, null)}`,
     valuesByOverboost: [
       { damage: "260", mDefDecreaseDur: "16", mDefDecreaseExt: "5", waterDamageIncreasePot: "Mid", waterDamageIncreaseDur: "25", waterDamageIncreaseExt: "5", waterDamageIncreaseMaxPot: "Mid" },
       { damage: "300", mDefDecreaseDur: "18", mDefDecreaseExt: "6", waterDamageIncreasePot: "Mid", waterDamageIncreaseDur: "28", waterDamageIncreaseExt: "5", waterDamageIncreaseMaxPot: "Mid" },
@@ -848,7 +848,7 @@ export const cAbilitiesData = {
     ]
   },
   "No Mercy": {
-    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${increase("PATK", null, "Self", null, null, null)}\nWhen [Rng.: Self]'s HP is 50% or more, ${decrease("MATK", "Mid", "Single Enemy", null, null, null)}`,
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${increase("PATK", null, "Self", null, null, null, null)}\nWhen [Rng.: Self]'s HP is 50% or more, ${decrease("MATK", "Mid", "Single Enemy", null, null, null)}`,
     valuesByOverboost: [
       { damage: "360", pAtkIncreasePot: "Mid", pAtkIncreaseDur: "25", pAtkIncreaseExt: "5", pAtkIncreaseMaxPot: "Mid", mAtkDecreaseDur: "20", mAtkDecreaseExt: "6", mAtkDecreaseMaxPot: "Mid" },
       { damage: "", pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", pAtkIncreaseMaxPot: "", mAtkDecreaseDur: "", mAtkDecreaseExt: "", mAtkDecreaseMaxPot: "" },
@@ -864,7 +864,7 @@ export const cAbilitiesData = {
     ]
   },
   "Aqua Splash": {
-    description: `${damage("Mag. Water", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("MATK", "Low", "Self", null, null, null)}`,
+    description: `${damage("Mag. Water", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("MATK", "Low", "Self", null, null, null, null)}`,
     valuesByOverboost: [
       { damage: "480", mAtkIncreaseDur: "25", mAtkIncreaseExt: "5", mAtkIncreaseMaxPot: "Mid" },
       { damage: "580", mAtkIncreaseDur: "28", mAtkIncreaseExt: "5", mAtkIncreaseMaxPot: "Mid" },
@@ -880,7 +880,7 @@ export const cAbilitiesData = {
     ]
   },
   "Solid Bravery (1)": {
-    description: `${increase("PATK", "Low", "Single Ally", null, null, "Mid")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    description: `${increase("PATK", "Low", "Single Ally", null, null, null, "Mid")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "9", heal: "9" },
       { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
@@ -928,7 +928,7 @@ export const cAbilitiesData = {
     ]
   },
   "Spiral Levin Strike": {
-    description: `${damage("Mag. Lightning", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("MATK", null, "Self", null, null, "Mid")}`,
+    description: `${damage("Mag. Lightning", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("MATK", null, "Self", null, null, null, "Mid")}`,
     valuesByOverboost: [
       { damage: "520", mAtkIncreasePot: "Low", mAtkIncreaseDur: "25", mAtkIncreaseExt: "5" },
       { damage: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
@@ -976,7 +976,7 @@ export const cAbilitiesData = {
     ]
   },
   "Stalwart Manaward (2)": {
-    description: `${increase("MDEF", null, "Single Ally", null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MDEF", null, "Single Ally", null, null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "30", mDefIncreaseExt: "10", heal: "10" },
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "34", mDefIncreaseExt: "11", heal: "13" },
@@ -1024,7 +1024,7 @@ export const cAbilitiesData = {
     ]
   },
   "Saving Grace": {
-    description: `${increase("PDEF", null, "All Allies", null, null, "Mid")}\nAlso, ${increase("MDEF", null, "All Allies", null, null, "Mid")}\n${heal("Mag.", "All Allies")}`,
+    description: `${increase("PDEF", null, "All Allies", null, null, null, "Mid")}\nAlso, ${increase("MDEF", null, "All Allies", null, null, null, "Mid")}\n${heal("Mag.", "All Allies")}`,
     valuesByOverboost: [
       { pDefIncreasePot: "Low", pDefIncreaseDur: "10", pDefIncreaseExt: "3", mDefIncreasePot: "Low", mDefIncreaseDur: "10", mDefIncreaseExt: "3", heal: "7" },
       { pDefIncreasePot: "Low", pDefIncreaseDur: "12", pDefIncreaseExt: "4", mDefIncreasePot: "Low", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "8" },
@@ -1168,7 +1168,7 @@ export const cAbilitiesData = {
     ]
   },
   "Solid Manaward (1)": {
-    description: `${increase("MDEF", "Mid", "Single Ally", null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MDEF", "Mid", "Single Ally", null, null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mDefIncreaseDur: "30", mDefIncreaseExt: "10", mDefIncreaseMaxPot: "Mid", heal: "9" },
       { mDefIncreaseDur: "34", mDefIncreaseExt: "11", mDefIncreaseMaxPot: "Mid", heal: "11" },
@@ -1216,7 +1216,7 @@ export const cAbilitiesData = {
     ]
   },
   "Healing Pulse": {
-    description: `${increase("MATK", null, "Single Ally", null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", regenDur: "9", heal: "9" },
       { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "" },
@@ -1264,7 +1264,7 @@ export const cAbilitiesData = {
     ]
   },
   "Spiritual Harmony": {
-    description: `${increase("PATK", null, "All Allies", null, null, "High")}\nAlso, when [Rng.: Self]'s HP is 70% or more, ${increase("MDEF", null, "All Allies", null, null, "High")}\n${heal("Mag.", "All Allies")}`,
+    description: `${increase("PATK", null, "All Allies", null, null, null, "High")}\nAlso, when [Rng.: Self]'s HP is 70% or more, ${increase("MDEF", null, "All Allies", null, null, null, "High")}\n${heal("Mag.", "All Allies")}`,
     valuesByOverboost: [
       { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "12", pAtkIncreaseExt: "4", mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "5" },
       { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", mDefIncreasePot: "", mDefIncreaseDur: "", mDefIncreaseExt: "", heal: "" },
@@ -1312,7 +1312,7 @@ export const cAbilitiesData = {
     ]
   },
   "Fruitful Energy": {
-    description: `${increase("Ice Damage", null, "Single Ally", null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("MATK", "Mid", "Single Ally", null, null, null)}`,
+    description: `${increase("Ice Damage", null, "Single Ally", null, null, null, null)}\nAlso, ${heal("Mag.", "Single Ally")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("MATK", "Mid", "Single Ally", null, null, null, null)}`,
     valuesByOverboost: [
       { iceDamageIncreasePot: "Mid", iceDamageIncreaseDur: "24", iceDamageIncreaseExt: "8", iceDamageIncreaseMaxPot: "Mid", heal: "7", mAtkIncreaseDur: "24", mAtkIncreaseExt: "8", mAtkIncreaseMaxPot: "Mid" },
       { iceDamageIncreasePot: "", iceDamageIncreaseDur: "", iceDamageIncreaseExt: "", iceDamageIncreaseMaxPot: "", heal: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", mAtkIncreaseMaxPot: "" },
@@ -1328,7 +1328,7 @@ export const cAbilitiesData = {
     ]
   },
   "Manaward A": {
-    description: `${increase("MDEF", null, "All Allies", null, null, "High")}\nAlso, ${heal("Mag.", "All Allies")}`,
+    description: `${increase("MDEF", null, "All Allies", null, null, null, "High")}\nAlso, ${heal("Mag.", "All Allies")}`,
     valuesByOverboost: [
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "10", mDefIncreaseExt: "3", heal: "4" },
       { mDefIncreasePot: "Mid", mDefIncreaseDur: "12", mDefIncreaseExt: "4", heal: "5" },
@@ -1712,7 +1712,7 @@ export const cAbilitiesData = {
     ]
   },
   "Stalwart Faith (2)": {
-    description: `${increase("MATK", null, "Single Ally", null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    description: `${increase("MATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
     valuesByOverboost: [
       { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", regenDur: "9", heal: "9" },
       { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
@@ -1808,7 +1808,7 @@ export const cAbilitiesData = {
     ]
   },
   "Feisty Spirit": {
-    description: `${increase("PATK", null, "Single Ally", null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}\n${increase("PATK", "Mid", "Self", null, null, null)}`,
+    description: `${increase("PATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${heal("Mag.", "Single Ally")}\n${increase("PATK", "Mid", "Self", null, null, null, null)}`,
     valuesByOverboost: [
       { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "24", pAtkIncreaseExt: "8", heal: "9", pAtkIncreaseMaxPot: "Mid" },
       { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "26", pAtkIncreaseExt: "8", heal: "11", pAtkIncreaseMaxPot: "Mid" },
@@ -1872,7 +1872,7 @@ export const cAbilitiesData = {
     ]
   },
   "Explosion": {
-    description: `${damage("Phys. Fire", "All Enemies", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("Fire Damage", "Low", "Self", null, null, null)}`,
+    description: `${damage("Phys. Fire", "All Enemies", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("Fire Damage", "Low", "Self", null, null, null, null)}`,
     valuesByOverboost: [
       { damage: "390", fireDamageIncreaseDur: "25", fireDamageIncreaseExt: "5", fireDamageIncreaseMaxPot: "Mid" },
       { damage: "", fireDamageIncreaseDur: "", fireDamageIncreaseExt: "", fireDamageIncreaseMaxPot: "" },
@@ -1901,6 +1901,246 @@ export const cAbilitiesData = {
       { damage: "280" },
       { damage: "280" },
       { damage: "290" }
+    ]
+  },
+  "Sonic Meow": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 30)}\nAlso, when hitting critical, x3 damage.`,
+    valuesByOverboost: [
+      { damage: "380" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "460" },
+      { damage: "590" },
+      { damage: "590" },
+      { damage: "590" },
+      { damage: "590" },
+      { damage: "700" }
+    ]
+  },
+  "Bloomin' Spray": {
+    description: `${damage("Mag. Water", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${decrease("Water Resist.", null, "Single Enemy", null, null, "High")}`,
+    valuesByOverboost: [
+      { damage: "390", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "20", waterResistDecreaseExt: "6" },
+      { damage: "450", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "22", waterResistDecreaseExt: "7" },
+      { damage: "450", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "22", waterResistDecreaseExt: "7" },
+      { damage: "450", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "22", waterResistDecreaseExt: "7" },
+      { damage: "450", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "22", waterResistDecreaseExt: "7" },
+      { damage: "450", waterResistDecreasePot: "Mid", waterResistDecreaseDur: "22", waterResistDecreaseExt: "7" },
+      { damage: "550", waterResistDecreasePot: "High", waterResistDecreaseDur: "26", waterResistDecreaseExt: "8" },
+      { damage: "550", waterResistDecreasePot: "High", waterResistDecreaseDur: "26", waterResistDecreaseExt: "8" },
+      { damage: "550", waterResistDecreasePot: "High", waterResistDecreaseDur: "26", waterResistDecreaseExt: "8" },
+      { damage: "550", waterResistDecreasePot: "High", waterResistDecreaseDur: "26", waterResistDecreaseExt: "8" },
+      { damage: "620", waterResistDecreasePot: "High", waterResistDecreaseDur: "30", waterResistDecreaseExt: "10" }
+    ]
+  },
+  "Blizzaga A (3)": {
+    description: `${damage("Mag. Ice", "All Enemies", null)}`,
+    valuesByOverboost: [
+      { damage: "280" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "520" }
+    ]
+  },
+  "Firaga A (2)": {
+    description: `${damage("Mag. Fire", "All Enemies", null)}`,
+    valuesByOverboost: [
+      { damage: "280" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "340" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "440" },
+      { damage: "520" }
+    ]
+  },
+  "Instant Barrier": {
+    description: `${increase("PDEF", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: [
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "30", pDefIncreaseExt: "10", regenDur: "8", heal: "9" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pDefIncreasePot: "Mid", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pDefIncreasePot: "High", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pDefIncreasePot: "High", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pDefIncreasePot: "High", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pDefIncreasePot: "High", pDefIncreaseDur: "34", pDefIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pDefIncreasePot: "High", pDefIncreaseDur: "38", pDefIncreaseExt: "12", regenDur: "15", heal: "13" }
+    ]
+  },
+  "Spinning Punch": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 20)}\nAlso, ${decrease("PDEF", "Low", "Single Enemy", null, null, "Low")}\nWhen hitting critical, ${decrease("PDEF", "High", "Affected Targets", null, null, "High")}`,
+    valuesByOverboost: [
+      { damage: "320", pDefDecreaseDur: "20", pDefDecreaseExt: "6" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "", pDefDecreaseDur: "", pDefDecreaseExt: "" },
+      { damage: "450", pDefDecreaseDur: "26", pDefDecreaseExt: "8" },
+      { damage: "450", pDefDecreaseDur: "26", pDefDecreaseExt: "8" },
+      { damage: "450", pDefDecreaseDur: "26", pDefDecreaseExt: "8" },
+      { damage: "450", pDefDecreaseDur: "26", pDefDecreaseExt: "8" },
+      { damage: "510", pDefDecreaseDur: "30", pDefDecreaseExt: "10" }
+    ]
+  },
+  "Fat Cat Attack": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 20)}\nAlso, ${decrease("Fire Resist.", null, "Single Enemy", null, null, "High")}\nWhen hitting critical, ${decrease("MATK", null, "Affected Targets", null, null, "High")}`,
+    valuesByOverboost: [
+      { damage: "320", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "20", fireResistDecreaseExt: "6", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "40", mAtkDecreaseExt: "13" },
+      { damage: "370", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "44", mAtkDecreaseExt: "14" },
+      { damage: "370", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "44", mAtkDecreaseExt: "14" },
+      { damage: "370", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "44", mAtkDecreaseExt: "14" },
+      { damage: "370", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "44", mAtkDecreaseExt: "14" },
+      { damage: "370", fireResistDecreasePot: "Mid", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "44", mAtkDecreaseExt: "14" },
+      { damage: "450", fireResistDecreasePot: "High", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "High", mAtkDecreaseDur: "52", mAtkDecreaseExt: "17" },
+      { damage: "450", fireResistDecreasePot: "High", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "High", mAtkDecreaseDur: "52", mAtkDecreaseExt: "17" },
+      { damage: "450", fireResistDecreasePot: "High", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "High", mAtkDecreaseDur: "52", mAtkDecreaseExt: "17" },
+      { damage: "450", fireResistDecreasePot: "High", fireResistDecreaseDur: "22", fireResistDecreaseExt: "7", mAtkDecreasePot: "High", mAtkDecreaseDur: "52", mAtkDecreaseExt: "17" },
+      { damage: "510", fireResistDecreasePot: "High", fireResistDecreaseDur: "25", fireResistDecreaseExt: "8", mAtkDecreasePot: "High", mAtkDecreaseDur: "60", mAtkDecreaseExt: "20" }
+    ]
+  },
+  "Battle Drum": {
+    description: `${damage("Phys. Non-elem.", "All Enemies", 20)}\nAlso, ${decrease("MATK", null, "All Enemies", null, null, "Mid")}\nWhen hitting critical, ${decrease("PATK", null, "Affected Targets", null, null, "High")}`,
+    valuesByOverboost: [
+      { damage: "220", mAtkDecreasePot: "Low", mAtkDecreaseDur: "20", mAtkDecreaseExt: "6", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "40", pAtkDecreaseExt: "13" },
+      { damage: "250", mAtkDecreasePot: "Low", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "44", pAtkDecreaseExt: "14" },
+      { damage: "250", mAtkDecreasePot: "Low", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "44", pAtkDecreaseExt: "14" },
+      { damage: "250", mAtkDecreasePot: "Low", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "44", pAtkDecreaseExt: "14" },
+      { damage: "250", mAtkDecreasePot: "Low", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "44", pAtkDecreaseExt: "14" },
+      { damage: "250", mAtkDecreasePot: "Low", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "Mid", pAtkDecreaseDur: "44", pAtkDecreaseExt: "14" },
+      { damage: "310", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "High", pAtkDecreaseDur: "52", pAtkDecreaseExt: "17" },
+      { damage: "310", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "High", pAtkDecreaseDur: "52", pAtkDecreaseExt: "17" },
+      { damage: "310", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "High", pAtkDecreaseDur: "52", pAtkDecreaseExt: "17" },
+      { damage: "310", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "22", mAtkDecreaseExt: "7", pAtkDecreasePot: "High", pAtkDecreaseDur: "52", pAtkDecreaseExt: "17" },
+      { damage: "350", mAtkDecreasePot: "Mid", mAtkDecreaseDur: "25", mAtkDecreaseExt: "8", pAtkDecreasePot: "High", pAtkDecreaseDur: "60", pAtkDecreaseExt: "20" }
+    ]
+  },
+  "Shellmanship": {
+    description: `${increase("PATK", null, "All Allies", null, null, null, "Mid")}\nAlso, ${heal("Mag.", "All Allies")}\n${increase("MATK", null, "All Allies", 20, null, null, "Mid")}`,
+    valuesByOverboost: [
+      { pAtkIncreasePot: "Low", pAtkIncreaseDur: "12", pAtkIncreaseExt: "4", heal: "5", mAtkIncreasePot: "Low", mAtkIncreaseDur: "12", mAtkIncreaseExt: "4" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", mAtkIncreasePot: "Mid", mAtkIncreaseDur: "16", mAtkIncreaseExt: "5" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", mAtkIncreasePot: "Mid", mAtkIncreaseDur: "16", mAtkIncreaseExt: "5" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", mAtkIncreasePot: "Mid", mAtkIncreaseDur: "16", mAtkIncreaseExt: "5" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", mAtkIncreasePot: "Mid", mAtkIncreaseDur: "16", mAtkIncreaseExt: "5" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "20", pAtkIncreaseExt: "6", heal: "7", mAtkIncreasePot: "Mid", mAtkIncreaseDur: "20", mAtkIncreaseExt: "6" }
+    ]
+  },
+  "Stalwart Bravery (1)": {
+    description: `${increase("PATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: [
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "30", pAtkIncreaseExt: "10", regenDur: "9", heal: "9" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "11" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "12", heal: "12" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "38", pAtkIncreaseExt: "12", regenDur: "15", heal: "13" }
+    ]
+  },
+  "Hang in There": {
+    description: `${increase("MATK", null, "Single Ally", null, null, null, "High")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}\n${apply("Haste", "Single Ally", 20, null, 5)}`,
+    valuesByOverboost: [
+      { mAtkIncreasePot: "Mid", mAtkIncreaseDur: "30", mAtkIncreaseExt: "10", regenDur: "9", heal: "9", hasteDur: "10" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "", hasteDur: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "", hasteDur: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "", hasteDur: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "", hasteDur: "" },
+      { mAtkIncreasePot: "", mAtkIncreaseDur: "", mAtkIncreaseExt: "", regenDur: "", heal: "", hasteDur: "" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12", hasteDur: "15" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12", hasteDur: "15" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12", hasteDur: "15" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "34", mAtkIncreaseExt: "11", regenDur: "12", heal: "12", hasteDur: "15" },
+      { mAtkIncreasePot: "High", mAtkIncreaseDur: "38", mAtkIncreaseExt: "12", regenDur: "15", heal: "13", hasteDur: "20" }
+    ]
+  },
+  "Aerora Surge A (1)": {
+    description: `${damage("Mag. Wind", "All Enemies", null)}`,
+    valuesByOverboost: [
+      { damage: "210" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "290" }
+    ]
+  },
+  "Solid Bravery (2)": {
+    description: `${increase("PATK", "Low", "Single Ally", null, null, null, "Mid")}\nAlso, ${regen("Single Ally", null, 3)}\n${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: [
+      { pAtkIncreaseDur: "34", pAtkIncreaseExt: "11", regenDur: "9", heal: "9" },
+      { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { pAtkIncreaseDur: "", pAtkIncreaseExt: "", regenDur: "", heal: "" },
+      { pAtkIncreaseDur: "40", pAtkIncreaseExt: "13", regenDur: "12", heal: "12" },
+      { pAtkIncreaseDur: "40", pAtkIncreaseExt: "13", regenDur: "12", heal: "12" },
+      { pAtkIncreaseDur: "40", pAtkIncreaseExt: "13", regenDur: "12", heal: "12" },
+      { pAtkIncreaseDur: "40", pAtkIncreaseExt: "13", regenDur: "12", heal: "12" },
+      { pAtkIncreaseDur: "44", pAtkIncreaseExt: "14", regenDur: "15", heal: "13" }
+    ]
+  },
+  "Blizzara Surge A (5)": {
+    description: `${damage("Mag. Ice", "All Enemies", null)}`,
+    valuesByOverboost: [
+      { damage: "210" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "280" },
+      { damage: "290" }
+    ]
+  },
+  "Comforting Cuisine": {
+    description: `${increase("PATK", null, "All Allies", null, null, null, "High")}\nAlso, ${heal("Mag.", "All Allies")}\nWhen [Rng.: Self]'s HP is 70% or more, ${increase("PDEF", null, "All Allies", null, null, null, "High")}`,
+    valuesByOverboost: [
+      { pAtkIncreasePot: "Mid", pAtkIncreaseDur: "12", pAtkIncreaseExt: "4", heal: "5", pDefIncreasePot: "Mid", pDefIncreaseDur: "12", pDefIncreaseExt: "4" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "" },
+      { pAtkIncreasePot: "", pAtkIncreaseDur: "", pAtkIncreaseExt: "", heal: "", pDefIncreasePot: "", pDefIncreaseDur: "", pDefIncreaseExt: "" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", pDefIncreasePot: "High", pDefIncreaseDur: "16", pDefIncreaseExt: "5" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", pDefIncreasePot: "High", pDefIncreaseDur: "16", pDefIncreaseExt: "5" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", pDefIncreasePot: "High", pDefIncreaseDur: "16", pDefIncreaseExt: "5" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "16", pAtkIncreaseExt: "5", heal: "7", pDefIncreasePot: "High", pDefIncreaseDur: "16", pDefIncreaseExt: "5" },
+      { pAtkIncreasePot: "High", pAtkIncreaseDur: "20", pAtkIncreaseExt: "6", heal: "7", pDefIncreasePot: "High", pDefIncreaseDur: "20", pDefIncreaseExt: "6" }
     ]
   }
 };
@@ -1931,6 +2171,7 @@ function getEffectKey(effect) {
   const eft = effect === "Ailment: Stun"    ? "stun"    :
               effect === "Ailment: Poison"  ? "poison"  :
               effect === "Ailment: Silence" ? "silence" :
+              effect === "Haste"            ? "haste"   :
                                               null      ;
   if (eft === null) throw new Error();
   return eft;
@@ -1951,14 +2192,14 @@ function decrease(attribute, potency, range, duration, extension, maxPotency) {
   return `${attribute} is decreased. [Pot.: ${pot}] [Rng.: ${range}] [Dur.: ${dur}s]. [Ext.: +${ext}s] [Max. pot.: ${maxPot}]`;
 }
 
-function increase(attribute, potency, range, duration, extension, maxPotency) {
+function increase(attribute, potency, range, rate, duration, extension, maxPotency) {
   if (arguments.length !== increase.length) throw new Error();
   const attributeKey = getAttributeKey(attribute);
   const pot = potency ? potency : `{{${attributeKey}IncreasePot}}`;
   const dur = duration ? duration : `{{${attributeKey}IncreaseDur}}`;
   const ext = extension ? extension : `{{${attributeKey}IncreaseExt}}`;
   const maxPot = maxPotency ? maxPotency : `{{${attributeKey}IncreaseMaxPot}}`;
-  return `${attribute} is increased. [Pot.: ${pot}] [Rng.: ${range}] [Dur.: ${dur}s]. [Ext.: +${ext}s] [Max. pot.: ${maxPot}]`;
+  return `${attribute} is increased. [Pot.: ${pot}]${rate ? ` [Rate: ${rate}%]` : ""} [Rng.: ${range}] [Dur.: ${dur}s]. [Ext.: +${ext}s] [Max. pot.: ${maxPot}]`;
 }
 
 function heal(type, range) {

@@ -1188,5 +1188,155 @@ export const weaponsData = {
       mAtk: 225,
       heal: 164
     }
+  },
+  "Yellow Megaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Sonic Meow",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 215,
+      heal: 165
+    }
+  },
+  "Green Megaphone": {
+    character: "Cait Sith",
+    element: "Water",
+    cAbility: "Bloomin' Spray",
+    fiveStarLevel120: {
+      pAtk: 222,
+      mAtk: 277,
+      heal: 158
+    }
+  },
+  "Blue Megaphone": {
+    character: "Cait Sith",
+    element: "Ice",
+    cAbility: "Blizzaga A (3)",
+    fiveStarLevel120: {
+      pAtk: 214,
+      mAtk: 267,
+      heal: 174
+    }
+  },
+  "Red Megaphone": {
+    character: "Cait Sith",
+    element: "Fire",
+    cAbility: "Firaga A (2)",
+    fiveStarLevel120: {
+      pAtk: 215,
+      mAtk: 262,
+      heal: 175
+    }
+  },
+  "Crystal Megaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Instant Barrier",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 218,
+      heal: 219
+    }
+  },
+  "Silver Megaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Spinning Punch",
+    fiveStarLevel120: {
+      pAtk: 233,
+      mAtk: 228,
+      heal: 189
+    }
+  },
+  "Gold Megaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Fat Cat Attack",
+    fiveStarLevel120: {
+      pAtk: 236,
+      mAtk: 231,
+      heal: 184
+    }
+  },
+  "Battle Trumpet": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Battle Drum",
+    fiveStarLevel120: {
+      pAtk: 246,
+      mAtk: 228,
+      heal: 178
+    }
+  },
+  "Trumpet Shell": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Shellmanship",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 197,
+      heal: 168
+    }
+  },
+  "Marching Horn": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Stalwart Bravery (1)",
+    fiveStarLevel120: {
+      pAtk: 247,
+      mAtk: 212,
+      heal: 191
+    }
+  },
+  "Flower Vase": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Hang in There",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 218,
+      heal: 215
+    }
+  },
+  "Humus Megaphone": {
+    character: "Cait Sith",
+    element: "Wind",
+    cAbility: "Aerora Surge A (1)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 222,
+      heal: 167
+    }
+  },
+  "Catsmegaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Solid Bravery (2)",
+    fiveStarLevel120: {
+      pAtk: 215,
+      mAtk: 201,
+      heal: 174
+    }
+  },
+  "Fireworks Megaphone": {
+    character: "Cait Sith",
+    element: "Ice",
+    cAbility: "Blizzara Surge A (5)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 228,
+      heal: 160
+    }
+  },
+  "Quina Megaphone": {
+    character: "Cait Sith",
+    element: "Non-elemental",
+    cAbility: "Comforting Cuisine",
+    fiveStarLevel120: {
+      pAtk: 254,
+      mAtk: 204,
+      heal: 192
+    }
   }
 };
