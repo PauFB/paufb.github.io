@@ -126,10 +126,9 @@ export function WeaponsPage({ isViewportNarrow }) {
   }
 
   function getWeaponCAbility(weapon, overboostLevel) {
-    const cAbility = cAbilities[weapon.cAbility];
-    const valuesByOverboost = cAbility.valuesByOverboost[overboostLevel];
-    return cAbility.description.replace(/{{(.*?)}}/g, (_, key) => valuesByOverboost[key]);
-  }
+  const { description, valuesByOverboost } = cAbilities[weapon.cAbility];
+  return description.replace(/\{\{(\w+)\}\}/g, (_, key) => valuesByOverboost[key][overboostLevel]);
+}
 
   return (
     <>
