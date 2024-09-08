@@ -1309,6 +1309,178 @@ export const cAbilitiesData = {
     valuesByOverboost: {
       damage: ["520", "", "", "", "", "", "780", "780", "780", "780", "940"]
     }
+  },
+  "Telluric Fury": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("MDEF", undefined, "Single Enemy", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["150", "170", "170", "170", "170", "170", "210", "210", "210", "210", "240"],
+      mDefDecreasePot: ["Low", "Low", "Low", "Low", "Low", "Low", "Mid", "Mid", "Mid", "Mid", "Mid"],
+      mDefDecreaseDur: ["11", "13", "13", "13", "13", "13", "13", "13", "13", "13", "14"],
+      mDefDecreaseExt: ["3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"]
+    }
+  },
+  "Aerial Frostblade": {
+    description: `${damage("Mag. Ice", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["440", "530", "530", "530", "530", "530", "660", "660", "660", "660", "800"]
+    }
+  },
+  "Sweeping Slash": {
+    description: `${damage("Phys. Non-elem.", "All Enemies", 10)}`,
+    valuesByOverboost: {
+      damage: ["350", "420", "420", "420", "420", "420", "550", "550", "550", "550", "650"]
+    }
+  },
+  "Frenzied Stance": {
+    description: `${increase("MATK", undefined, "Self", null, undefined, undefined, "High")}\nAlso, ${regen("Self", undefined, 3)}\n${heal("Mag.", "Self")}`,
+    valuesByOverboost: {
+      mAtkIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mAtkIncreaseDur: ["36", "40", "40", "40", "40", "40", "40", "40", "40", "40", "44"],
+      mAtkIncreaseExt: ["12", "13", "13", "13", "13", "13", "13", "13", "13", "13", "14"],
+      regenDur: ["9", "12", "12", "12", "12", "12", "12", "12", "12", "12", "15"],
+      heal: ["11", "13", "13", "13", "13", "13", "14", "14", "14", "14", "15"]
+    }
+  },
+  "Radiant Aurora": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PATK", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      pAtkDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      pAtkDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      pAtkDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Firaga A (4)": {
+    description: `${damage("Mag. Fire", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["280", "340", "340", "340", "340", "340", "440", "440", "440", "440", "520"]
+    }
+  },
+  "Thundaga A (3)": {
+    description: `${damage("Mag. Lightning", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["280", "340", "340", "340", "340", "340", "440", "440", "440", "440", "520"]
+    }
+  },
+  "Steadfast Stance": {
+    description: `${increase("PDEF", undefined, "Self", null, undefined, undefined, "High")}\nAlso, ${regen("Self", undefined, 3)}\n${heal("Phys.", "Self")}`,
+    valuesByOverboost: {
+      pDefIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      pDefIncreaseDur: ["36", "40", "40", "40", "40", "40", "40", "40", "40", "40", "44"],
+      pDefIncreaseExt: ["12", "13", "13", "13", "13", "13", "13", "13", "13", "13", "14"],
+      regenDur: ["9", "12", "12", "12", "12", "12", "12", "12", "12", "12", "15"],
+      heal: ["11", "13", "13", "13", "13", "13", "14", "14", "14", "14", "15"]
+    }
+  },
+  "Shock Blast": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}`,
+    valuesByOverboost: {
+      damage: ["500", "600", "600", "600", "600", "600", "780", "780", "780", "780", "940"]
+    }
+  },
+  "Solid Barrier (2)": {
+    description: `${increase("PDEF", "Mid", "Single Ally", null, undefined, undefined, undefined)}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      pDefIncreaseDur: ["30", "", "", "", "", "", "34", "34", "34", "34", "38"],
+      pDefIncreaseExt: ["10", "", "", "", "", "", "11", "11", "11", "11", "12"],
+      pDefIncreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      heal: ["9", "", "", "", "", "", "12", "12", "12", "12", "13"]
+    }
+  },
+  "Heavenly Grasp": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, with Command Gauge max in Attack Stance: x1.5 damage.`,
+    valuesByOverboost: {
+      damage: ["370", "", "", "", "", "", "570", "570", "570", "570", "700"]
+    }
+  },
+  "Gale Strike": {
+    description: `${damage("Phys. Wind", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["440", "530", "530", "530", "530", "530", "660", "660", "660", "660", "800"]
+    }
+  },
+  "Flare Star": {
+    description: `${damage("Mag. Non-elem.", "All Enemies", 10)}\nAlso, ${decrease("MATK", "Mid", "All Enemies", null, undefined, undefined, undefined)}\nWhen [Rng.: Self]'s HP is 50% or more, ${decrease("PATK", "Mid", "All Enemies", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      damage: ["340", "", "", "", "", "", "480", "480", "480", "480", "540"],
+      mAtkDecreaseDur: ["20", "", "", "", "", "", "26", "26", "26", "26", "30"],
+      mAtkDecreaseExt: ["6", "", "", "", "", "", "8", "8", "8", "8", "10"],
+      mAtkDecreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      pAtkDecreaseDur: ["20", "", "", "", "", "", "26", "26", "26", "26", "30"],
+      pAtkDecreaseExt: ["6", "", "", "", "", "", "8", "8", "8", "8", "10"],
+      pAtkDecreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Iai": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PDEF", "Mid", "Single Enemy", null, undefined, undefined, "Mid")}\nWhen [Rng.: Self]'s HP is 50% or more, ${decrease("Fire Resist.", undefined, "Single Enemy", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      damage: ["340", "390", "390", "390", "390", "390", "480", "480", "480", "480", "540"],
+      pDefDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      pDefDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"],
+      fireResistDecreasePot: ["Low", "Low", "Low", "Low", "Low", "Low", "High", "High", "High", "High", "High"],
+      fireResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      fireResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"],
+      fireResistDecreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Protector's Blow": {
+    description: `${damage("Mag. Non-elem.", "All Enemies", 10)}\nAlso, against a single target, x1.3 damage.`,
+    valuesByOverboost: {
+      damage: ["500", "", "", "", "", "", "740", "740", "740", "740", "900"]
+    }
+  },
+  "Defira Surge (2)": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Fire Resist.", undefined, "Single Enemy", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["260", "300", "300", "300", "300", "300", "350", "350", "350", "350", "360"],
+      fireResistDecreasePot: ["Low", "Low", "Low", "Low", "Low", "Low", "Mid", "Mid", "Mid", "Mid", "Mid"],
+      fireResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "25", "25", "25", "25", "28"],
+      fireResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "9"]
+    }
+  },
+  "Fira Surge A (4)": {
+    description: `${damage("Mag. Fire", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["210", "", "", "", "", "", "280", "280", "280", "280", "290"]
+    }
+  },
+  "Theatrical Strike": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${increase("PATK", "Mid", "Self", null, undefined, undefined, "Mid")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("Wind Damage", undefined, "Self", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      damage: ["260", "300", "300", "300", "300", "300", "360", "360", "360", "360", "420"],
+      pAtkIncreaseDur: ["25", "28", "28", "28", "28", "28", "30", "30", "30", "30", "35"],
+      pAtkIncreaseExt: ["5", "5", "5", "5", "5", "5", "6", "6", "6", "6", "7"],
+      windDamageIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      windDamageIncreaseDur: ["25", "28", "28", "28", "28", "28", "30", "30", "30", "30", "35"],
+      windDamageIncreaseExt: ["5", "5", "5", "5", "5", "5", "6", "6", "6", "6", "7"],
+      windDamageIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Defira Surge A": {
+    description: `${damage("Mag. Non-elem.", "All Enemies", 10)}\nAlso, ${decrease("Fire Resist.", "Low", "All Enemies", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["180", "", "", "", "", "", "240", "240", "240", "240", "250"],
+      fireResistDecreaseDur: ["20", "", "", "", "", "", "30", "30", "30", "30", "35"],
+      fireResistDecreaseExt: ["5", "", "", "", "", "", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Torrential Thrust": {
+    description: `${damage("Phys. Water", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${decrease("Water Resist.", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["440", "510", "510", "510", "510", "510", "620", "620", "620", "620", "700"],
+      waterResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      waterResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      waterResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"]
+    }
+  },
+  "Sandsplitter": {
+    description: `${damage("Mag. Earth", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${decrease("Earth Resist.", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["440", "510", "510", "510", "510", "510", "620", "620", "620", "620", "700"],
+      earthResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      earthResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      earthResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"]
+    }
   }
 };
 

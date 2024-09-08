@@ -1668,5 +1668,215 @@ export const weaponsData = {
       mAtk: 220,
       heal: 154
     }
+  },
+  "Nameless": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Telluric Fury",
+    fiveStarLevel120: {
+      pAtk: 260,
+      mAtk: 228,
+      heal: 167
+    }
+  },
+  "Edged Wings": {
+    character: "Sephiroth",
+    element: "Ice",
+    cAbility: "Aerial Frostblade",
+    fiveStarLevel120: {
+      pAtk: 225,
+      mAtk: 267,
+      heal: 165
+    }
+  },
+  "Glaireid": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Sweeping Slash",
+    fiveStarLevel120: {
+      pAtk: 262,
+      mAtk: 214,
+      heal: 177
+    }
+  },
+  "Aonibi": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Frenzied Stance",
+    fiveStarLevel120: {
+      pAtk: 215,
+      mAtk: 222,
+      heal: 208
+    }
+  },
+  "Northern Lights": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Radiant Aurora",
+    fiveStarLevel120: {
+      pAtk: 249,
+      mAtk: 214,
+      heal: 188
+    }
+  },
+  "Prototype Crimson Blade": {
+    character: "Sephiroth",
+    element: "Fire",
+    cAbility: "Firaga A (4)",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 260,
+      heal: 174
+    }
+  },
+  "CC Alloy Sword": {
+    character: "Sephiroth",
+    element: "Lightning",
+    cAbility: "Thundaga A (3)",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 256,
+      heal: 172
+    }
+  },
+  "Mythril Type-0 Katana": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Steadfast Stance",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 220,
+      heal: 213
+    }
+  },
+  "Shinra Blade: Model I": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Shock Blast",
+    fiveStarLevel120: {
+      pAtk: 228,
+      mAtk: 257,
+      heal: 168
+    }
+  },
+  "Torn Wing": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Solid Barrier (2)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 207,
+      heal: 178
+    }
+  },
+  "World Tree Bough": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Heavenly Grasp",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 193,
+      heal: 165
+    }
+  },
+  "Dark Heavens": {
+    character: "Sephiroth",
+    element: "Wind",
+    cAbility: "Gale Strike",
+    fiveStarLevel120: {
+      pAtk: 260,
+      mAtk: 212,
+      heal: 181
+    }
+  },
+  "Kuja's Spirit Blade": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Flare Star",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 264,
+      heal: 177
+    }
+  },
+  "Radiant Edge": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Iai",
+    fiveStarLevel120: {
+      pAtk: 273,
+      mAtk: 212,
+      heal: 170
+    }
+  },
+  "Protector's Blade": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Protector's Blow",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 278,
+      heal: 174
+    }
+  },
+  "Flame Dragon Blade": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Defira Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 226,
+      heal: 167
+    }
+  },
+  "Ashura": {
+    character: "Sephiroth",
+    element: "Fire",
+    cAbility: "Fira Surge A (4)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 218,
+      heal: 170
+    }
+  },
+  "Shinra Military Sword": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Theatrical Strike",
+    fiveStarLevel120: {
+      pAtk: 283,
+      mAtk: 201,
+      heal: 170
+    }
+  },
+  "Shinra Wyvern Blade": {
+    character: "Sephiroth",
+    element: "Non-elemental",
+    cAbility: "Defira Surge A",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 218,
+      heal: 167
+    }
+  },
+  "Tempest": {
+    character: "Sephiroth",
+    element: "Water",
+    cAbility: "Torrential Thrust",
+    fiveStarLevel120: {
+      pAtk: 277,
+      mAtk: 214,
+      heal: 165
+    }
+  },
+  "Blue Bramble": {
+    character: "Sephiroth",
+    element: "Earth",
+    cAbility: "Sandsplitter",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 281,
+      heal: 164
+    }
   }
 };
