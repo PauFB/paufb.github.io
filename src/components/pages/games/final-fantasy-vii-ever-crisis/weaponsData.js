@@ -922,7 +922,7 @@ export const weaponsData = {
   "Iron Collar": {
     character: "Red XIII",
     element: "Non-elemental",
-    cAbility: "Spiral Swing",
+    cAbility: "Spiral Swing (1)",
     fiveStarLevel120: {
       pAtk: 205,
       mAtk: 215,
@@ -1457,6 +1457,216 @@ export const weaponsData = {
       pAtk: 262,
       mAtk: 228,
       heal: 165
+    }
+  },
+  "Type-99 Longsword": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Rapid Slash",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 210,
+      heal: 189
+    }
+  },
+  "Beach Parasol": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Magic Ray (1)",
+    fiveStarLevel120: {
+      pAtk: 183,
+      mAtk: 193,
+      heal: 157
+    }
+  },
+  "Enhance Sword (Z)": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Healing Vortex",
+    fiveStarLevel120: {
+      pAtk: 233,
+      mAtk: 236,
+      heal: 182
+    }
+  },
+  "Defender": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Spirit Burst",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 189,
+      heal: 206
+    }
+  },
+  "Crystal Sword (Z)": {
+    character: "Zack",
+    element: "Fire",
+    cAbility: "Firaga A (3)",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 212,
+      heal: 223
+    }
+  },
+  "Falchion": {
+    character: "Zack",
+    element: "Wind",
+    cAbility: "Gale Blast",
+    fiveStarLevel120: {
+      pAtk: 247,
+      mAtk: 204,
+      heal: 198
+    }
+  },
+  "Zweihander": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Slashing Thrust",
+    fiveStarLevel120: {
+      pAtk: 273,
+      mAtk: 199,
+      heal: 181
+    }
+  },
+  "Arc Sword": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Homing Blast",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 262,
+      heal: 178
+    }
+  },
+  "Cutlass": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Destructive Swipe",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 225,
+      heal: 191
+    }
+  },
+  "Ceremonial Sword (Z)": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Ceremonial Slice",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 193,
+      heal: 184
+    }
+  },
+  "Bouquet": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Floral Flourish",
+    fiveStarLevel120: {
+      pAtk: 236,
+      mAtk: 201,
+      heal: 157
+    }
+  },
+  "Pressure Ridge": {
+    character: "Zack",
+    element: "Ice",
+    cAbility: "Freezing Cleave",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 205,
+      heal: 174
+    }
+  },
+  "Iron Greatsword": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Spiral Swing (2)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 214,
+      heal: 174
+    }
+  },
+  "Ifrit's Sword": {
+    character: "Zack",
+    element: "Fire",
+    cAbility: "Fira Surge (4)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 212,
+      heal: 174
+    }
+  },
+  "Twinkling Star": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Dual Onslaught",
+    fiveStarLevel120: {
+      pAtk: 257,
+      mAtk: 201,
+      heal: 191
+    }
+  },
+  "Black Whiskers": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Swirl Drop",
+    fiveStarLevel120: {
+      pAtk: 262,
+      mAtk: 201,
+      heal: 188
+    }
+  },
+  "Stream Guard": {
+    character: "Zack",
+    element: "Fire",
+    cAbility: "Igniting Stream",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 277,
+      heal: 170
+    }
+  },
+  "Zinogre Blade": {
+    character: "Zack",
+    element: "Lightning",
+    cAbility: "Lightning Edge",
+    fiveStarLevel120: {
+      pAtk: 278,
+      mAtk: 222,
+      heal: 157
+    }
+  },
+  "Carrot Sword": {
+    character: "Zack",
+    element: "Fire",
+    cAbility: "Fira Surge A (3)",
+    fiveStarLevel120: {
+      pAtk: 197,
+      mAtk: 225,
+      heal: 170
+    }
+  },
+  "Alba Blade": {
+    character: "Zack",
+    element: "Non-elemental",
+    cAbility: "Ruinra Impact A",
+    fiveStarLevel120: {
+      pAtk: 222,
+      mAtk: 204,
+      heal: 167
+    }
+  },
+  "Beatrix Sword": {
+    character: "Zack",
+    element: "Wind",
+    cAbility: "Gale Slash",
+    fiveStarLevel120: {
+      pAtk: 283,
+      mAtk: 220,
+      heal: 154
     }
   }
 };
