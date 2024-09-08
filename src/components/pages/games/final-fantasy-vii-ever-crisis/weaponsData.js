@@ -1338,5 +1338,125 @@ export const weaponsData = {
       mAtk: 204,
       heal: 192
     }
+  },
+  "Cath Palug": {
+    character: "Vincent",
+    element: "Ice",
+    cAbility: "Blizzaga A (4)",
+    fiveStarLevel120: {
+      pAtk: 225,
+      mAtk: 268,
+      heal: 164
+    }
+  },
+  "Gilded Age": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Gilded Spirit",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 220,
+      heal: 206
+    }
+  },
+  "S1976C": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Spellgun Shower",
+    fiveStarLevel120: {
+      pAtk: 231,
+      mAtk: 260,
+      heal: 165
+    }
+  },
+  "Shortbarrel": {
+    character: "Vincent",
+    element: "Wind",
+    cAbility: "Stormround",
+    fiveStarLevel120: {
+      pAtk: 268,
+      mAtk: 226,
+      heal: 161
+    }
+  },
+  "T03 Model N": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Quick Draw",
+    fiveStarLevel120: {
+      pAtk: 264,
+      mAtk: 236,
+      heal: 157
+    }
+  },
+  "Sawed-Off GS": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Wardshot",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 225,
+      heal: 203
+    }
+  },
+  "Chiron": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Sageshot",
+    fiveStarLevel120: {
+      pAtk: 243,
+      mAtk: 243,
+      heal: 168
+    }
+  },
+  "Double Stem E": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Poison Sphere",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 273,
+      heal: 158
+    }
+  },
+  "White Dog": {
+    character: "Vincent",
+    element: "Earth",
+    cAbility: "Sludge Shot",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 278,
+      heal: 165
+    }
+  },
+  "Silver Rifle": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Gunspinner Shot",
+    fiveStarLevel120: {
+      pAtk: 235,
+      mAtk: 205,
+      heal: 154
+    }
+  },
+  "Hugin & Munin": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Pentaburst Shot",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 285,
+      heal: 164
+    }
+  },
+  "Quicksilver": {
+    character: "Vincent",
+    element: "Non-elemental",
+    cAbility: "Spinning Pentashot",
+    fiveStarLevel120: {
+      pAtk: 262,
+      mAtk: 228,
+      heal: 165
+    }
   }
 };

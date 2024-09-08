@@ -45,7 +45,7 @@ export const cAbilitiesData = {
     }
   },
   "Shock Slice": {
-    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${apply("Ailment: Stun", "Single Enemy", null, 5, 2)}`,
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${apply("Ailment: Stun", "Single Enemy", undefined, 5, 2)}`,
     valuesByOverboost: {
       damage: ["400", "", "", "", "", "", "620", "620", "620", "620", "750"],
       stunRate: ["20", "", "", "", "", "", "30", "30", "30", "30", "30"]
@@ -723,10 +723,10 @@ export const cAbilitiesData = {
   "Power Fang": {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Thunder Resist.", null, "Single Enemy", null, null, "High")}\n${regen("Self", 3, 3)}`,
     valuesByOverboost: {
-      damage: ["320", "", "", "", "", "", "450", "450", "450", "450", "510"],
-      lightningResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      lightningResistDecreaseDur: ["15", "", "", "", "", "", "18", "18", "18", "18", "21"],
-      lightningResistDecreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "7"]
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      lightningResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      lightningResistDecreaseDur: ["15", "18", "18", "18", "18", "18", "18", "18", "18", "18", "21"],
+      lightningResistDecreaseExt: ["5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "7"]
     }
   },
   "Manara Breach Surge (2)": {
@@ -755,13 +755,13 @@ export const cAbilitiesData = {
   "Growing Ivy": {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Fire Resist.", null, "Single Enemy", null, null, "High")}\n${decrease("Ice Resist.", null, "Single Enemy", null, null, "High")}`,
     valuesByOverboost: {
-      damage: ["260", "", "", "", "", "", "360", "360", "360", "360", "420"],
-      fireResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      fireResistDecreaseDur: ["16", "", "", "", "", "", "20", "20", "20", "20", "24"],
-      fireResistDecreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "8"],
-      iceResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      iceResistDecreaseDur: ["16", "", "", "", "", "", "20", "20", "20", "20", "24"],
-      iceResistDecreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "8"]
+      damage: ["260", "300", "300", "300", "300", "300", "360", "360", "360", "360", "420"],
+      fireResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      fireResistDecreaseDur: ["16", "18", "18", "18", "18", "18", "20", "20", "20", "20", "24"],
+      fireResistDecreaseExt: ["5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "8"],
+      iceResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      iceResistDecreaseDur: ["16", "18", "18", "18", "18", "18", "20", "20", "20", "20", "24"],
+      iceResistDecreaseExt: ["5", "6", "6", "6", "6", "6", "6", "6", "6", "6", "8"]
     }
   },
   "Blizzara Surge A (3)": {
@@ -802,19 +802,19 @@ export const cAbilitiesData = {
   "Flurry of Steel": {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Fire Resist.", null, "Single Enemy", null, null, "High")}`,
     valuesByOverboost: {
-      damage: ["320", "", "", "", "", "", "450", "450", "450", "450", "510"],
-      fireResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      fireResistDecreaseDur: ["20", "", "", "", "", "", "22", "22", "22", "22", "25"],
-      fireResistDecreaseExt: ["6", "", "", "", "", "", "7", "7", "7", "7", "8"]
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      fireResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      fireResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      fireResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
     }
   },
   "Sweeping Spin": {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Ice Resist.", null, "Single Enemy", null, null, "High")}`,
     valuesByOverboost: {
-      damage: ["320", "", "", "", "", "", "450", "450", "450", "450", "510"],
-      iceResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      iceResistDecreaseDur: ["20", "", "", "", "", "", "22", "22", "22", "22", "25"],
-      iceResistDecreaseExt: ["6", "", "", "", "", "", "7", "7", "7", "7", "8"]
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      iceResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      iceResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      iceResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
     }
   },
   "Quaga A (2)": {
@@ -842,14 +842,14 @@ export const cAbilitiesData = {
   "Nimble Wind Slash": {
     description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Thunder Resist.", null, "Single Enemy", null, null, "High")}`,
     valuesByOverboost: {
-      damage: ["320", "", "", "", "", "", "450", "450", "450", "450", "510"],
-      lightningResistDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
-      lightningResistDecreaseDur: ["20", "", "", "", "", "", "22", "22", "22", "22", "25"],
-      lightningResistDecreaseExt: ["6", "", "", "", "", "", "7", "7", "7", "7", "8"]
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      lightningResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      lightningResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      lightningResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
     }
   },
   "Venomstrike": {
-    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${apply("Ailment: Poison", "Single Enemy", null, null, null)}`,
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${apply("Ailment: Poison", "Single Enemy", undefined, null, null)}`,
     valuesByOverboost: {
       damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
       poisonRate: ["50", "50", "50", "50", "50", "50", "70", "70", "70", "70", "70"],
@@ -866,13 +866,13 @@ export const cAbilitiesData = {
   "Wind Ninjutsu": {
     description: `${damage("Phys. Wind", "All Enemies", null)}`,
     valuesByOverboost: {
-      damage: ["280", "", "", "", "", "", "440", "440", "440", "440", "520"]
+      damage: ["280", "340", "340", "340", "340", "340", "440", "440", "440", "440", "520"]
     }
   },
   "Twister": {
     description: `${damage("Phys. Wind", "Single Enemy", null)}`,
     valuesByOverboost: {
-      damage: ["480", "", "", "", "", "", "710", "710", "710", "710", "850"]
+      damage: ["480", "580", "580", "580", "580", "580", "710", "710", "710", "710", "850"]
     }
   },
   "Feisty Spirit": {
@@ -906,10 +906,10 @@ export const cAbilitiesData = {
   "Explosion": {
     description: `${damage("Phys. Fire", "All Enemies", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${increase("Fire Damage", "Low", "Self", null, null, null, null)}`,
     valuesByOverboost: {
-      damage: ["390", "", "", "", "", "", "620", "620", "620", "620", "700"],
-      fireDamageIncreaseDur: ["25", "", "", "", "", "", "30", "30", "30", "30", "35"],
-      fireDamageIncreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "7"],
-      fireDamageIncreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"]
+      damage: ["390", "530", "530", "530", "530", "530", "620", "620", "620", "620", "700"],
+      fireDamageIncreaseDur: ["25", "28", "28", "28", "28", "28", "30", "30", "30", "30", "35"],
+      fireDamageIncreaseExt: ["5", "5", "5", "5", "5", "5", "6", "6", "6", "6", "7"],
+      fireDamageIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
     }
   },
   "Blizzara Surge A (4)": {
@@ -1052,6 +1052,107 @@ export const cAbilitiesData = {
       pDefIncreaseDur: ["12", "", "", "", "", "", "16", "16", "16", "16", "20"],
       pDefIncreaseExt: ["4", "", "", "", "", "", "5", "5", "5", "5", "6"]
     }
+  },
+  "Blizzaga A (4)": {
+    description: `${damage("Mag. Ice", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["280", "340", "340", "340", "340", "340", "440", "440", "440", "440", "520"]
+    }
+  },
+  "Gilded Spirit": {
+    description: `${increaseLimitGauge(undefined, "Self")}\nAlso, ${heal("Mag.", "Self")}\n${regen("Self", null, 3)}`,
+    valuesByOverboost: {
+      limitGaugeIncreasePot: ["5", "", "", "", "", "", "8", "8", "8", "8", "10"],
+      heal: ["9", "", "", "", "", "", "12", "12", "12", "12", "13"],
+      regenDur: ["9", "", "", "", "", "", "12", "12", "12", "12", "15"]
+    }
+  },
+  "Spellgun Shower": {
+    description: `${damage("Mag. Non-elem.", "All Enemies", 10)}\nAlso, ${decrease("PATK", "Mid", "All Enemies", null, null, null)}\n${decrease("MATK", "Mid", "All Enemies", null, null, null)}\n${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["340", "", "", "", "", "", "480", "480", "480", "480", "540"],
+      pAtkDecreaseDur: ["18", "", "", "", "", "", "20", "20", "20", "20", "25"],
+      pAtkDecreaseExt: ["6", "", "", "", "", "", "6", "6", "6", "6", "8"],
+      pAtkDecreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      mAtkDecreaseDur: ["18", "", "", "", "", "", "20", "20", "20", "20", "25"],
+      mAtkDecreaseExt: ["6", "", "", "", "", "", "6", "6", "6", "6", "8"],
+      mAtkDecreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      limitGaugeIncreasePot: ["2", "", "", "", "", "", "3", "3", "3", "3", "3"]
+    }
+  },
+  "Stormround": {
+    description: `${damage("Phys. Wind", "Single Enemy", null)}\nThe higher your HP, the higher the ability pot. (max: x3).\nAlso, ${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["220", "", "", "", "", "", "340", "340", "340", "340", "400"],
+      limitGaugeIncreasePot: ["3", "", "", "", "", "", "4", "4", "4", "4", "4"]
+    }
+  },
+  "Quick Draw": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nThe lower your HP, the higher the ability pot. (max: x3).\nAlso, ${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["160", "190", "190", "190", "190", "190", "250", "250", "250", "250", "300"],
+      limitGaugeIncreasePot: ["1", "1", "1", "1", "1", "1", "2", "2", "2", "2", "2"]
+    }
+  },
+  "Wardshot": {
+    description: `${increase("MATK", null, "Self", null, null, null, "High")}\nAlso, ${increase("MDEF", null, "Self", null, null, null, "High")}\n${increaseLimitGauge(undefined, "Self")}\n${heal("Mag.", "Self")}`,
+    valuesByOverboost: {
+      mAtkIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mAtkIncreaseDur: ["30", "34", "34", "34", "34", "34", "34", "34", "34", "34", "38"],
+      mAtkIncreaseExt: ["10", "11", "11", "11", "11", "11", "11", "11", "11", "11", "12"],
+      mDefIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mDefIncreaseDur: ["30", "34", "34", "34", "34", "34", "34", "34", "34", "34", "38"],
+      mDefIncreaseExt: ["10", "11", "11", "11", "11", "11", "11", "11", "11", "11", "12"],
+      limitGaugeIncreasePot: ["2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3"],
+      heal: ["11", "13", "13", "13", "13", "13", "14", "14", "14", "14", "15"]
+    }
+  },
+  "Sageshot": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${decrease("Earth Resist.", null, "Single Enemy", null, null, "High")}\n${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["320", "370", "370", "370", "370", "370", "450", "450", "450", "450", "510"],
+      earthResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      earthResistDecreaseDur: ["20", "25", "25", "25", "25", "25", "30", "30", "30", "30", "35"],
+      earthResistDecreaseExt: ["6", "8", "8", "8", "8", "8", "10", "10", "10", "10", "11"],
+      limitGaugeIncreasePot: ["2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3"]
+    }
+  },
+  "Poison Sphere": {
+    description: `${damage("Mag. Non-elem.", "All Enemies", 10)}\nAlso, ${increaseLimitGauge(undefined, "Self")}\nWhen [Rng.: Self]'s HP is 30% or less, ${apply("Ailment: Poison", "All Enemies", null, null, null)}`,
+    valuesByOverboost: {
+      damage: ["280", "340", "340", "340", "340", "340", "440", "440", "440", "440", "520"],
+      limitGaugeIncreasePot: ["2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3"],
+      poisonDur: ["12", "16", "16", "16", "16", "16", "20", "20", "20", "20", "25"],
+      poisonExt: ["3", "4", "4", "4", "4", "4", "5", "5", "5", "5", "6"]
+    }
+  },
+  "Sludge Shot": {
+    description: `${damage("Mag. Earth", "Single Enemy", null)}\nAlso, when Debuff is granted to Target, x1.2 damage.\n${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["520", "", "", "", "", "", "780", "780", "780", "780", "940"],
+      limitGaugeIncreasePot: ["4", "", "", "", "", "", "5", "5", "5", "5", "5"]
+    }
+  },
+  "Gunspinner Shot": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, when Debuff is granted to Target, x1.5 damage.\n${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["370", "", "", "", "", "", "570", "570", "570", "570", "700"],
+      limitGaugeIncreasePot: ["2", "", "", "", "", "", "3", "3", "3", "3", "3"]
+    }
+  },
+  "Pentaburst Shot": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["650", "", "", "", "", "", "1,140", "1,140", "1,140", "1,140", "1,300"],
+      limitGaugeIncreasePot: ["4", "", "", "", "", "", "5", "5", "5", "5", "5"]
+    }
+  },
+  "Spinning Pentashot": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nThe lower your HP, the higher the ability pot. (max: x1.5).\nAlso, ${increaseLimitGauge(undefined, "Self")}`,
+    valuesByOverboost: {
+      damage: ["400", "", "", "", "", "", "620", "620", "620", "620", "750"],
+      limitGaugeIncreasePot: ["3", "", "", "", "", "", "5", "5", "5", "5", "5"]
+    }
   }
 };
 
@@ -1127,13 +1228,21 @@ function regen(range, duration, extension) {
 function apply(effect, range, rate, duration, extension) {
   if (arguments.length !== apply.length) throw new Error();
   const effectKey = getEffectKey(effect);
-  const rte = rate ? rate : `{{${effectKey}Rate}}`;
+  const rateString = rate === null      ? ""                               :
+                     rate === undefined ? ` [Rate: {{${effectKey}Rate}}%]` :
+                                          ` [Rate: ${rate}%]`              ;
   const dur = duration ? duration : `{{${effectKey}Dur}}`;
   const ext = extension ? extension : `{{${effectKey}Ext}}`;
-  return `${effect} is applied [Rng.: ${range}] [Rate: ${rte}%]. [Dur.: ${dur}s] [Ext.: +${ext}s]`;
+  return `${effect} is applied [Rng.: ${range}]${rateString}. [Dur.: ${dur}s] [Ext.: +${ext}s]`;
 }
 
 function remove(effect, range) {
   if (arguments.length !== remove.length) throw new Error();
   return `Removes ${effect} [Rng.: ${range}].`;
+}
+
+function increaseLimitGauge(potency, range) {
+  if (arguments.length !== increaseLimitGauge.length) throw new Error();
+  const pot = potency ? potency : "{{limitGaugeIncreasePot}}";
+  return `Increases Limit Gauge [Pot.: ${pot}%] [Rng.: ${range}].`;
 }
