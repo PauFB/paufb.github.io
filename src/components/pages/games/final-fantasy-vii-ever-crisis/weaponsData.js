@@ -1878,5 +1878,195 @@ export const weaponsData = {
       mAtk: 281,
       heal: 164
     }
+  },
+  "Personal Style": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Mad Bull",
+    fiveStarLevel120: {
+      pAtk: 256,
+      mAtk: 218,
+      heal: 178
+    }
+  },
+  "Crewkicker": {
+    character: "Glenn",
+    element: "Fire",
+    cAbility: "Spinning Blaze",
+    fiveStarLevel120: {
+      pAtk: 260,
+      mAtk: 214,
+      heal: 178
+    }
+  },
+  "Jiggy Fam": {
+    character: "Glenn",
+    element: "Earth",
+    cAbility: "Quaga A (3)",
+    fiveStarLevel120: {
+      pAtk: 228,
+      mAtk: 239,
+      heal: 184
+    }
+  },
+  "Hardcore Squad": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Good Vibes",
+    fiveStarLevel120: {
+      pAtk: 231,
+      mAtk: 241,
+      heal: 181
+    }
+  },
+  "Rest in Peace": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Hell's Penalty",
+    fiveStarLevel120: {
+      pAtk: 283,
+      mAtk: 205,
+      heal: 167
+    }
+  },
+  "Ultimatic": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Skullknocker",
+    fiveStarLevel120: {
+      pAtk: 275,
+      mAtk: 199,
+      heal: 178
+    }
+  },
+  "Piece of Cake": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Dual Slash",
+    fiveStarLevel120: {
+      pAtk: 268,
+      mAtk: 212,
+      heal: 174
+    }
+  },
+  "Shockbuster": {
+    character: "Glenn",
+    element: "Lightning",
+    cAbility: "Thundaga A (4)",
+    fiveStarLevel120: {
+      pAtk: 233,
+      mAtk: 239,
+      heal: 181
+    }
+  },
+  "Apology in Hell": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Twin Hell",
+    fiveStarLevel120: {
+      pAtk: 249,
+      mAtk: 225,
+      heal: 178
+    }
+  },
+  "Squeaky Hammer": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Crushing Jump",
+    fiveStarLevel120: {
+      pAtk: 243,
+      mAtk: 201,
+      heal: 151
+    }
+  },
+  "Inferno Grave": {
+    character: "Glenn",
+    element: "Fire",
+    cAbility: "Fira Surge (9)",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 215,
+      heal: 165
+    }
+  },
+  "Pumpkin Lamppost": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Stalwart Bravery (2)",
+    fiveStarLevel120: {
+      pAtk: 212,
+      mAtk: 226,
+      heal: 208
+    }
+  },
+  "Thousand Waves": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Magic Ray (2)",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 191,
+      heal: 153
+    }
+  },
+  "Steiner's Blade": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Power Break",
+    fiveStarLevel120: {
+      pAtk: 197,
+      mAtk: 186,
+      heal: 150
+    }
+  },
+  "Stream Slasher": {
+    character: "Glenn",
+    element: "Water",
+    cAbility: "Flooding Stream",
+    fiveStarLevel120: {
+      pAtk: 281,
+      mAtk: 214,
+      heal: 161
+    }
+  },
+  "Best Wishes": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Armora Breach Surge (3)",
+    fiveStarLevel120: {
+      pAtk: 204,
+      mAtk: 215,
+      heal: 172
+    }
+  },
+  "Radglaive": {
+    character: "Glenn",
+    element: "Water",
+    cAbility: "Watera Surge A (4)",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 215,
+      heal: 168
+    }
+  },
+  "Silver Sol Buster": {
+    character: "Glenn",
+    element: "Fire",
+    cAbility: "Fira Surge A (6)",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 214,
+      heal: 170
+    }
+  },
+  "Slay the Day": {
+    character: "Glenn",
+    element: "Non-elemental",
+    cAbility: "Rising Strike",
+    fiveStarLevel120: {
+      pAtk: 277,
+      mAtk: 220,
+      heal: 160
+    }
   }
 };
