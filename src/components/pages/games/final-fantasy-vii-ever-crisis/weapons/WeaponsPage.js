@@ -126,9 +126,9 @@ export function WeaponsPage({ isViewportNarrow }) {
   }
 
   function getWeaponCAbility(weapon, overboostLevel) {
-  const { description, valuesByOverboost } = cAbilities[weapon.cAbility];
-  return description.replace(/\{\{(\w+)\}\}/g, (_, key) => valuesByOverboost[key][overboostLevel]);
-}
+    const { description, valuesByOverboost } = cAbilities[weapon.cAbility];
+    return description.replace(/\{\{(\w+)\}\}/g, (_, key) => valuesByOverboost[key][overboostLevel]);
+  }
 
   return (
     <>
@@ -138,23 +138,17 @@ export function WeaponsPage({ isViewportNarrow }) {
           <div className={`${styles["filters-container-row"]} ${isViewportNarrow ? styles["filters-container-row--narrow"] : ""}`}>
             <div className={styles["filters-container-column"]}>
               <div className={styles["filter"]}>
-                <div className={styles["filter-name"]}>
-                  Name
-                  <input type="text" className={styles["filter-name__input"]} onChange={handleNameQueryChange} />
-                </div>
-              </div>
-              <div className={styles["filter"]}>
                 <div className={styles["filter-characters"]}>
                   {Object.entries(characters).map(([characterName, character]) => (
-                    <label className={`${styles["filter-characters__character"]} ${selectedCharacters.includes(characterName) ? styles["character--selected"] : ""}`} key={characterName}>
+                    <label className={`${styles["character-toggle"]} ${selectedCharacters.includes(characterName) ? styles["character-toggle--selected"] : ""}`} key={characterName}>
                       <input
                         type="checkbox"
                         value={characterName}
                         onChange={handleSelectedCharactersChange}
                         style={{ display: "none" }}
                       />
-                      <img className={styles["filter-characters__character__icon"]} src={character.icon} title={characterName} alt="" />
-                      <div className={styles["filter-characters__character__name"]}>
+                      <img src={character.icon} title={characterName} alt="" />
+                      <div className={styles["character-toggle-name"]}>
                         {characterName}
                       </div>
                     </label>
@@ -164,30 +158,9 @@ export function WeaponsPage({ isViewportNarrow }) {
             </div>
             <div className={styles["filters-container-column"]}>
               <div className={styles["filter"]}>
-                <div className={styles["filter-level"]}>
-                  Level
-                  <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} disabled>
-                    {[...Array(120)].map((_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
-                  </select>
-                </div>
-              </div>
-              <div className={styles["filter"]}>
-                <div className={styles["filter-overboost"]}>
-                  Overboost
-                  <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
-                    <option value="0">0</option>
-                    <option value="6">6</option>
-                    <option value="10">10</option>
-                  </select>
-                  <div className={styles["filter-overboost__stars"]}>
-                    <OverboostStars overboostLevel={selectedOverboostLevel} />
-                  </div>
-                </div>
-              </div>
-              <div className={styles["filter"]}>
                 <div className={styles["filter-elements"]}>
                   {Object.entries(elements).map(([elementName, element]) => (
-                    <label className={`${styles["filter-elements__element"]} ${selectedElements.includes(elementName) ? styles["element--selected"] : ""}`} key={elementName}>
+                    <label className={`${styles["element-toggle"]} ${selectedElements.includes(elementName) ? styles["element-toggle--selected"] : ""}`} key={elementName}>
                       <input
                         type="checkbox"
                         value={elementName}
@@ -195,7 +168,6 @@ export function WeaponsPage({ isViewportNarrow }) {
                         style={{ display: "none" }}
                       />
                       <span
-                        className={styles["filter-elements__element__icon"]}
                         title={elementName}
                         style={{ backgroundImage: `url(${elementIcons(`./${element.icon}`)})` }}
                       />
@@ -203,6 +175,47 @@ export function WeaponsPage({ isViewportNarrow }) {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles["filters-container"]}>
+          <div className={`${styles["filters-container-row"]} ${isViewportNarrow ? styles["filters-container-row--narrow"] : ""}`}>
+            <div className={styles["filters-container-column"]}>
+              <div className={styles["filter-name"]}>
+                <svg width="24px" height="24px" viewBox="0 -960 960 960" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <input type="text" onChange={handleNameQueryChange} placeholder="Search by name" />
+              </div>
+            </div>
+            <div className={styles["level-and-overboost-container"]}>
+              <div className={styles["filters-container-column"]}>
+                <div className={styles["filter"]}>
+                  <div className={styles["filter-level"]}>
+                    Level
+                    <select defaultValue={selectedWeaponLevel} onChange={e => setSelectedWeaponLevel(e.target.value)} disabled>
+                      {[...Array(120)].map((_, i) => <option key={i + 1} value={i + 1}>{i + 1}</option>)}
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div className={styles["filters-container-column"]}>
+                <div className={styles["filter"]}>
+                  <div className={styles["filter-overboost"]}>
+                    Overboost
+                    <select defaultValue={selectedOverboostLevel} onChange={e => setSelectedOverboostLevel(e.target.value)}>
+                      <option value="0">0</option>
+                      <option value="6">6</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div className={styles["filter-overboost__stars"]}>
+                      <OverboostStars overboostLevel={selectedOverboostLevel} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles["number-of-weapons"]}>
+              <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m240-160 40-160H120l20-80h160l40-160H180l20-80h160l40-160h80l-40 160h160l40-160h80l-40 160h160l-20 80H660l-40 160h160l-20 80H600l-40 160h-80l40-160H360l-40 160h-80Zm140-240h160l40-160H420l-40 160Z"/></svg>
+              {Object.keys(weapons).length}
             </div>
           </div>
         </div>

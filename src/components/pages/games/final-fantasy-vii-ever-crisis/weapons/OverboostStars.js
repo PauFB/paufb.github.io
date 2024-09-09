@@ -24,18 +24,8 @@ export function OverboostStars({ overboostLevel, size = "1rem" }) {
   return (
     <>
       {[...Array(5)].map((_, i) =>
-        <svg
-          key={i}
-          width={size}
-          height={size}
-          viewBox="0 0 24 24"
-          fill={starColors[i]}
-          stroke={starColors[i]}
-          strokeWidth="2"
-        >
-          <polygon
-            points="12 2 15 8.5 22 9.3 17 14.1 18.6 21 12 17.7 5.4 21 7 14.1 2 9.3 9 8.5 12 2"
-          />
+        <svg key={i} width={size} height={size} fill={starColors[i]} viewBox="0 0 512 512">
+          <polygon points="512,207.9 315.1,207.9 256,11 196.9,207.9 0,207.9 157.5,316.2 98.5,503.3 256,404.8 413.5,503.3 354.5,316.2 "/>
         </svg>
       )}
     </>
