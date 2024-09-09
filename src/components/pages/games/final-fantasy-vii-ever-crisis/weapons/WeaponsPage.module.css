@@ -85,9 +85,30 @@
   gap: 0.75rem;
 }
 
-.number-of-weapons {
+.filter-layout {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+
+  & .layout-grid,
+  & .layout-table {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  & .layout-grid--selected,
+  & .layout-table--selected {
+    & svg {
+      fill: white;
+    }
+  }
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 0.25rem;
   color: white;
   background-color: rgb(5, 22, 41);
@@ -308,4 +329,36 @@
 .table-data-c-ability {
   max-height: 7em;
   overflow-y: scroll;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.weapon-grid-entry {
+  display: flex;
+  color: white;
+  width: 15rem;
+}
+
+.weapon-grid-image {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(5, 41, 80);
+  border-style: solid;
+  border-color: rgb(21, 81, 151);
+  border-radius: 4px;
+  border-width: 0.125rem;
+  outline: rgb(21, 81, 151) solid calc(0.3rem / 2.5);
+  outline-width: 0.125rem;
+  outline-offset: calc(-0.125rem * 3);
+  padding: calc(0.125rem * 3);
+
+  & img {
+    width: 4rem;
+    height: 4rem;
+  }
 }

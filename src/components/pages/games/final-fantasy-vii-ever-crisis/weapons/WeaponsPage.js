@@ -15,6 +15,7 @@ export function WeaponsPage({ isViewportNarrow }) {
   const [selectedWeaponLevel, setSelectedWeaponLevel] = useState(120);
   const [selectedOverboostLevel, setSelectedOverboostLevel] = useState(10);
   const [sortConfig, setSortConfig] = useState({ column: null, direction: null });
+  const [layout, setLayout] = useState("table");
 
   useEffect(() => {
     Promise.all([
@@ -95,7 +96,7 @@ export function WeaponsPage({ isViewportNarrow }) {
                                              <span style={{ marginLeft: "0.25rem" }} className="arrow-up-down" /> ;
   }
 
-  function getWeaponPatk(weapon, overboostLevel) {
+  function getWeaponPAtk(weapon, overboostLevel) {
     const overboostLevelMultipliers = [0, 0.4, 0.3, 0.2, 0.1, 0.1, 0.1, 0.05, 0.05, 0.05, 0.05];
     const basePAtk = weapon.fiveStarLevel120.pAtk;
     let additionalPAtk = 0;
@@ -105,7 +106,7 @@ export function WeaponsPage({ isViewportNarrow }) {
     return Math.floor(basePAtk + additionalPAtk);
   }
 
-  function getWeaponMatk(weapon, overboostLevel) {
+  function getWeaponMAtk(weapon, overboostLevel) {
     const overboostLevelMultipliers = [0, 0.4, 0.3, 0.2, 0.1, 0.1, 0.1, 0.05, 0.05, 0.05, 0.05];
     const baseMAtk = weapon.fiveStarLevel120.mAtk;
     let additionalMAtk = 0;
@@ -213,105 +214,132 @@ export function WeaponsPage({ isViewportNarrow }) {
                 </div>
               </div>
             </div>
-            <div className={styles["number-of-weapons"]}>
+          </div>
+          <div className={styles["filters-container-row"]}>
+            <div className={styles["filter"]}>
+              <div className={styles["filter-layout"]}>
+                Layout
+                <div className={`${styles["layout-table"]} ${layout === "table" ? styles["layout-table--selected"] : ""}`} onClick={() => setLayout("table")}>
+                  <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M320-280q17 0 28.5-11.5T360-320q0-17-11.5-28.5T320-360q-17 0-28.5 11.5T280-320q0 17 11.5 28.5T320-280Zm0-160q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 320h240v-80H440v80Zm0-160h240v-80H440v80Zm0-160h240v-80H440v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+                </div>
+                <div className={`${styles["layout-grid"]} ${layout === "grid" ? styles["layout-grid--selected"] : ""}`} onClick={() => setLayout("grid")}>
+                  <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-520v-320h320v320H120Zm0 400v-320h320v320H120Zm400-400v-320h320v320H520Zm0 400v-320h320v320H520ZM200-600h160v-160H200v160Zm400 0h160v-160H600v160Zm0 400h160v-160H600v160Zm-400 0h160v-160H200v160Zm400-400Zm0 240Zm-240 0Zm0-240Z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div className={styles["statistic"]}>
               <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m240-160 40-160H120l20-80h160l40-160H180l20-80h160l40-160h80l-40 160h160l40-160h80l-40 160h160l-20 80H660l-40 160h160l-20 80H600l-40 160h-80l40-160H360l-40 160h-80Zm140-240h160l40-160H420l-40 160Z"/></svg>
               {Object.keys(weapons).length}
             </div>
           </div>
         </div>
         <div className={styles["table-decoration"]}>
-          <div className={styles["table-container"]}>
-            <table className={styles["table"]}>
-              <colgroup>
-                <col style={{ width: "calc(100% / 6)" }} />
-                <col style={{ width: "calc(100% / 12)" }} />
-                <col style={{ width: "calc(100% / 12)" }} />
-                <col style={{ width: "calc(100% / 12)" }} />
-                <col style={{ width: "calc(100% / 12)" }} />
-                <col style={{ width: "calc(100% / 2)" }} />
-              </colgroup>
-              <thead>
-                <tr className={styles["table-head-row"]}>
-                  <th onClick={() => handleOnClickColumnSorting("weapon")} className={styles["table-header--sortable"]}>
-                    <div className={styles["table-header-cell"]}>
-                      Weapon {renderColumnSortIcon("weapon")}
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles["table-header-cell"]}>
-                      Element
-                    </div>
-                  </th>
-                  <th onClick={() => handleOnClickColumnSorting("pAtk")} className={styles["table-header--sortable"]}>
-                    <div className={styles["table-header-cell"]}>
-                      PATK {renderColumnSortIcon("pAtk")}
-                    </div>
-                  </th>
-                  <th onClick={() => handleOnClickColumnSorting("mAtk")} className={styles["table-header--sortable"]}>
-                    <div className={styles["table-header-cell"]}>
-                      MATK {renderColumnSortIcon("mAtk")}
-                    </div>
-                  </th>
-                  <th onClick={() => handleOnClickColumnSorting("heal")} className={styles["table-header--sortable"]}>
-                    <div className={styles["table-header-cell"]}>
-                      HEAL {renderColumnSortIcon("heal")}
-                    </div>
-                  </th>
-                  <th>
-                    <div className={styles["table-header-cell"]}>
-                      C. Ability
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
-                  <tr className={styles["table-row"]} key={weaponName}>
-                    <td className={`${styles["table-data"]} ${styles["table-data--nowrap"]}`}>
-                      <div className={styles["table-data-weapon-container-row"]}>
-                        <div className={styles["table-data-weapon-container-column"]}>
-                          <img src={characters[weapon.character].icon}
-                            className={styles["table-data-weapon-container-character"]}
-                            title={weapon.character}
-                            alt=""
-                          />
-                        </div>
-                        <div className={styles["table-data-weapon-container-column"]}>
-                          <div>
-                            {weaponName}
-                          </div>
-                          <div>
-                            <OverboostStars overboostLevel={selectedOverboostLevel} />
-                          </div>
-                        </div>
+          {layout === "table" && (
+            <div className={styles["table-container"]}>
+              <table className={styles["table"]}>
+                <colgroup>
+                  <col style={{ width: "calc(100% / 6)" }} />
+                  <col style={{ width: "calc(100% / 12)" }} />
+                  <col style={{ width: "calc(100% / 12)" }} />
+                  <col style={{ width: "calc(100% / 12)" }} />
+                  <col style={{ width: "calc(100% / 12)" }} />
+                  <col style={{ width: "calc(100% / 2)" }} />
+                </colgroup>
+                <thead>
+                  <tr className={styles["table-head-row"]}>
+                    <th onClick={() => handleOnClickColumnSorting("weapon")} className={styles["table-header--sortable"]}>
+                      <div className={styles["table-header-cell"]}>
+                        Weapon {renderColumnSortIcon("weapon")}
                       </div>
-                    </td>
-                    <td className={`${styles["table-data"]}} ${styles["table-data--centered"]}`}>
-                      <img src={elementIcons(`./${elements[weapon.element].icon}`)}
-                        className={styles["table-data-element"]}
-                        title={weapon.element}
-                        alt=""
-                      />
-                    </td>
-                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
-                      {getWeaponPatk(weapon, selectedOverboostLevel)}
-                    </td>
-                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
-                      {getWeaponMatk(weapon, selectedOverboostLevel)}
-                    </td>
-                    <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
-                      {getWeaponHeal(weapon, selectedOverboostLevel)}
-                    </td>
-                    <td className={styles["table-data"]}>
-                      <div className={styles["table-data-c-ability"]}>
-                        {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                    </th>
+                    <th>
+                      <div className={styles["table-header-cell"]}>
+                        Element
                       </div>
-                    </td>
+                    </th>
+                    <th onClick={() => handleOnClickColumnSorting("pAtk")} className={styles["table-header--sortable"]}>
+                      <div className={styles["table-header-cell"]}>
+                        PATK {renderColumnSortIcon("pAtk")}
+                      </div>
+                    </th>
+                    <th onClick={() => handleOnClickColumnSorting("mAtk")} className={styles["table-header--sortable"]}>
+                      <div className={styles["table-header-cell"]}>
+                        MATK {renderColumnSortIcon("mAtk")}
+                      </div>
+                    </th>
+                    <th onClick={() => handleOnClickColumnSorting("heal")} className={styles["table-header--sortable"]}>
+                      <div className={styles["table-header-cell"]}>
+                        HEAL {renderColumnSortIcon("heal")}
+                      </div>
+                    </th>
+                    <th>
+                      <div className={styles["table-header-cell"]}>
+                        C. Ability
+                      </div>
+                    </th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
+                    <tr className={styles["table-row"]} key={weaponName}>
+                      <td className={`${styles["table-data"]} ${styles["table-data--nowrap"]}`}>
+                        <div className={styles["table-data-weapon-container-row"]}>
+                          <div className={styles["table-data-weapon-container-column"]}>
+                            <img src={characters[weapon.character].icon}
+                              className={styles["table-data-weapon-container-character"]}
+                              title={weapon.character}
+                              alt=""
+                            />
+                          </div>
+                          <div className={styles["table-data-weapon-container-column"]}>
+                            <div>
+                              {weaponName}
+                            </div>
+                            <div>
+                              <OverboostStars overboostLevel={selectedOverboostLevel} />
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className={`${styles["table-data"]}} ${styles["table-data--centered"]}`}>
+                        <img src={elementIcons(`./${elements[weapon.element].icon}`)}
+                          className={styles["table-data-element"]}
+                          title={weapon.element}
+                          alt=""
+                        />
+                      </td>
+                      <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
+                        {getWeaponPAtk(weapon, selectedOverboostLevel)}
+                      </td>
+                      <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
+                        {getWeaponMAtk(weapon, selectedOverboostLevel)}
+                      </td>
+                      <td className={`${styles["table-data"]} ${styles["table-data--centered"]}`}>
+                        {getWeaponHeal(weapon, selectedOverboostLevel)}
+                      </td>
+                      <td className={styles["table-data"]}>
+                        <div className={styles["table-data-c-ability"]}>
+                          {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+          {layout === "grid" && (
+            <div className={styles["grid-container"]}>
+              {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
+                <div className={styles["weapon-grid-entry"]}>
+                  <div className={styles["weapon-grid-image"]}>
+                    <img src={""} title={weaponName} alt="" />
+                  </div>
+                  {weaponName}
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>
