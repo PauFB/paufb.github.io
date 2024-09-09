@@ -1551,7 +1551,7 @@ export const cAbilitiesData = {
       damage: ["370", "", "", "", "", "", "570", "570", "570", "570", "700"]
     }
   },
-  "Fira Surge (9)": {
+  "Fira Surge (5)": {
     description: `${damage("Mag. Fire", "Single Enemy", null)}`,
     valuesByOverboost: {
       damage: ["320", "", "", "", "", "", "430", "430", "430", "430", "450"]
@@ -1601,7 +1601,7 @@ export const cAbilitiesData = {
       damage: ["210", "", "", "", "", "", "280", "280", "280", "280", "290"]
     }
   },
-  "Fira Surge A (6)": {
+  "Fira Surge A (5)": {
     description: `${damage("Mag. Fire", "All Enemies", null)}`,
     valuesByOverboost: {
       damage: ["210", "", "", "", "", "", "280", "280", "280", "280", "290"]
@@ -1751,6 +1751,161 @@ export const cAbilitiesData = {
     valuesByOverboost: {
       damage: ["320", "", "", "", "", "", "430", "430", "430", "430", "450"]
     }
+  },
+  "Pineapple Shot": {
+    description: `${damage("Phys. Non-elem.", "All Enemies", 10)}`,
+    valuesByOverboost: {
+      damage: ["370", "440", "440", "440", "440", "440", "580", "580", "580", "580", "690"]
+    }
+  },
+  "Aeroga A": {
+    description: `${damage("Mag. Wind", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["270", "320", "320", "320", "320", "320", "420", "420", "420", "420", "500"]
+    }
+  },
+  "Hydroshot": {
+    description: `${damage("Phys. Water", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["420", "500", "500", "500", "500", "500", "660", "660", "660", "660", "790"]
+    }
+  },
+  "Laser Spark": {
+    description: `${damage("Mag. Lightning", "Single Enemy", null)}\nAlso, ${decrease("MDEF", "Mid", "Single Enemy", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      damage: ["340", "390", "390", "390", "390", "390", "480", "480", "480", "480", "540"],
+      mDefDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      mDefDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"],
+      mDefDecreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Potion Volley": {
+    description: `${heal("Mag.", "Self")}\nAlso, ${remove("Ailment: Poison, Ailment: Darkness", "Self")}`,
+    valuesByOverboost: {
+      heal: ["117", "140", "140", "140", "140", "140", "152", "152", "152", "152", "163"]
+    }
+  },
+  "Stalwart Manaward (3)": {
+    description: `${increase("MDEF", undefined, "Single Ally", null, undefined, undefined, "High")}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      mDefIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mDefIncreaseDur: ["30", "34", "34", "34", "34", "34", "34", "34", "34", "34", "38"],
+      mDefIncreaseExt: ["10", "11", "11", "11", "11", "11", "11", "11", "11", "11", "12"],
+      heal: ["9", "11", "11", "11", "11", "11", "12", "12", "12", "12", "13"]
+    }
+  },
+  "Barrage": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("MATK", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["340", "390", "390", "390", "390", "390", "480", "480", "480", "480", "540"],
+      mAtkDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mAtkDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      mAtkDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Diving Burst": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("Ice Resist.", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["340", "390", "390", "390", "390", "390", "480", "480", "480", "480", "540"],
+      iceResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      iceResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      iceResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Quietude": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${apply("Ailment: Silence", "Single Enemy", undefined, 5, 2)}`,
+    valuesByOverboost: {
+      damage: ["420", "500", "500", "500", "500", "500", "660", "660", "660", "660", "790"],
+      silenceRate: ["20", "20", "20", "20", "20", "20", "30", "30", "30", "30", "30"]
+    }
+  },
+  "Parading Shot": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${increaseCommandGauge(20)}`,
+    valuesByOverboost: {
+      damage: ["330", "", "", "", "", "", "510", "510", "510", "510", "620"]
+    }
+  },
+  "Debravera Surge (3)": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PATK", "Low", "Single Enemy", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["260", "300", "300", "300", "300", "300", "350", "350", "350", "350", "360"],
+      pAtkDecreaseDur: ["20", "22", "22", "22", "22", "22", "25", "25", "25", "25", "28"],
+      pAtkDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "9"]
+    }
+  },
+  "Striking Quintet": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}`,
+    valuesByOverboost: {
+      damage: ["420", "", "", "", "", "", "660", "660", "660", "660", "790"]
+    }
+  },
+  "Solid Manaward (2)": {
+    description: `${increase("MDEF", "Mid", "Single Ally", null, undefined, undefined, undefined)}\nAlso, ${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      mDefIncreaseDur: ["30", "", "", "", "", "", "34", "34", "34", "34", "38"],
+      mDefIncreaseExt: ["10", "", "", "", "", "", "11", "11", "11", "11", "12"],
+      mDefIncreaseMaxPot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      heal: ["9", "", "", "", "", "", "12", "12", "12", "12", "13"]
+    }
+  },
+  "Thundara Surge (2)": {
+    description: `${damage("Mag. Lightning", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["300", "", "", "", "", "", "410", "410", "410", "410", "420"]
+    }
+  },
+  "Rock Blast": {
+    description: `${damage("Mag. Earth", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["440", "530", "530", "530", "530", "530", "660", "660", "660", "660", "800"]
+    }
+  },
+  "Fira Surge A (6)": {
+    description: `${damage("Mag. Fire", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["210", "", "", "", "", "", "280", "280", "280", "280", "290"]
+    }
+  },
+  "Blazing Rose": {
+    description: `${damage("Mag. Fire", "Single Enemy", null)}\nAlso, when [Rng.: Self]'s HP is 50% or more, ${decrease("MDEF", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["390", "450", "450", "450", "450", "450", "550", "550", "550", "550", "620"],
+      mDefDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mDefDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      mDefDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"]
+    }
+  },
+  "Armora Breach Surge (4)": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PDEF", "Low", "Single Enemy", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["260", "", "", "", "", "", "350", "350", "350", "350", "360"],
+      pDefDecreaseDur: ["20", "", "", "", "", "", "25", "25", "25", "25", "28"],
+      pDefDecreaseExt: ["6", "", "", "", "", "", "7", "7", "7", "7", "9"]
+    }
+  },
+  "Bullet Hail": {
+    description: `${damage("Phys. Non-elem.", "All Enemies", null)}\nAlso, ${decrease("PATK", "Mid", "All Enemies", null, undefined, undefined, undefined)}\nWhen [Rng.: Self]'s HP is 50% or more, ${decrease("Fire Resist.", undefined, "All Enemies", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["350", "400", "400", "400", "400", "400", "490", "490", "490", "490", "560"],
+      pAtkDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      pAtkDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"],
+      pAtkDecreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      fireResistDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      fireResistDecreaseDur: ["20", "22", "22", "22", "22", "22", "26", "26", "26", "26", "30"],
+      fireResistDecreaseExt: ["6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "10"]
+    }
+  },
+  "Nightglint": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PDEF", undefined, "Single Enemy", null, undefined, undefined, "High")}\nWhen Buff is granted to [Rng.: Self], ${decrease("MDEF", undefined, "Single Enemy", null, undefined, undefined, "Mid")}`,
+    valuesByOverboost: {
+      damage: ["260", "", "", "", "", "", "360", "360", "360", "360", "420"],
+      pDefDecreasePot: ["Mid", "", "", "", "", "", "High", "High", "High", "High", "High"],
+      pDefDecreaseDur: ["16", "", "", "", "", "", "20", "20", "20", "20", "24"],
+      pDefDecreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "8"],
+      mDefDecreasePot: ["Low", "", "", "", "", "", "Mid", "Mid", "Mid", "Mid", "Mid"],
+      mDefDecreaseDur: ["16", "", "", "", "", "", "20", "20", "20", "20", "24"],
+      mDefDecreaseExt: ["5", "", "", "", "", "", "6", "6", "6", "6", "8"]
+    }
   }
 };
 
@@ -1852,4 +2007,10 @@ function increaseLimitGauge(potency, range) {
   if (arguments.length !== increaseLimitGauge.length) throw new Error();
   const pot = potency ? potency : "{{limitGaugeIncreasePot}}";
   return `Increases Limit Gauge [Pot.: ${pot}%] [Rng.: ${range}].`;
+}
+
+function increaseCommandGauge(potency) {
+  if (arguments.length !== increaseCommandGauge.length) throw new Error();
+  const pot = potency ? potency : "{{commandGaugeIncreasePot}}";
+  return `Increases Command Gauge [Pot.: ${pot}%]`;
 }

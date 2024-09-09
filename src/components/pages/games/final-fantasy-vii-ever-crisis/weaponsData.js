@@ -1982,7 +1982,7 @@ export const weaponsData = {
   "Inferno Grave": {
     character: "Glenn",
     element: "Fire",
-    cAbility: "Fira Surge (9)",
+    cAbility: "Fira Surge (5)",
     fiveStarLevel120: {
       pAtk: 212,
       mAtk: 215,
@@ -2052,7 +2052,7 @@ export const weaponsData = {
   "Silver Sol Buster": {
     character: "Glenn",
     element: "Fire",
-    cAbility: "Fira Surge A (6)",
+    cAbility: "Fira Surge A (5)",
     fiveStarLevel120: {
       pAtk: 207,
       mAtk: 214,
@@ -2247,6 +2247,206 @@ export const weaponsData = {
       pAtk: 215,
       mAtk: 199,
       heal: 175
+    }
+  },
+  "V39": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Pineapple Shot",
+    fiveStarLevel120: {
+      pAtk: 252,
+      mAtk: 225,
+      heal: 177
+    }
+  },
+  "Pulse Gun": {
+    character: "Lucia",
+    element: "Wind",
+    cAbility: "Aeroga A",
+    fiveStarLevel120: {
+      pAtk: 247,
+      mAtk: 225,
+      heal: 181
+    }
+  },
+  "Serpent Eater": {
+    character: "Lucia",
+    element: "Water",
+    cAbility: "Hydroshot",
+    fiveStarLevel120: {
+      pAtk: 222,
+      mAtk: 256,
+      heal: 175
+    }
+  },
+  "Thunderbird": {
+    character: "Lucia",
+    element: "Lightning",
+    cAbility: "Laser Spark",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 281,
+      heal: 168
+    }
+  },
+  "Tranquilizer Gun": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Potion Volley",
+    fiveStarLevel120: {
+      pAtk: 225,
+      mAtk: 205,
+      heal: 215
+    }
+  },
+  "SSR1976": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Stalwart Manaward (3)",
+    fiveStarLevel120: {
+      pAtk: 220,
+      mAtk: 262,
+      heal: 172
+    }
+  },
+  "Mad Minute": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Barrage",
+    fiveStarLevel120: {
+      pAtk: 243,
+      mAtk: 226,
+      heal: 182
+    }
+  },
+  "Bald Eagle": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Diving Burst",
+    fiveStarLevel120: {
+      pAtk: 264,
+      mAtk: 199,
+      heal: 188
+    }
+  },
+  "Black Rifle": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Quietude",
+    fiveStarLevel120: {
+      pAtk: 273,
+      mAtk: 207,
+      heal: 174
+    }
+  },
+  "Rubber Band Gun": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Parading Shot",
+    fiveStarLevel120: {
+      pAtk: 233,
+      mAtk: 199,
+      heal: 161
+    }
+  },
+  "Featherscatter": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Debravera Surge (3)",
+    fiveStarLevel120: {
+      pAtk: 201,
+      mAtk: 215,
+      heal: 174
+    }
+  },
+  "Barn Swallow": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Striking Quintet",
+    fiveStarLevel120: {
+      pAtk: 264,
+      mAtk: 204,
+      heal: 184
+    }
+  },
+  "Pumpkin Blaster": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Solid Manaward (2)",
+    fiveStarLevel120: {
+      pAtk: 180,
+      mAtk: 193,
+      heal: 158
+    }
+  },
+  "Rifle of Levin": {
+    character: "Lucia",
+    element: "Lightning",
+    cAbility: "Thundara Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 220,
+      heal: 167
+    }
+  },
+  "Holiday Revolver": {
+    character: "Lucia",
+    element: "Earth",
+    cAbility: "Rock Blast",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 275,
+      heal: 174
+    }
+  },
+  "Vivi's Magical Gun": {
+    character: "Lucia",
+    element: "Fire",
+    cAbility: "Fira Surge A (6)",
+    fiveStarLevel120: {
+      pAtk: 184,
+      mAtk: 199,
+      heal: 150
+    }
+  },
+  "Rose Musket": {
+    character: "Lucia",
+    element: "Fire",
+    cAbility: "Blazing Rose",
+    fiveStarLevel120: {
+      pAtk: 210,
+      mAtk: 275,
+      heal: 170
+    }
+  },
+  "Turks' Rifle": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Armora Breach Surge (4)",
+    fiveStarLevel120: {
+      pAtk: 222,
+      mAtk: 215,
+      heal: 157
+    }
+  },
+  "Marine Shooter": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Bullet Hail",
+    fiveStarLevel120: {
+      pAtk: 277,
+      mAtk: 212,
+      heal: 167
+    }
+  },
+  "Nightjar": {
+    character: "Lucia",
+    element: "Non-elemental",
+    cAbility: "Nightglint",
+    fiveStarLevel120: {
+      pAtk: 247,
+      mAtk: 247,
+      heal: 161
     }
   }
 };
