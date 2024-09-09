@@ -1618,6 +1618,139 @@ export const cAbilitiesData = {
       waterDamageIncreaseExt: ["5", "5", "5", "5", "5", "5", "6", "6", "6", "6", "7"],
       waterDamageIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
     }
+  },
+  "Shoot & Slash": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}`,
+    valuesByOverboost: {
+      damage: ["480", "", "", "", "", "", "750", "750", "750", "750", "900"]
+    }
+  },
+  "Waterga A (2)": {
+    description: `${damage("Mag. Water", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["290", "", "", "", "", "", "450", "450", "450", "450", "540"]
+    }
+  },
+  "Snowstorm": {
+    description: `${damage("Mag. Ice", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["290", "350", "350", "350", "350", "350", "450", "450", "450", "450", "540"]
+    }
+  },
+  "Healing Showers": {
+    description: `${heal("Mag.", "All Allies")}`,
+    valuesByOverboost: {
+      heal: ["53", "63", "63", "63", "63", "63", "69", "69", "69", "69", "74"]
+    }
+  },
+  "First Aid": {
+    description: `${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      heal: ["106", "", "", "", "", "", "138", "138", "138", "138", "148"]
+    }
+  },
+  "Amulet Tribute": {
+    description: `${increase("MDEF", undefined, "All Allies", null, undefined, undefined, "High")}\nAlso, ${heal("Mag.", "All Allies")}`,
+    valuesByOverboost: {
+      mDefIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mDefIncreaseDur: ["10", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+      mDefIncreaseExt: ["3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+      heal: ["5", "6", "6", "6", "6", "6", "7", "7", "7", "7", "7"]
+    }
+  },
+  "Recovery Circle": {
+    description: `${heal("Mag.", "All Allies")}\nAlso, ${increase("PDEF", "Mid", "All Allies", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      heal: ["42", "50", "50", "50", "50", "50", "54", "54", "54", "54", "59"],
+      pDefIncreaseDur: ["10", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+      pDefIncreaseExt: ["3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+      pDefIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Core Sting": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("MDEF", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["340", "390", "390", "390", "390", "390", "480", "480", "480", "480", "540"],
+      mDefDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      mDefDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      mDefDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Killing Slash": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}`,
+    valuesByOverboost: {
+      damage: ["380", "460", "460", "460", "460", "460", "590", "590", "590", "590", "720"]
+    }
+  },
+  "Stalwart Bravery (3)": {
+    description: `${increase("PATK", undefined, "Single Ally", null, undefined, undefined, "High")}\nAlso, ${regen("Single Ally", undefined, 3)}\n${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      pAtkIncreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      pAtkIncreaseDur: ["30", "34", "34", "34", "34", "34", "34", "34", "34", "34", "38"],
+      pAtkIncreaseExt: ["10", "11", "11", "11", "11", "11", "11", "11", "11", "11", "12"],
+      regenDur: ["9", "12", "12", "12", "12", "12", "12", "12", "12", "12", "15"],
+      heal: ["9", "11", "11", "11", "11", "11", "12", "12", "12", "12", "13"]
+    }
+  },
+  "Defending Jab": {
+    description: `${increase("MDEF", "Mid", "All Allies", null, undefined, undefined, undefined)}\nAlso, ${heal("Mag.", "All Allies")}\nWhen [Rng.: Self]'s HP is 50% or more, ${increase("PDEF", "Mid", "All Allies", null, undefined, undefined, undefined)}`,
+    valuesByOverboost: {
+      mDefIncreaseDur: ["10", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+      mDefIncreaseExt: ["3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+      mDefIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      heal: ["5", "6", "6", "6", "6", "6", "7", "7", "7", "7", "7"],
+      pDefIncreaseDur: ["10", "12", "12", "12", "12", "12", "12", "12", "12", "12", "14"],
+      pDefIncreaseExt: ["3", "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"],
+      pDefIncreaseMaxPot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"]
+    }
+  },
+  "Swing": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${remove("Phys. Defense Up", "Single Enemy")}`,
+    valuesByOverboost: {
+      damage: ["330", "400", "400", "400", "400", "400", "510", "510", "510", "510", "620"]
+    }
+  },
+  "X-Shot": {
+    description: `${damage("Phys. Non-elem.", "Single Enemy", 10)}\nAlso, ${decrease("PATK", undefined, "Single Enemy", null, undefined, undefined, "High")}`,
+    valuesByOverboost: {
+      damage: ["300", "350", "350", "350", "350", "350", "420", "420", "420", "420", "480"],
+      pAtkDecreasePot: ["Mid", "Mid", "Mid", "Mid", "Mid", "Mid", "High", "High", "High", "High", "High"],
+      pAtkDecreaseDur: ["20", "22", "22", "22", "22", "22", "22", "22", "22", "22", "25"],
+      pAtkDecreaseExt: ["6", "7", "7", "7", "7", "7", "7", "7", "7", "7", "8"]
+    }
+  },
+  "Ruinra Surge (2)": {
+    description: `${damage("Mag. Non-elem.", "Single Enemy", 10)}`,
+    valuesByOverboost: {
+      damage: ["320", "", "", "", "", "", "430", "430", "430", "430", "450"]
+    }
+  },
+  "Quakera Surge A (2)": {
+    description: `${damage("Mag. Earth", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["210", "", "", "", "", "", "280", "280", "280", "280", "290"]
+    }
+  },
+  "Solid Bravery (3)": {
+    description: `${increase("PATK", "Low", "Single Ally", null, undefined, undefined, "Mid")}\nAlso, ${regen("Single Ally", undefined, 3)}\n${heal("Mag.", "Single Ally")}`,
+    valuesByOverboost: {
+      pAtkIncreaseDur: ["34", "36", "36", "36", "36", "36", "40", "40", "40", "40", "44"],
+      pAtkIncreaseExt: ["11", "12", "12", "12", "12", "12", "13", "13", "13", "13", "14"],
+      regenDur: ["9", "12", "12", "12", "12", "12", "12", "12", "12", "12", "15"],
+      heal: ["9", "11", "11", "11", "11", "11", "12", "12", "12", "12", "13"]
+    }
+  },
+  "Aerora Surge A (2)": {
+    description: `${damage("Mag. Wind", "All Enemies", null)}`,
+    valuesByOverboost: {
+      damage: ["210", "240", "240", "240", "240", "240", "280", "280", "280", "280", "290"]
+    }
+  },
+  "Fira Impact (2)": {
+    description: `${damage("Phys. Fire", "Single Enemy", null)}`,
+    valuesByOverboost: {
+      damage: ["320", "", "", "", "", "", "430", "430", "430", "430", "450"]
+    }
   }
 };
 

@@ -2068,5 +2068,185 @@ export const weaponsData = {
       mAtk: 220,
       heal: 160
     }
+  },
+  "Broadsword: Axis": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Shoot & Slash",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 243,
+      heal: 205
+    }
+  },
+  "Orthodox Raven": {
+    character: "Matt",
+    element: "Water",
+    cAbility: "Waterga A (2)",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 254,
+      heal: 191
+    }
+  },
+  "Absolute Royal": {
+    character: "Matt",
+    element: "Ice",
+    cAbility: "Snowstorm",
+    fiveStarLevel120: {
+      pAtk: 210,
+      mAtk: 246,
+      heal: 195
+    }
+  },
+  "Prime Number": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Healing Showers",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 215,
+      heal: 220
+    }
+  },
+  "Espee Rapiere Next-G": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "First Aid",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 210,
+      heal: 232
+    }
+  },
+  "Core Defender": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Amulet Tribute",
+    fiveStarLevel120: {
+      pAtk: 197,
+      mAtk: 273,
+      heal: 182
+    }
+  },
+  "Centipede": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Recovery Circle",
+    fiveStarLevel120: {
+      pAtk: 205,
+      mAtk: 207,
+      heal: 229
+    }
+  },
+  "Stingray": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Core Sting",
+    fiveStarLevel120: {
+      pAtk: 193,
+      mAtk: 267,
+      heal: 191
+    }
+  },
+  "Killer Hornet": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Killing Slash",
+    fiveStarLevel120: {
+      pAtk: 267,
+      mAtk: 225,
+      heal: 165
+    }
+  },
+  "Bramble Spine": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Stalwart Bravery (3)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 260,
+      heal: 191
+    }
+  },
+  "Syringe Rapier": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Defending Jab",
+    fiveStarLevel120: {
+      pAtk: 207,
+      mAtk: 214,
+      heal: 222
+    }
+  },
+  "Foam Sword": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Swing",
+    fiveStarLevel120: {
+      pAtk: 226,
+      mAtk: 189,
+      heal: 175
+    }
+  },
+  "Slick Beetle": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "X-Shot",
+    fiveStarLevel120: {
+      pAtk: 254,
+      mAtk: 212,
+      heal: 185
+    }
+  },
+  "Bahamut Rapier": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Ruinra Surge (2)",
+    fiveStarLevel120: {
+      pAtk: 189,
+      mAtk: 226,
+      heal: 175
+    }
+  },
+  "Holiday Cane": {
+    character: "Matt",
+    element: "Earth",
+    cAbility: "Quakera Surge A (2)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 215,
+      heal: 175
+    }
+  },
+  "Giant Fork": {
+    character: "Matt",
+    element: "Non-elemental",
+    cAbility: "Solid Bravery (3)",
+    fiveStarLevel120: {
+      pAtk: 214,
+      mAtk: 207,
+      heal: 170
+    }
+  },
+  "Humus Rapier": {
+    character: "Matt",
+    element: "Wind",
+    cAbility: "Aerora Surge A (2)",
+    fiveStarLevel120: {
+      pAtk: 199,
+      mAtk: 220,
+      heal: 172
+    }
+  },
+  "Firefish": {
+    character: "Matt",
+    element: "Fire",
+    cAbility: "Fira Impact (2)",
+    fiveStarLevel120: {
+      pAtk: 215,
+      mAtk: 199,
+      heal: 175
+    }
   }
 };
