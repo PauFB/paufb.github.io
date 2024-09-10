@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ATBBarCost } from './ATBBarCost';
 import { OverboostStars } from './OverboostStars';
 import styles from './WeaponsPage.module.css';
 
@@ -48,12 +49,15 @@ export function WeaponsPage({ isViewportNarrow }) {
         } else if (sortConfig.column === "weapon") {
           const comparison = nameA.localeCompare(nameB, "en", { sensitivity: "base" });
           return sortConfig.direction === "asc" ? comparison : -comparison;
+        } else if (sortConfig.column === "atbCost") {
+          const diff = cAbilities[weaponA.cAbility].atbCost - cAbilities[weaponB.cAbility].atbCost;
+          return sortConfig.direction === "asc" ? diff : -diff;
         }
         return 0;
       });
     }
     setFilteredWeapons(Object.fromEntries(filteredEntries));
-  }, [weapons, nameQuery, selectedCharacters, selectedElements, sortConfig]);
+  }, [weapons, nameQuery, selectedCharacters, selectedElements, sortConfig, cAbilities]);
 
   function handleNameQueryChange(event) {
     const query = event.target.value;
@@ -82,7 +86,7 @@ export function WeaponsPage({ isViewportNarrow }) {
     if (!column) return;
     let direction = "desc";
     if (sortConfig.column === column) {
-        direction = sortConfig.direction === "desc" ? "asc" : 
+        direction = sortConfig.direction === "desc" ? "asc" :
                     sortConfig.direction === "asc"  ? null  :
                                                       "desc";
     }
@@ -272,9 +276,9 @@ export function WeaponsPage({ isViewportNarrow }) {
                         HEAL {renderColumnSortIcon("heal")}
                       </div>
                     </th>
-                    <th>
+                    <th onClick={() => handleOnClickColumnSorting("atbCost")} className={styles["table-header--sortable"]}>
                       <div className={styles["table-header-cell"]}>
-                        C. Ability
+                        C. Ability {renderColumnSortIcon("atbCost")}
                       </div>
                     </th>
                   </tr>
@@ -318,8 +322,15 @@ export function WeaponsPage({ isViewportNarrow }) {
                         {getWeaponHeal(weapon, selectedOverboostLevel)}
                       </td>
                       <td className={styles["table-data"]}>
-                        <div className={styles["table-data-c-ability"]}>
-                          {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                        <div className={styles["c-ability-container"]}>
+                          <div className={styles["c-ability-header"]}>
+                            <ATBBarCost cost={cAbilities[weapon.cAbility].atbCost} />
+                            {weapon.cAbility}
+                          </div>
+                          <div className={styles["c-ability-separator"]} />
+                          <div className={styles["table-data-c-ability"]}>
+                            {getWeaponCAbility(weapon, selectedOverboostLevel)}
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -331,7 +342,7 @@ export function WeaponsPage({ isViewportNarrow }) {
           {layout === "grid" && (
             <div className={styles["grid-container"]}>
               {Object.entries(filteredWeapons).map(([weaponName, weapon]) => (
-                <div className={styles["weapon-grid-entry"]}>
+                <div key={weaponName} className={styles["weapon-grid-entry"]}>
                   <div className={styles["weapon-grid-image"]}>
                     <img src={""} title={weaponName} alt="" />
                   </div>

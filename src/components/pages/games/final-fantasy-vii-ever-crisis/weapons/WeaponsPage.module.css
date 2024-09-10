@@ -144,6 +144,15 @@
   outline-width: 0.125rem;
   outline-offset: calc(-0.125rem * 3);
   padding: calc(0.125rem * 3);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              outline-color 0.2s ease;
+
+  &:hover {
+    background-color: #08325e;
+    border-color: #2164ab;
+    outline-color: #2164ab;
+  }
 
   &.character-toggle--selected {
     background-color: rgb(13, 83, 157);
@@ -207,6 +216,15 @@
   outline-width: 0.125rem;
   outline-offset: calc(-0.125rem * 3);
   padding: calc(0.125rem * 3);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              outline-color 0.2s ease;
+
+  &:hover {
+    background-color: #08325e;
+    border-color: #2164ab;
+    outline-color: #2164ab;
+  }
 
   &.element-toggle--selected {
     background-color: rgb(13, 83, 157);
@@ -267,6 +285,8 @@
 }
 
 .table-header--sortable {
+  transition: background-color 0.2s ease;
+
   &:hover {
     background-color: rgb(12, 48, 90);
     border-radius: 4px;
@@ -326,9 +346,27 @@
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.table-data-c-ability {
+.c-ability-container {
+  display: flex;
+  flex-direction: column;
   max-height: 7em;
-  overflow-y: scroll;
+  gap: 0.25rem;
+
+  & .c-ability-header {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  & .c-ability-separator {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(46, 67, 92);
+  }
+
+  & .table-data-c-ability {
+    overflow-x: scroll;
+  }
 }
 
 .grid-container {

@@ -1142,7 +1142,7 @@ export const weaponsData = {
   "Bamboo Ring": {
     character: "Yuffie",
     element: "Non-elemental",
-    cAbility: "Baddies Begone (1)",
+    cAbility: "Baddies Begone",
     fiveStarLevel120: {
       pAtk: 236,
       mAtk: 191,
