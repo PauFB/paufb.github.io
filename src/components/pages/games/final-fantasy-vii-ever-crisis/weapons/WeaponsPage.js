@@ -345,8 +345,14 @@ export function WeaponsPage({ isViewportNarrow }) {
                 <div key={weaponName} className={styles["weapon-grid-entry"]}>
                   <div className={styles["weapon-grid-image"]}>
                     <img src={""} title={weaponName} alt="" />
+                    <div className={styles["weapon-grid-image-overboost-stars"]}>
+                      <OverboostStars overboostLevel={selectedOverboostLevel} />
+                    </div>
                   </div>
-                  {weaponName}
+                  <div className={styles["weapon-grid-entry-column"]}>
+                    {weaponName}
+                    <ATBBarCost cost={cAbilities[weapon.cAbility].atbCost} />
+                  </div>
                 </div>
               ))}
             </div>
