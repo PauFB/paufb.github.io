@@ -9,7 +9,7 @@ export const navbarItemsData = [
     submenu: [
       {
         title: "FINAL FANTASY VII EVER CRISIS",
-        url: "final-fantasy-vii-ever-crisis",
+        externalUrl: "https://paufb.github.io/ffviiec/",
         icon: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/2484110/0c340f0216909506616c6467eb30d06c91ddf5ac.ico"
       },
       {

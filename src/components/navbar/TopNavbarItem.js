@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { TopNavbarDropdown } from './TopNavbarDropdown';
 
 export function TopNavbarItem({ items, depthLevel }) {
@@ -27,10 +27,17 @@ export function TopNavbarItem({ items, depthLevel }) {
         </>
       ) : (
         <>
-          <NavLink to={items.url}>
-            {getItemIcon()}
-            {items.title}
-          </NavLink>
+          {items.externalUrl ? (
+            <Link to={items.externalUrl} target="_blank" rel="noreferrer">
+              {getItemIcon()}
+              {items.title}
+            </Link>
+          ) : (
+            <NavLink to={items.url}>
+              {getItemIcon()}
+              {items.title}
+            </NavLink>
+          )}
         </>
       )}
     </li>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { LeftNavbarDropdown } from './LeftNavbarDropdown';
 
 export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
@@ -28,10 +28,17 @@ export function LeftNavbarItem({ items, depthLevel, toggleSidebar }) {
         </>
       ) : (
         <>
-          <NavLink to={items.url} onClick={toggleSidebar}>
-            {getItemIcon()}
-            {items.title}
-          </NavLink>
+          {items.externalUrl ? (
+            <Link to={items.externalUrl} target="_blank" rel="noreferrer">
+              {getItemIcon()}
+              {items.title}
+            </Link>
+          ) : (
+            <NavLink to={items.url} onClick={toggleSidebar}>
+              {getItemIcon()}
+              {items.title}
+            </NavLink>
+          )}
         </>
       )}
     </li>
