@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.532d7c46.css",
+    "main.js": "/static/js/main.0c1c17c4.js",
+    "static/js/453.ecb3862f.chunk.js": "/static/js/453.ecb3862f.chunk.js",
+    "static/media/twoweekendssans-regular.otf": "/static/media/twoweekendssans-regular.2069a42b8d4e3a2cdac9.otf",
+    "static/media/PublicSans-Regular.woff2": "/static/media/PublicSans-Regular.9bbae93f4ca6fda6dbb4.woff2",
+    "static/media/nodejs.svg": "/static/media/nodejs.3a44034a66f6f9b1daa7fbe062611bbe.svg",
+    "static/media/XOIREQE.TTF": "/static/media/XOIREQE.a56de09530ac3ea2a87e.TTF",
+    "static/media/react-dark.svg": "/static/media/react-dark.393de5641adc455fb5e8c3516d7aed59.svg",
+    "static/media/mysql.svg": "/static/media/mysql.edea1c374043e66847e776292c0d554f.svg",
+    "static/media/docker.svg": "/static/media/docker.57162b7888085b4f20a524fa44c5a9d5.svg",
+    "static/media/javascript.svg": "/static/media/javascript.e8dbfe4b16f56bf9138762cd4620a05d.svg",
+    "static/media/rails.svg": "/static/media/rails.8e6be0becf816f19170a12060ba430b2.svg",
+    "static/media/github.svg": "/static/media/github.2b69960d4429f60616550b157e10d6e1.svg",
+    "index.html": "/index.html",
+    "main.532d7c46.css.map": "/static/css/main.532d7c46.css.map",
+    "main.0c1c17c4.js.map": "/static/js/main.0c1c17c4.js.map",
+    "453.ecb3862f.chunk.js.map": "/static/js/453.ecb3862f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.532d7c46.css",
+    "static/js/main.0c1c17c4.js"
+  ]
+}
