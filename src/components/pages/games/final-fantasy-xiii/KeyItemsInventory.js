@@ -1,5 +1,0 @@
-export function KeyItemsInventory() {
-  return (
-    <></>
-  );
-}
